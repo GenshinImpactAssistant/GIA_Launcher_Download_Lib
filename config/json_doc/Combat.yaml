@@ -1,0 +1,25 @@
+TeamFile:
+  special_index: $FILE_IN_FOLDER$#config\tactic
+name:
+  special_index: $INPUT_VERIFY$#character_name
+position:
+  select_items:
+  - Main
+  - Normal
+  - Shield
+  - Recovery
+  - ''
+vision:
+  select_items:
+  - Geo
+  - Electro
+  - Hydro
+  - Pyro
+  - Cryo
+  - Dendro
+  - Anemo
+  - ''
+n:
+  type: int
+priority:
+  type: int

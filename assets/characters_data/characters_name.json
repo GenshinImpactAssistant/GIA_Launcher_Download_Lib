@@ -1,0 +1,910 @@
+[
+    {
+      "en": "Aether",
+      "ja": "空",
+      "notes": "男性主人公名。発音は「イーサー」。俗称として MC (Main Character の略?) と呼ばれることもある。",
+      "pronunciationJa": "そら",
+      "tags": [
+        "character-main"
+      ],
+      "zhCN": "空"
+    },
+    {
+      "en": "Lumine",
+      "ja": "蛍",
+      "notes": "女性主人公名。発音は「ルミーン」と思われるが諸説あり。俗称として MC (Main Character の略?) と呼ばれることもある。",
+      "pronunciationJa": "ほたる",
+      "tags": [
+        "character-main"
+      ],
+      "zhCN": "荧"
+    },
+    {
+      "en": "Traveler",
+      "ja": "旅人",
+      "notes": "俗称として MC (Main Character の略?) と呼ばれることもある",
+      "pronunciationJa": "たびびと",
+      "tags": [
+        "title",
+        "how-to-call"
+      ],
+      "zhCN": "旅行者"
+    },
+    {
+      "en": "Paimon",
+      "ja": "パイモン",
+      "tags": [
+        "character-sub"
+      ],
+      "zhCN": "派蒙"
+    },
+    {
+      "en": "Sustainer of Heavenly Principles",
+      "ja": "天理の調停者",
+      "pronunciationJa": "てんりのちょうていしゃ",
+      "tags": [
+        "character-sub"
+      ],
+      "zhCN": "天理的维系者"
+    },
+    {
+      "en": "Katheryne",
+      "ja": "キャサリン",
+      "tags": [
+        "character-sub"
+      ],
+      "zhCN": "凯瑟琳"
+    },
+    {
+      "en": "Jean",
+      "ja": "ジン",
+      "tags": [
+        "mondstadt",
+        "character-main"
+      ],
+      "zhCN": "琴"
+    },
+    {
+      "en": "Amber",
+      "ja": "アンバー",
+      "tags": [
+        "mondstadt",
+        "character-main"
+      ],
+      "zhCN": "安柏"
+    },
+    {
+      "en": "Kaeya",
+      "ja": "ガイア",
+      "tags": [
+        "mondstadt",
+        "character-main"
+      ],
+      "zhCN": "凯亚"
+    },
+    {
+      "en": "Lisa",
+      "ja": "リサ・ミンツ",
+      "tags": [
+        "mondstadt",
+        "character-main"
+      ],
+      "zhCN": "丽莎"
+    },
+    {
+      "en": "Venti",
+      "ja": "ウェンティ",
+      "tags": [
+        "mondstadt",
+        "character-main"
+      ],
+      "zhCN": "温迪"
+    },
+    {
+      "en": "Razor",
+      "ja": "レザー",
+      "tags": [
+        "mondstadt",
+        "character-main"
+      ],
+      "zhCN": "雷泽"
+    },
+    {
+      "en": "Bennett",
+      "ja": "ベネット",
+      "tags": [
+        "mondstadt",
+        "character-main"
+      ],
+      "zhCN": "班尼特"
+    },
+    {
+      "en": "Noelle",
+      "ja": "ノエル",
+      "tags": [
+        "mondstadt",
+        "character-main"
+      ],
+      "zhCN": "诺艾尔"
+    },
+    {
+      "en": "Fischl",
+      "ja": "フィッシュル",
+      "tags": [
+        "mondstadt",
+        "character-main"
+      ],
+      "zhCN": "菲谢尔"
+    },
+    {
+      "en": "Diluc",
+      "ja": "ディルック",
+      "tags": [
+        "mondstadt",
+        "character-main"
+      ],
+      "variants": {
+        "ja": [
+          "ディルック・ラグウィンド"
+        ]
+      },
+      "zhCN": "迪卢克"
+    },
+    {
+      "en": "Klee",
+      "ja": "クレー",
+      "notes": "読み方は「クリー」",
+      "tags": [
+        "mondstadt",
+        "character-main"
+      ],
+      "zhCN": "可莉"
+    },
+    {
+      "en": "Diona",
+      "ja": "ディオナ",
+      "notes": "読みは「ダイオナ」",
+      "tags": [
+        "mondstadt",
+        "character-main"
+      ],
+      "zhCN": "迪奥娜"
+    },
+    {
+      "en": "Barbara",
+      "ja": "バーバラ",
+      "notes": "姓については、日本語では表記揺れあり。英語版の発音は「バーバラ・ペッグ」",
+      "tags": [
+        "mondstadt",
+        "character-main"
+      ],
+      "zhCN": "芭芭拉"
+    },
+    {
+      "en": "Sucrose",
+      "ja": "スクロース",
+      "tags": [
+        "mondstadt",
+        "character-main"
+      ],
+      "zhCN": "砂糖"
+    },
+    {
+      "en": "Albedo",
+      "ja": "アルベド",
+      "tags": [
+        "mondstadt",
+        "character-main"
+      ],
+      "zhCN": "阿贝多"
+    },
+    {
+      "en": "Mona",
+      "ja": "モナ",
+      "tags": [
+        "mondstadt",
+        "character-main"
+      ],
+      "zhCN": "莫娜"
+    },
+    {
+      "en": "Rosaria",
+      "ja": "ロサリア",
+      "notes": "英語では「ロザリア」と発音される。カタカナで表すと崩壊 3rd のロザリア・アリーンと全く同名に見えるが、こちらは Rozaliya と綴る。",
+      "tags": [
+        "mondstadt",
+        "character-main"
+      ],
+      "zhCN": "罗莎莉亚"
+    },
+    {
+      "en": "Eula",
+      "ja": "エウルア",
+      "notes": "英語での発音は「ユーラ」",
+      "tags": [
+        "mondstadt",
+        "character-main"
+      ],
+      "zhCN": "优菈"
+    },
+    {
+      "en": "Mika",
+      "ja": "ミカ",
+      "tags": [
+        "mondstadt",
+        "character-main"
+      ],
+      "zhCN": "米卡"
+    },
+    {
+      "en": "Xiangling",
+      "ja": "香菱",
+      "notes": "[発音についての参考動画](https://youtu.be/p10yiwULJA8?t=303)",
+      "pronunciationJa": "シャンリン",
+      "tags": [
+        "liyue",
+        "character-main"
+      ],
+      "zhCN": "香菱"
+    },
+    {
+      "en": "Keqing",
+      "ja": "刻晴",
+      "notes": "読みは「クゥー(ァ)チン」([参考動画](https://youtu.be/p10yiwULJA8?t=288))",
+      "pronunciationJa": "こくせい",
+      "tags": [
+        "liyue",
+        "character-main"
+      ],
+      "zhCN": "刻晴"
+    },
+    {
+      "en": "Ningguang",
+      "ja": "凝光",
+      "notes": "発音は「ニィングアン」([参考動画](https://youtu.be/p10yiwULJA8?t=256))",
+      "pronunciationJa": "ぎょうこう",
+      "tags": [
+        "liyue",
+        "character-main"
+      ],
+      "zhCN": "凝光"
+    },
+    {
+      "en": "Qiqi",
+      "ja": "七七",
+      "notes": "読みは「チィーチィー」([参考動画](https://youtu.be/p10yiwULJA8?t=283))",
+      "pronunciationJa": "なな",
+      "tags": [
+        "liyue",
+        "character-main"
+      ],
+      "zhCN": "七七"
+    },
+    {
+      "en": "Xingqiu",
+      "ja": "行秋",
+      "notes": "読みは「シンチォウ」([参考動画](https://youtu.be/p10yiwULJA8?t=224))",
+      "pronunciationJa": "ゆくあき",
+      "tags": [
+        "liyue",
+        "character-main"
+      ],
+      "zhCN": "行秋"
+    },
+    {
+      "en": "Chongyun",
+      "ja": "重雲",
+      "notes": "読みは「チョンュイン」([参考動画](https://youtu.be/p10yiwULJA8?t=237))",
+      "pronunciationJa": "ちょううん",
+      "tags": [
+        "liyue",
+        "character-main"
+      ],
+      "zhCN": "重云"
+    },
+    {
+      "en": "Beidou",
+      "ja": "北斗",
+      "notes": "発音は「ベイドウ」([参考動画](https://youtu.be/p10yiwULJA8?t=248))",
+      "pronunciationJa": "ほくと",
+      "tags": [
+        "liyue",
+        "character-main"
+      ],
+      "zhCN": "北斗"
+    },
+    {
+      "en": "Xinyan",
+      "ja": "辛炎",
+      "pronunciationJa": "しんえん",
+      "tags": [
+        "liyue",
+        "character-main"
+      ],
+      "zhCN": "辛焱"
+    },
+    {
+      "en": "Zhongli",
+      "ja": "鍾離",
+      "notes": "読みは「ヂョンリー」([参考動画](https://youtu.be/p10yiwULJA8?t=118))",
+      "pronunciationJa": "しょうり",
+      "tags": [
+        "liyue",
+        "character-main"
+      ],
+      "variants": {
+        "ja": [
+          "鐘離"
+        ]
+      },
+      "zhCN": "钟离"
+    },
+    {
+      "en": "Xiao",
+      "ja": "魈",
+      "notes": "発音は「シァオ」([参考動画](https://youtu.be/p10yiwULJA8?t=310))",
+      "pronunciationJa": "しょう",
+      "tags": [
+        "liyue",
+        "character-main"
+      ],
+      "zhCN": "魈"
+    },
+    {
+      "en": "Ganyu",
+      "ja": "甘雨",
+      "pronunciationJa": "かんう",
+      "tags": [
+        "liyue",
+        "character-main"
+      ],
+      "zhCN": "甘雨"
+    },
+    {
+      "en": "Hu Tao",
+      "id": "hutao",
+      "ja": "胡桃",
+      "pronunciationJa": "フータオ",
+      "tags": [
+        "liyue",
+        "character-main"
+      ],
+      "zhCN": "胡桃"
+    },
+    {
+      "en": "Yanfei",
+      "ja": "煙緋",
+      "notes": "英語及び中国語の読みは「イェンフェイ」",
+      "pronunciationJa": "えんひ",
+      "tags": [
+        "liyue",
+        "character-main"
+      ],
+      "zhCN": "烟绯"
+    },
+    {
+      "en": "Baizhu",
+      "ja": "白朮",
+      "notes": "英語の発音は「バイジュ」",
+      "pronunciationJa": "びゃくじゅつ",
+      "tags": [
+        "liyue",
+        "character-sub"
+      ],
+      "zhCN": "白术"
+    },
+    {
+      "en": "Xingyan",
+      "ja": "星燕",
+      "tags": [
+        "liyue",
+        "character-sub"
+      ],
+      "zhCN": "星燕"
+    },
+    {
+      "en": "Yun Jin",
+      "ja": "雲菫",
+      "pronunciationJa": "うんきん",
+      "tags": [
+        "liyue",
+        "character-main"
+      ],
+      "zhCN": "云堇"
+    },
+    {
+      "en": "Shenhe",
+      "ja": "申鶴",
+      "notes": "発音は「シェンハ」",
+      "pronunciationJa": "しんかく",
+      "tags": [
+        "liyue",
+        "character-main"
+      ],
+      "zhCN": "申鹤"
+    },
+    {
+      "en": "Yelan",
+      "ja": "夜蘭",
+      "pronunciationJa": "イェラン",
+      "tags": [
+        "liyue",
+        "character-main"
+      ],
+      "zhCN": "夜兰"
+    },
+    {
+      "en": "Yaoyao",
+      "ja": "ヨォーヨ",
+      "tags": [
+        "liyue",
+        "character-main"
+      ],
+      "zhCN": "瑶瑶"
+    },
+    {
+      "en": "Yuegui",
+      "ja": "月桂",
+      "notes": "ヨォーヨの持っている人形 (?)",
+      "pronunciationJa": "ユェーグェイ",
+      "tags": [
+        "liyue",
+        "object"
+      ],
+      "zhCN": "月桂"
+    },
+    {
+      "en": "Morax",
+      "ja": "モラクス",
+      "tags": [
+        "liyue",
+        "title"
+      ],
+      "zhCN": "摩拉克斯"
+    },
+    {
+      "en": "Rex Lapis",
+      "ja": "岩王帝君",
+      "pronunciationJa": "がんおうていくん",
+      "tags": [
+        "liyue",
+        "title",
+        "how-to-call"
+      ],
+      "zhCN": "岩王帝君"
+    },
+    {
+      "en": "Geo Archon",
+      "ja": "岩神",
+      "pronunciationJa": "がんしん",
+      "tags": [
+        "liyue",
+        "title"
+      ],
+      "variants": {
+        "en": [
+          "Geo God",
+          "God of Geo"
+        ]
+      },
+      "zhCN": "岩神"
+    },
+    {
+      "en": "Madame Ping",
+      "ja": "ピンばあや",
+      "tags": [
+        "liyue",
+        "character-sub",
+        "sereniteapot"
+      ],
+      "zhCN": "萍姥姥"
+    },
+    {
+      "en": "Kaedehara Kazuha",
+      "ja": "楓原万葉",
+      "pronunciationJa": "かえではらかずは",
+      "tags": [
+        "inazuma",
+        "character-main"
+      ],
+      "zhCN": "枫原万叶"
+    },
+    {
+      "en": "Yoimiya",
+      "ja": "宵宮",
+      "pronunciationJa": "よいみや",
+      "tags": [
+        "inazuma",
+        "character-main"
+      ],
+      "variants": {
+        "zhCN": [
+          "霄宫"
+        ]
+      },
+      "zhCN": "宵宫"
+    },
+    {
+      "en": "Kamisato Ayaka",
+      "ja": "神里綾華",
+      "pronunciationJa": "かみさとあやか",
+      "tags": [
+        "inazuma",
+        "character-main"
+      ],
+      "variants": {
+        "ja": [
+          "神里綾香"
+        ],
+        "zhCN": [
+          "神里凌华"
+        ]
+      },
+      "zhCN": "神里绫华"
+    },
+    {
+      "en": "Kamisato Ayato",
+      "ja": "神里綾人",
+      "pronunciationJa": "かみさとあやと",
+      "tags": [
+        "inazuma",
+        "character-main"
+      ],
+      "variants": {
+        "zhCN": [
+          "神里凌人"
+        ]
+      },
+      "zhCN": "神里绫人"
+    },
+    {
+      "en": "Thoma",
+      "ja": "トーマ",
+      "tags": [
+        "inazuma",
+        "character-main"
+      ],
+      "variants": {
+        "ja": [
+          "トウマ"
+        ]
+      },
+      "zhCN": "托马"
+    },
+    {
+      "en": "Sayu",
+      "ja": "早柚",
+      "pronunciationJa": "さゆ",
+      "tags": [
+        "inazuma",
+        "character-main"
+      ],
+      "zhCN": "早柚"
+    },
+    {
+      "en": "Yae Miko",
+      "ja": "八重神子",
+      "pronunciationJa": "やえみこ",
+      "tags": [
+        "inazuma",
+        "character-main"
+      ],
+      "zhCN": "八重神子"
+    },
+    {
+      "en": "Arataki Itto",
+      "ja": "荒瀧一斗",
+      "pronunciationJa": "あらたきいっと",
+      "tags": [
+        "inazuma",
+        "character-main"
+      ],
+      "zhCN": "荒泷一斗"
+    },
+    {
+      "en": "Kuki Shinobu",
+      "ja": "久岐忍",
+      "pronunciationJa": "くきしのぶ",
+      "tags": [
+        "inazuma",
+        "character-main"
+      ],
+      "zhCN": "久岐忍"
+    },
+    {
+      "en": "Gorou",
+      "ja": "ゴロー",
+      "tags": [
+        "inazuma",
+        "character-main"
+      ],
+      "zhCN": "五郎"
+    },
+    {
+      "en": "Sangonomiya Kokomi",
+      "ja": "珊瑚宮心海",
+      "pronunciationJa": "さんごのみやここみ",
+      "tags": [
+        "inazuma",
+        "character-main"
+      ],
+      "zhCN": "珊瑚宫心海"
+    },
+    {
+      "en": "Kujou Sara",
+      "ja": "九条裟羅",
+      "pronunciationJa": "くじょうさら",
+      "tags": [
+        "inazuma",
+        "character-main"
+      ],
+      "variants": {
+        "zhCN": [
+          "九条纱罗"
+        ]
+      },
+      "zhCN": "九条裟罗"
+    },
+    {
+      "en": "Shikanoin Heizou",
+      "ja": "鹿野院平蔵",
+      "pronunciationJa": "しかのいんへいぞう",
+      "tags": [
+        "inazuma",
+        "character-main"
+      ],
+      "zhCN": "鹿野院平藏"
+    },
+    {
+      "en": "Raiden Shogun",
+      "ja": "雷電将軍",
+      "pronunciationJa": "らいでんしょうぐん",
+      "tags": [
+        "inazuma",
+        "character-main"
+      ],
+      "zhCN": "雷电将军"
+    },
+    {
+      "en": "Ei",
+      "ja": "影",
+      "pronunciationJa": "えい",
+      "tags": [
+        "inazuma",
+        "character-main"
+      ],
+      "zhCN": "影"
+    },
+    {
+      "en": "Cyno",
+      "ja": "セノ",
+      "notes": "英語版の発音は「サイノ」",
+      "tags": [
+        "sumeru",
+        "character-main"
+      ],
+      "zhCN": "赛诺"
+    },
+    {
+      "en": "Tighnari",
+      "ja": "ティナリ",
+      "notes": "英語の発音は「タイナリ」。中国語での発音は、日本語とほぼ同様で「ティナリ」。",
+      "tags": [
+        "sumeru",
+        "character-main"
+      ],
+      "zhCN": "提纳里"
+    },
+    {
+      "en": "Collei",
+      "ja": "コレイ",
+      "notes": "中国語の発音は「クライ」に近い",
+      "tags": [
+        "sumeru",
+        "character-main"
+      ],
+      "zhCN": "柯莱"
+    },
+    {
+      "en": "Dori Sangemah Bay",
+      "ja": "ドリー・サングマハベイ",
+      "tags": [
+        "sumeru",
+        "character-main"
+      ],
+      "zhCN": "多莉·桑歌玛哈巴依"
+    },
+    {
+      "en": "Alhaitham",
+      "ja": "アルハイゼン",
+      "tags": [
+        "sumeru",
+        "character-main"
+      ],
+      "zhCN": "艾尔海森"
+    },
+    {
+      "en": "Dehya",
+      "ja": "ディシア",
+      "notes": "英語版における発音は「ディーヤ」",
+      "tags": [
+        "sumeru",
+        "character-main"
+      ],
+      "zhCN": "迪希雅"
+    },
+    {
+      "en": "Nilou",
+      "ja": "ニィロウ",
+      "tags": [
+        "sumeru",
+        "character-main"
+      ],
+      "zhCN": "妮露"
+    },
+    {
+      "en": "Candace",
+      "ja": "キャンディス",
+      "tags": [
+        "sumeru",
+        "character-main"
+      ],
+      "zhCN": "坎蒂丝"
+    },
+    {
+      "en": "Layla",
+      "ja": "レイラ",
+      "tags": [
+        "sumeru",
+        "character-main"
+      ],
+      "zhCN": "莱依拉"
+    },
+    {
+      "en": "Faruzan",
+      "ja": "ファルザン",
+      "tags": [
+        "sumeru",
+        "character-main"
+      ],
+      "zhCN": "珐露珊"
+    },
+    {
+      "en": "Kaveh",
+      "ja": "カーヴェ",
+      "tags": [
+        "sumeru",
+        "character-main"
+      ],
+      "zhCN": "卡维"
+    },
+    {
+      "en": "Nahida",
+      "ja": "ナヒーダ",
+      "tags": [
+        "sumeru",
+        "character-main"
+      ],
+      "zhCN": "纳西妲"
+    },
+    {
+      "en": "Lyney",
+      "ja": "リネ",
+      "tags": [
+        "character-main"
+      ],
+      "zhCN": "林尼"
+    },
+    {
+      "en": "Lynette",
+      "ja": "リネット",
+      "tags": [
+        "character-main"
+      ],
+      "zhCN": "琳妮特"
+    },
+    {
+      "en": "Iansan",
+      "ja": "イアンサ",
+      "tags": [
+        "character-main"
+      ],
+      "zhCN": "伊安珊"
+    },
+    {
+      "en": "Tartaglia",
+      "ja": "タルタリヤ",
+      "notes": "[公子](/childe/)の通称",
+      "tags": [
+        "snezhnaya",
+        "liyue",
+        "character-main",
+        "enemy-boss"
+      ],
+      "variants": {
+        "ja": [
+          "タルタリア",
+          "タルタル"
+        ]
+      },
+      "zhCN": "达达利亚"
+    },
+    {
+      "en": "Childe",
+      "ja": "公子",
+      "notes": "[タルタリヤ](/tartaglia/)のコードネーム。英語圏では Tartaglia よりも Childe と呼ばれることが多い印象。",
+      "pronunciationJa": "こうし",
+      "tags": [
+        "snezhnaya",
+        "liyue",
+        "character-main",
+        "title",
+        "how-to-call",
+        "enemy-boss"
+      ],
+      "zhCN": "公子"
+    },
+    {
+      "en": "Ajax",
+      "ja": "アヤックス",
+      "tags": [
+        "snezhnaya",
+        "liyue",
+        "character-main",
+        "enemy-boss"
+      ],
+      "zhCN": "阿贾克斯"
+    },
+    {
+      "en": "Scaramouche",
+      "ja": "スカラマシュ",
+      "notes": "英語での発音は「スカラムーシュ」。([出典動画](https://youtu.be/TmaAOV4SJNQ?t=122)) 中国のプレイヤーの間では「スカラマシュ」(斯卡拉姆齐) よりも「散兵」の名で呼ばれることが多い。",
+      "tags": [
+        "snezhnaya",
+        "inazuma",
+        "sumeru",
+        "character-main"
+      ],
+      "zhCN": "斯卡拉姆齐"
+    },
+    {
+      "en": "Balladeer",
+      "ja": "散兵",
+      "notes": "中国のプレイヤーの間では「スカラマシュ」(斯卡拉姆齐) よりも「散兵」の名で呼ばれることが多い。",
+      "pronunciationJa": "ざんひょう",
+      "tags": [
+        "snezhnaya",
+        "inazuma",
+        "sumeru",
+        "character-main",
+        "title"
+      ],
+      "zhCN": "散兵"
+    },
+    {
+      "en": "Kunikuzushi",
+      "ja": "国崩",
+      "pronunciationJa": "くにくずし",
+      "tags": [
+        "snezhnaya",
+        "inazuma",
+        "sumeru",
+        "character-main",
+        "title"
+      ],
+      "zhCN": "国崩"
+    },
+    {
+      "en": "Wanderer",
+      "ja": "放浪者",
+      "pronunciationJa": "ほうろうしゃ",
+      "tags": [
+        "snezhnaya",
+        "inazuma",
+        "sumeru",
+        "character-main",
+        "title"
+      ],
+      "zhCN": "流浪者"
+    }
+  ]

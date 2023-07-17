@@ -1,0 +1,13 @@
+CollectMode:
+  annotation: No use for now
+  doc: Collect Mode
+CollectionArea:
+  doc: Collect Area
+CollectionName:
+  annotation: Fill in the item name directly
+  doc: Collection Name
+CollectionType:
+  doc: Collection Type
+MinimumTimesMaskColId:
+  annotation: No use for now
+  doc: Minimum number of collection failure blocking

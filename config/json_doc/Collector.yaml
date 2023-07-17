@@ -1,0 +1,13 @@
+CollectionMode:
+  select_items:
+  - Auto
+  - ManualAssi
+CollectionArea:
+  select_items:
+  - ALL
+CollectionName:
+  special_index: $PREDICT_AND_VERIFY_01$
+CollectionType:
+  select_items:
+  - COLLECTION
+  - ENEMY

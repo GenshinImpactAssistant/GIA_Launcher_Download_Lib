@@ -1,0 +1,744 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2023-05-08 23:52+0800\n"
+"PO-Revision-Date: 2023-05-08 23:54+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Poedit 3.2\n"
+
+#: genshin_assistant.py:26
+msgid "正在初始化，请稍后"
+msgstr "Initializing, please wait"
+
+#: genshin_assistant.py:33 genshin_assistant.py:41
+msgid "导入依赖时错误"
+msgstr "Error in importing dependencies."
+
+#: genshin_assistant.py:36 genshin_assistant.py:44
+msgid "程序暂停。按任意键退出"
+msgstr "Program paused. press any key to exit"
+
+#: genshin_assistant.py:46
+msgid "初始化完成"
+msgstr "Initializing successfully"
+
+#: genshin_assistant.py:47
+msgid "正在等待webio启动"
+msgstr "Waiting for webio to start"
+
+#: genshin_assistant.py:48
+msgid "启动键盘监听"
+msgstr "Start keyboard listening"
+
+#: source\api\pdocr_api.py:4
+msgid "Creating ocr object."
+msgstr "Creating ocr object."
+
+#: source\api\pdocr_api.py:14
+msgid "导入paddleocr时错误; err code: 001"
+msgstr "Error when importing paddleocr; err code: 001"
+
+#: source\api\pdocr_api.py:200
+msgid "ocr device: "
+msgstr "ocr device: "
+
+#: source\api\yolox_api.py:6
+msgid "Creating yolox obj. It may takes a few second."
+msgstr "Creating yolox obj. It may takes a few second."
+
+#: source\api\yolox_api.py:22
+msgid "导入torch时错误; err code: 002"
+msgstr "Error when importing torch; err code: 002"
+
+#: source\api\yolox_api.py:534
+msgid "Created yolox obj."
+msgstr "Created yolox obj."
+
+#: source\common\flow_state.py:99
+msgid "空闲"
+msgstr "Idle"
+
+#: source\common\flow_state.py:102
+msgid "正在初始化"
+msgstr "Initializing"
+
+#: source\common\flow_state.py:104
+msgid "正在准备"
+msgstr "Prepareing"
+
+#: source\common\flow_state.py:106
+msgid "正在进行"
+msgstr "Doing"
+
+#: source\common\flow_state.py:108
+msgid "准备结束"
+msgstr "Ready to end"
+
+#: source\common\flow_state.py:110
+msgid "结束"
+msgstr "End"
+
+#: source\common\flow_state.py:113
+msgid "移动到挑战位置"
+msgstr "move to challenge position"
+
+#: source\common\flow_state.py:115
+msgid "挑战秘境中"
+msgstr "In challenging"
+
+#: source\common\flow_state.py:117
+msgid "准备领取奖励"
+msgstr "ready to claim reward"
+
+#: source\common\flow_state.py:119
+msgid "正在寻找石化古树位置"
+msgstr "Looking for the location of the tree"
+
+#: source\common\flow_state.py:121
+msgid "移动到石化古树位置"
+msgstr "Move to the location of the tree"
+
+#: source\common\flow_state.py:123
+msgid "领取奖励"
+msgstr "Obtain reaward"
+
+#: source\common\flow_state.py:125
+msgid "结束秘境"
+msgstr "End domain"
+
+#: source\common\flow_state.py:127
+msgid "在地图上传送"
+msgstr "teleport on map"
+
+#: source\common\flow_state.py:129
+msgid "移动到目标坐标位置"
+msgstr "Move to the target coordinate position"
+
+#: source\common\flow_state.py:131
+msgid "移动到采集物位置"
+msgstr "Move to collection location"
+
+#: source\common\flow_state.py:133
+msgid "拾取采集物"
+msgstr "Pick up collection"
+
+#: source\common\flow_state.py:135
+msgid "结束自动采集"
+msgstr "End AutoCollection"
+
+#: source\common\generic_event.py:71 source\interaction\interaction_core.py:42
+msgid "恢复操作"
+msgstr "recovery operation"
+
+#: source\common\generic_event.py:73
+msgid "是原神窗口"
+msgstr "is Genshin window"
+
+#: source\common\generic_event.py:73 source\interaction\interaction_core.py:44
+msgid " 秒"
+msgstr " second"
+
+#: source\common\generic_event.py:73 source\interaction\interaction_core.py:44
+msgid "当前窗口焦点为"
+msgstr "The current window focus is"
+
+#: source\common\generic_event.py:73 source\interaction\interaction_core.py:44
+msgid "，操作暂停 "
+msgstr ", operation stopped. "
+
+#: source\common\static_lib.py:22
+msgid "CANNOT FIND HANDLE"
+msgstr "CANNOT FIND HANDLE"
+
+#: source\controller\combat_controller.py:48
+msgid "有人嘎了，停止自动战斗"
+msgstr "Someone's dead, stop auto combat"
+
+#: source\controller\combat_controller.py:59
+msgid "停止自动战斗"
+msgstr "stop auto combat"
+
+#: source\controller\teyvat_move_controller.py:143
+#: source\controller\teyvat_move_controller_upgrad.py:138
+#: source\flow\teyvat_move_flow_upgrad.py:292
+msgid "已到达目的地附近，本次导航结束。"
+msgstr "Near the destination has been reached, this navigation is over."
+
+#: source\controller\teyvat_move_controller.py:149
+#: source\controller\teyvat_move_controller_upgrad.py:144
+#: source\flow\teyvat_move_flow_upgrad.py:305
+msgid "已到达F附近，本次导航结束。"
+msgstr "You have reached the button of F, and this navigation is over."
+
+#: source\flow\collector_flow.py:220
+msgid "停止自动采集"
+msgstr "Stoping AutoCollector"
+
+#: source\flow\collector_flow.py:224
+msgid "所有角色都已嘎掉，正在中断此次采集"
+msgstr "All characters have been died and are interrupting this collection"
+
+#: source\flow\collector_flow.py:240 source\flow\collector_flow.py:247
+#: source\flow\collector_flow.py:262
+msgid "重置完成。准备进行下一次采集"
+msgstr "Reset is complete. Ready for the next collection"
+
+#: source\flow\collector_flow.py:244
+msgid "Flow timeout"
+msgstr "Flow timeout"
+
+#: source\flow\collector_flow.py:256
+msgid "有人嘎了，正在停止此次采集"
+msgstr "Someone's dead, stop collection"
+
+#: source\flow\collector_flow.py:338
+msgid "switch Flow to: AFTER_MOVETO_COLLECTOR"
+msgstr "switch Flow to: AFTER_MOVETO_COLLECTOR"
+
+#: source\flow\collector_flow.py:342
+msgid "collect in"
+msgstr "collect in"
+
+#: source\flow\collector_flow.py:342
+msgid "failed. reason: stuck"
+msgstr "failed. reason: stuck"
+
+#: source\flow\collector_flow.py:373
+msgid "switch Flow to: BEFORE_PICKUP_COLLECTOR"
+msgstr "switch Flow to: BEFORE_PICKUP_COLLECTOR"
+
+#: source\flow\collector_flow.py:381
+msgid "switch Flow to: IN_PICKUP_COLLECTOR"
+msgstr "switch Flow to: IN_PICKUP_COLLECTOR"
+
+#: source\flow\collector_flow.py:391
+msgid "switch Flow to: AFTER_PICKUP_COLLECTOR"
+msgstr "switch Flow to: AFTER_PICKUP_COLLECTOR"
+
+#: source\flow\domain_flow.py:29
+msgid "请输入秘境次数"
+msgstr "Please enter the number of challenges"
+
+#: source\flow\domain_flow.py:44
+msgid "秘境次数："
+msgstr "Challenge times:"
+
+#: source\flow\domain_flow.py:47
+msgid "停止自动秘境"
+msgstr "stop AutoDomain"
+
+#: source\flow\domain_flow.py:107 source\flow\domain_flow_upgrad.py:51
+msgid "正在开始挑战秘境"
+msgstr "Starting to challenge the domain"
+
+#: source\flow\domain_flow.py:252 source\flow\domain_flow_upgrad.py:93
+msgid "正在开始战斗"
+msgstr "starting combat"
+
+#: source\flow\domain_flow.py:266 source\flow\domain_flow_upgrad.py:116
+msgid "正在停止战斗"
+msgstr "stopting combat"
+
+#: source\flow\domain_flow.py:269 source\flow\domain_flow_upgrad.py:119
+msgid "等待岩造物消失"
+msgstr "Waiting for the rock-made to disappear"
+
+#: source\flow\domain_flow.py:277 source\flow\domain_flow_upgrad.py:163
+msgid "正在激活石化古树"
+msgstr "Activating the tree"
+
+#: source\flow\domain_flow.py:322
+msgid "秘境结束。"
+msgstr "Domain over."
+
+#: source\flow\domain_flow.py:333 source\task\domain_task.py:97
+msgid "开始下一次秘境"
+msgstr "Starting next domain"
+
+#: source\flow\domain_flow.py:347 source\task\domain_task.py:109
+msgid "次数结束。退出秘境"
+msgstr "The number of times is over. Exit the domain"
+
+#: source\flow\path_recorder_flow.py:111
+msgid "position added:"
+msgstr "position added:"
+
+#: source\flow\path_recorder_flow.py:145
+msgid "ready to start recording"
+msgstr "ready to start recording"
+
+#: source\flow\path_recorder_flow.py:148
+msgid "ready to stop recording"
+msgstr "ready to stop recording"
+
+#: source\flow\path_recorder_flow.py:181
+msgid "start recording"
+msgstr "start recording"
+
+#: source\flow\teyvat_move_flow.py:115
+msgid "停止自动移动"
+msgstr "Stop AutoMove"
+
+#: source\flow\teyvat_move_flow.py:156 source\funclib\generic_lib.py:59
+msgid "获取传送锚点失败，正在重试"
+msgstr "Failed to get teleportation, retrying"
+
+#: source\flow\teyvat_move_flow.py:274
+msgid "正在落地"
+msgstr "Landing"
+
+#: source\flow\teyvat_move_flow.py:276
+msgid "结束自动行走"
+msgstr "Stop AutoMove"
+
+#: source\flow\teyvat_move_flow_upgrad.py:169
+msgid "不在服务区"
+msgstr "Out of service area"
+
+#: source\funclib\combat_lib.py:145
+msgid ""
+"Located at the map boundary, the is_chara_busy function enables fuzzy "
+"recognition mode."
+msgstr ""
+"Located at the map boundary, the is_chara_busy function enables fuzzy "
+"recognition mode."
+
+#: source\funclib\combat_lib.py:189
+msgid "获得当前角色编号失败"
+msgstr "Failed to get the current character number"
+
+#: source\funclib\combat_lib.py:501
+msgid ""
+"The strategy file for the current teaming is not found in the tactic folder: "
+msgstr ""
+"The strategy file for the current teaming is not found in the tactic folder: "
+
+#: source\funclib\combat_lib.py:553
+msgid "请将配对文件中的tastic_group更名为tactic_group. 已自动识别。"
+msgstr ""
+"Please rename the tastic_group to tactic_group in the tactic file. It is "
+"automatically recognized."
+
+#: source\funclib\combat_lib.py:572
+msgid "Character Key Empty Error"
+msgstr "Character Key Empty Error"
+
+#: source\funclib\scene_lib.py:22
+msgid "UI界面检测失败，正在尝试按esc返回"
+msgstr "UI interface detection failed, trying to press esc to return"
+
+#: source\funclib\scene_lib.py:24
+msgid "将在1秒后再次尝试获取UI界面"
+msgstr "Will try to get the UI again after 1 second"
+
+#: source\funclib\scene_lib.py:25 source\funclib\scene_lib.py:36
+#: source\funclib\scene_lib.py:39
+msgid "尝试次数："
+msgstr "Retry times:"
+
+#: source\funclib\scene_lib.py:30 source\funclib\scene_lib.py:32
+msgid "UI界面检测失败"
+msgstr "UI interface detection failed"
+
+#: source\funclib\scene_lib.py:33
+msgid "将在0.2秒后再次尝试获取UI界面"
+msgstr "Will try to get the UI again after 0.2 seconds"
+
+#: source\interaction\capture.py:66
+msgid "Fail to get capture: "
+msgstr "Fail to get capture: "
+
+#: source\interaction\capture.py:68
+msgid " waiting 2 sec."
+msgstr " waiting 2 sec."
+
+#: source\interaction\capture.py:109
+msgid "research handle: "
+msgstr "research handle: "
+
+#: source\interaction\capture.py:115
+msgid "research monitor: "
+msgstr "research monitor: "
+
+#: source\interaction\capture.py:123
+msgid "multiple monitor detected: "
+msgstr "multiple monitor detected: "
+
+#: source\interaction\capture.py:144
+msgid ""
+"You seem to have monitor scaling set? It is automatically recognized and "
+"this does not affect usage."
+msgstr ""
+"You seem to have monitor scaling set? It is automatically recognized and "
+"this does not affect usage."
+
+#: source\interaction\interaction_core.py:44
+msgid "不是原神窗口"
+msgstr "Not the Genshin window"
+
+#: source\interaction\interaction_core.py:355
+msgid "appear then click fail"
+msgstr "appear then click fail"
+
+#: source\operator\pickup_operator.py:53
+msgid "正在设置时间为夜晚"
+msgstr "Setting time to night"
+
+#: source\operator\pickup_operator.py:80
+msgid "停止自动拾取"
+msgstr "Stop AutoCollector"
+
+#: source\operator\pickup_operator.py:118
+msgid "PICKUP_TIMEOUT_001"
+msgstr "PICKUP_TIMEOUT_001"
+
+#: source\operator\pickup_operator.py:120
+#: source\operator\pickup_operator.py:126
+msgid "停止拾取"
+msgstr "Stop pickup"
+
+#: source\operator\pickup_operator.py:124
+msgid "PICKUP_TIMEOUT_002"
+msgstr "PICKUP_TIMEOUT_002"
+
+#: source\operator\pickup_operator.py:133
+msgid "已找到物品且无法找到下一个物品，停止拾取"
+msgstr "Item found and can't find next item, stop picking"
+
+#: source\operator\pickup_operator.py:181
+msgid "pickup: "
+msgstr "pickup: "
+
+#: source\operator\pickup_operator.py:183
+msgid "已找到："
+msgstr "Found:"
+
+#: source\task\domain_task.py:73
+msgid "找不到秘境名称，放弃选择。"
+msgstr "Can't find the name of the domain, give up the choice."
+
+#: source\task\domain_task.py:128
+msgid "Unknown UI page"
+msgstr "Unknown UI page"
+
+#: source\task\ley_line_outcrop\ley_line_outcrop.py:107
+msgid "HandleExceptionInMission"
+msgstr "HandleExceptionInMission"
+
+#: source\task\task_manager.py:38
+msgid "No Task Running"
+msgstr "No Task Running"
+
+#: source\task\task_manager.py:40
+msgid "Loading"
+msgstr "Loading"
+
+#: source\task\task_manager.py:83
+msgid " Start."
+msgstr " Start."
+
+#: source\task\task_manager.py:83
+msgid "Task"
+msgstr "Task"
+
+#: source\task\task_manager.py:92
+msgid "End Task"
+msgstr "End Task"
+
+#: source\ui\ui.py:39
+msgid "未知Page, 重新检测"
+msgstr "Unknown Page, Redetect"
+
+#: source\webio\page_manager.py:31
+msgid "Main"
+msgstr "Main"
+
+#: source\webio\page_manager.py:32
+msgid "Setting"
+msgstr "Setting"
+
+#: source\webio\page_manager.py:33
+msgid "CombatSetting"
+msgstr "CombatSetting"
+
+#: source\webio\page_manager.py:34 source\webio\pages.py:755
+msgid "CollectorSetting"
+msgstr "CollectorSetting"
+
+#: source\webio\pages.py:51 source\webio\pages.py:54 source\webio\pages.py:332
+msgid "未找到会话，可能由于窗口关闭。请刷新页面重试。"
+msgstr ""
+"Session not found, possibly due to window being closed. Please refresh the "
+"page and try again."
+
+#: source\webio\pages.py:59
+msgid "正在导入模块, 可能需要一些时间。"
+msgstr "Modules are being imported and may take some time."
+
+#: source\webio\pages.py:61
+msgid "在导入完成前，请不要切换页面。"
+msgstr "Please do not switch pages until the import is complete."
+
+#: source\webio\pages.py:111
+msgid "Get IP address"
+msgstr "Get IP address"
+
+#: source\webio\pages.py:117
+msgid "Launch genshin"
+msgstr "Launch genshin"
+
+#: source\webio\pages.py:121
+msgid "Domain Task"
+msgstr "Domain Task"
+
+#: source\webio\pages.py:125
+msgid "Daily Commission"
+msgstr "Daily Commission"
+
+#: source\webio\pages.py:129
+msgid "Claim Reward"
+msgstr "Claim Reward"
+
+#: source\webio\pages.py:133
+msgid "Ley Line Outcrop"
+msgstr "Ley Line Outcrop"
+
+#: source\webio\pages.py:137
+msgid "Mission"
+msgstr "Mission"
+
+#: source\webio\pages.py:143
+msgid "Task List"
+msgstr "Task List"
+
+#: source\webio\pages.py:144
+msgid "Can only be activated from the button"
+msgstr "Can only be activated from the button"
+
+#: source\webio\pages.py:150
+msgid "启动/停止Task"
+msgstr "Start/Stop Task"
+
+#: source\webio\pages.py:152
+msgid "## Statement"
+msgstr "## Statement"
+
+#: source\webio\pages.py:154
+msgid "任务状态"
+msgstr "Mission Status"
+
+#: source\webio\pages.py:156
+msgid "## Mission"
+msgstr "## Mission"
+
+#: source\webio\pages.py:160
+msgid "Mission Group"
+msgstr "Mission Group"
+
+#: source\webio\pages.py:167
+msgid "## Function"
+msgstr "## Function"
+
+#: source\webio\pages.py:168
+msgid "Can only be activated from the hotkey '['"
+msgstr "Can only be activated from the hotkey '['"
+
+#: source\webio\pages.py:170
+msgid "FlowMode"
+msgstr "FlowMode"
+
+#: source\webio\pages.py:172
+msgid "Idle"
+msgstr "Idle"
+
+#: source\webio\pages.py:173
+msgid "AutoCombat"
+msgstr "AutoCombat"
+
+#: source\webio\pages.py:190
+msgid "## Log"
+msgstr "## Log"
+
+#: source\webio\pages.py:197
+msgid "更新提示"
+msgstr "Update Tips"
+
+#: source\webio\pages.py:232
+msgid "Not Enabled"
+msgstr "Not Enabled"
+
+#: source\webio\pages.py:233
+msgid "LAN IP"
+msgstr "LAN IP"
+
+#: source\webio\pages.py:233
+msgid "WAN IP"
+msgstr "WAN IP"
+
+#: source\webio\pages.py:280
+msgid "# Config"
+msgstr "# Config"
+
+#: source\webio\pages.py:286 source\webio\pages.py:636
+#: source\webio\pages.py:716 source\webio\pages.py:761
+msgid "## config:"
+msgstr "# Config"
+
+#: source\webio\pages.py:300
+msgid "Combat.json"
+msgstr "Combat Settings"
+
+#: source\webio\pages.py:301
+msgid "Domain.json"
+msgstr "Domain Settings"
+
+#: source\webio\pages.py:302
+msgid "General.json"
+msgstr "General Settings"
+
+#: source\webio\pages.py:303
+msgid "Keymap.json"
+msgstr "Keymap Settings"
+
+#: source\webio\pages.py:304
+msgid "collected.json"
+msgstr "collected.json"
+
+#: source\webio\pages.py:305
+msgid "collection_blacklist.json"
+msgstr "collection_blacklist.json"
+
+#: source\webio\pages.py:306
+msgid "collection_log.json"
+msgstr "collection_log.json"
+
+#: source\webio\pages.py:307
+msgid "Collector.json"
+msgstr "Collector Settings"
+
+#: source\webio\pages.py:308
+msgid "LeyLineOutcrop.json"
+msgstr "Ley Line Outcrop Settings"
+
+#: source\webio\pages.py:353 source\webio\pages.py:877
+msgid "Verified!"
+msgstr "Verified!"
+
+#: source\webio\pages.py:362 source\webio\pages.py:886
+msgid "Waiting..."
+msgstr "Waiting..."
+
+#: source\webio\pages.py:367 source\webio\pages.py:891
+msgid "You may want to enter: "
+msgstr "You may want to enter: "
+
+#: source\webio\pages.py:372 source\webio\pages.py:896
+msgid "Not a valid name"
+msgstr "Not a valid name"
+
+#: source\webio\pages.py:415
+msgid "saved!"
+msgstr "saved!"
+
+#: source\webio\pages.py:458
+msgid "Do you need to save changes?"
+msgstr "Do you need to save changes?"
+
+#: source\webio\pages.py:459
+msgid "No"
+msgstr "No"
+
+#: source\webio\pages.py:459
+msgid "Yes"
+msgstr "Yes"
+
+#: source\webio\pages.py:630
+msgid "# Setting"
+msgstr "# Setting"
+
+#: source\webio\pages.py:700
+msgid "# CombatSetting"
+msgstr "# Combat Setting"
+
+#: source\webio\pages.py:706
+msgid "# Add team"
+msgstr "# Add team"
+
+#: source\webio\pages.py:710
+msgid "Add team"
+msgstr "Add team"
+
+#: source\webio\pages.py:712
+msgid "自动填充"
+msgstr "Auto Fill"
+
+#: source\webio\pages.py:822
+msgid "Add to blacklist"
+msgstr "Add to blacklist"
+
+#: source\webio\pages.py:830
+msgid "展开/收起"
+msgstr "Expand / Close"
+
+#: source\webio\pages.py:865
+msgid "clean list"
+msgstr "clean list"
+
+#: source\webio\update_notice.py:7
+msgid "GIA 已升级到"
+msgstr "GIA has been upgraded to"
+
+#: source\webio\webio.py:34
+msgid "webio启动完成"
+msgstr "webio startup successfully"
+
+msgid "当前状态"
+msgstr "Current status"
+
+msgid " 的Ecd_float_time大于0，请确定该角色不是多段e技能角色。"
+msgstr ""
+"'s Ecd_float_time is greater than 0, please make sure that the character "
+"is not a character with multiple E skills."
+
+msgid "角色 "
+msgstr "character"
+
+msgid "正在停止自动战斗"
+msgstr "Stopping AutoCombat"
+
+msgid "启动自动战斗"
+msgstr "Start AutoCombat"
+
+msgid "正在停止自动秘境"
+msgstr "Stoping AutoDomain"
+
+msgid "启动自动秘境"
+msgstr "Start AutoDomain"
+
+msgid "启动自动采集"
+msgstr "Start AutoCollector"
+
+msgid "导入完成"
+msgstr "Import complete"
+
+msgid "等待cvautotrack获取坐标"
+msgstr "Wait for cvautotrack to get the coordinates"
+
+msgid " 请检查"
+msgstr "Please check up"
+
+msgid "目录不存在："
+msgstr "Directory does not exist:"
+
+msgid "请用管理员权限运行"
+msgstr "Please run with administrator level"

@@ -1,0 +1,70 @@
+## TODO：
+- commission set time
+- appear x2
+- TMF的F拾取有点小问题
+- chara name 使用新方法
+- commission retry max: 2
+- commission的CSDL end好像有点问题
+- 传送点识别区域还是不够大
+- combat sco shield与复活不兼容 考虑加入usd。
+- TMF超过6s没检测到ui就退出
+- bp>100记录
+- webui list的显示要改改
+- 自动战斗预启动
+- 自动战斗的e技能释放有延迟，可能是计时器问题
+- 秘境开局会点两下 原神动画问题
+- 自动战斗boss血条不动
+- ocr在角色名字时试试用in
+- BigPudgyProblem需要对话
+- combat lib识别受ui限制
+
+## Done：
+- 视角乱转
+- commission 执行完就是成功
+- 测试优化的复活功能
+- generate pot: use "path"
+- TMF加migration
+- talk加日志
+- eng ocr opt
+- TMF没landing
+- 检测。。。按钮识别是采集物还是人
+- time dilation rate
+- domain 退出 识别错误
+- 自动战斗main的优先级调高
+- thread init
+- mission init加满
+- i18n
+- 支持无须弥人
+- aim operator move to enemy按空格
+- 让sco get_characters_name()在continue时获得charalist
+- move straight在移动视角前按下了w
+- sco切换失败时上下左右跳
+- LLO使用Domain同款急停 pass
+- 攀高危险按按中键 pass
+- ao在秘境里一走到底 pass
+- mission reg exception pass
+- mission reg precise arrive pass
+- mission reg fight if needed pass
+- tactic默认配置不要用json template pass
+- 独立assets未完全重构 pass
+- config的名字全部改成首字母大写，去掉下划线 pass
+- jsontemplate与json分离 pass
+- jsondoc的其他配置项与i18n分离,或者在加载时合并common与i18n两个jsondoc pass
+- 合并aim与combat pass
+- 合并pickup与collect pass
+- collet增加一个在半径内逛街找敌人的功能 pass
+- 游泳的usd有bug pass
+- chara waiting增加更有效的usd。游泳、爬山、空格。 pass
+- 秘境ocr结果输出 pass
+- ui切换太慢 pass
+- 太靠近地图边界会切换角色失败 pass
+- QQ人哨塔可以识别委托标志去打 pass
+- 每日委托图片不够靠近中心 pass
+- auto combat的shield模式有bug pass
+- QQ人哨塔可以识别委托标志下面的距离 pass
+- 蒙德传送点太多扫不到锚点 pass
+
+## Notice：
+- 太靠近地图边界会切换角色失败 alpha问题
+- 更新后设置部分丢失
+- 更新后tactic的默认配置变为只读

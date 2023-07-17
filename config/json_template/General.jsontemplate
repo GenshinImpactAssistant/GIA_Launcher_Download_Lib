@@ -1,0 +1,16 @@
+{
+  "BorderlessWindow": false,
+  "UsingAlphaChannel": true,
+  "DEBUG": false,
+  "Lang":"$locale$",
+  "DevicePaddle": "cpu",
+  "DeviceTorch": "auto",
+  "CheckImport": false,
+  "CloudGenshin": false,
+  "CaptureMode":"fast",
+  "CorrDegree": 0.95,
+  "DeterminingStrictWeight":0.9,
+  "InteractionMode": "Desktop",
+  "Python32Path": "",
+  "Version":"v0.8.5.0"
+}

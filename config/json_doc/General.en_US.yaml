@@ -1,0 +1,76 @@
+Lang: 
+  doc: 语言(language)
+  annotation: When $locale$ is selected, it will be automatically selected based on the system language.
+
+BorderlessWindow:
+  doc: Whether it is a borderless window
+  annotation: Set to True for full-screen or borderless windowing and False for windowing.
+
+DEBUG: 
+ doc: Debug mode
+
+corr_degree:
+  doc: Viewing angle calibration
+  annotation: Auxiliary parameter for perspective calibration in the domain. Increase this value if the viewpoint is to the left in the domain, and vice versa.
+
+DevicePaddle: 
+  doc: Paddle device
+  annotation: The device used for Paddleocr operations is set to `'gpu'` if cudnn is installed, otherwise it is set to `'cpu'`. When set to `auto`, it will automatically detect GPU availability, but will not automatically switch GPUs, you need to switch them manually according to the availability prompt.
+
+DeviceTorch: 
+  doc: Torch device
+  annotation: The device used for yolox computing is set to `'gpu'` if cudnn is installed, otherwise it is set to `'cpu'`. When set to `auto`, GPU availability can be automatically detected and switched automatically.
+
+Version: 
+  doc: Version
+
+CaptureMode:
+  doc: Capture Mode
+
+UsingAlphaChannel:
+  doc: Whether to use the transparency channel
+  annotation: If it is indeed impossible to take a screenshot with BitBlt, set it to True.
+
+CheckImport:
+  doc: Whether to check the import at startup
+
+CloudGenshin:
+  doc: Whether the Cloud Genshin
+
+DeterminingStrictWeight:
+  doc: Detection margin percentage
+  annotation: Some cv detections will use this value. If the detection fails in some places, you can try to lower or raise the value.
+
+InteractionMode:
+  doc: Interaction Mode
+
+Python32Path:
+  doc: 32-bit python absolute path
+  annotation: Fill in when using Dm mode.
+
+DomainTimes:
+  doc:  Number of Domain
+
+FastMode:
+  doc:  Fast mode, closed when walking over the head when start the challenge.
+
+IsObscuredDomain:
+  doc:  Is the petrified ancient trees have copies that are obscured
+
+Resin: 
+  doc: Resin
+  
+AutoDistance:
+  doc: Automatic distance control
+
+AutoMove:
+  doc: Auto View Shift
+
+DomainStageName:
+  doc: Secret level name
+  annotation: The level must be included, and the level must be a capital I. This is not required if starting from within the domain. Current version may have recognition error issues.
+  
+DomainName:
+  doc: Domain name
+  annotation: This is not required if you are starting from within the domain.
+
