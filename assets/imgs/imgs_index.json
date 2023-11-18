@@ -84,7 +84,7 @@
     "common": "assets\\imgs\\Windows\\Bigmap\\common\\ButtonBigmapSwitchMap.jpg"
   },
   "ButtonBigmapTP": {
-    "common": "assets\\imgs\\Windows\\Bigmap\\common\\ButtonBigmapTP.jpg"
+    "common": "assets\\imgs\\Windows\\Bigmap\\common\\ButtonBigmapTP.png"
   },
   "ButtonCombatSwitchTeamLeft": {
     "common": "assets\\imgs\\Windows\\Combat\\common\\ButtonCombatSwitchTeamLeft.jpg"
@@ -188,6 +188,9 @@
   "IconCombatComingOutBySpace": {
     "common": "assets\\imgs\\Windows\\Combat\\common\\IconCombatComingOutBySpace.jpg"
   },
+  "IconCommissionCommissionComplete": {
+    "zh_CN": "assets\\imgs\\Windows\\Commission\\zh_CN\\IconCommissionCommissionComplete.jpg"
+  },
   "IconCommissionCommissionIcon": {
     "common": "assets\\imgs\\Windows\\Commission\\common\\IconCommissionCommissionIcon.jpg"
   },
@@ -201,6 +204,9 @@
   "IconExpeditionComplete2": {
     "en_US": "assets\\imgs\\Windows\\Expedition\\en_US\\IconExpeditionComplete2.jpg",
     "zh_CN": "assets\\imgs\\Windows\\Expedition\\zh_CN\\IconExpeditionComplete2.jpg"
+  },
+  "IconGeneralBlink": {
+    "common": "assets\\imgs\\Windows\\General\\common\\IconGeneralBlink.jpg"
   },
   "IconGeneralChallengeSuccess": {
     "en_US": "assets\\imgs\\Windows\\General\\en_US\\IconGeneralChallengeSuccess.jpg",
@@ -247,6 +253,12 @@
   },
   "IconMovementSwimming": {
     "common": "assets\\imgs\\Windows\\Movement\\common\\IconMovementSwimming.jpg"
+  },
+  "IconTalkTalking1": {
+    "common": "assets\\imgs\\Windows\\Talk\\common\\IconTalkTalking1.jpg"
+  },
+  "IconTalkTalking2": {
+    "common": "assets\\imgs\\Windows\\Talk\\common\\IconTalkTalking2.jpg"
   },
   "IconUIBag": {
     "common": "assets\\imgs\\Windows\\UI\\common\\IconUIBag.jpg"
