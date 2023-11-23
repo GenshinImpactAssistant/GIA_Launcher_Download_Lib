@@ -3,6 +3,7 @@
     "en": "Aether",
     "ja": "空",
     "notes": "男性主人公名。発音は「イーサー」。俗称として MC (Main Character の略?) と呼ばれることもある。",
+    "notesZh": "男主人公的名字。",
     "pronunciationJa": "そら",
     "tags": [
       "character-main"
@@ -13,6 +14,7 @@
     "en": "Lumine",
     "ja": "蛍",
     "notes": "女性主人公名。発音は「ルミーン」と思われるが諸説あり。俗称として MC (Main Character の略?) と呼ばれることもある。",
+    "notesZh": "女主人公的名字",
     "pronunciationJa": "ほたる",
     "tags": [
       "character-main"
@@ -53,6 +55,7 @@
     "en": "Flying Lavender Melon",
     "ja": "空飛ぶチビ助",
     "notes": "荒瀧一斗がパイモンに付けたあだ名。Lavender Melon はスミレウリのこと。直訳すると「空飛ぶスミレウリ」",
+    "notesZh": "荒泷一斗给派蒙起的绰号。",
     "pronunciationJa": "そらとぶちびすけ",
     "tags": [
       "title"
@@ -79,6 +82,12 @@
   {
     "en": "Endora",
     "ja": "エンドラー",
+    "pinyins": [
+      {
+        "char": "嫣",
+        "pron": "yan1"
+      }
+    ],
     "tags": [
       "character-sub",
       "item"
@@ -162,6 +171,7 @@
     "en": "little cutie",
     "ja": "可愛い子ちゃん",
     "notes": "リサの旅人に対する呼び方",
+    "notesZh": "丽莎对旅行者的称呼",
     "pronunciationJa": "かわいこちゃん",
     "tags": [
       "mondstadt",
@@ -237,6 +247,7 @@
     "en": "Prinzessin der Verurteilung",
     "ja": "断罪の皇女",
     "notes": "英語ではなくドイツ語",
+    "notesZh": "英语原文是德语",
     "tags": [
       "mondstadt",
       "title"
@@ -275,6 +286,7 @@
     "en": "Immernachtreich",
     "ja": "幽夜浄土",
     "notes": "英語版はドイツ語で「常夜の王国」の意。",
+    "notesZh": "英语版内容在德语中是「常夜的王国」的意思。",
     "tags": [
       "mondstadt"
     ],
@@ -314,9 +326,21 @@
     "zhCN": "可莉"
   },
   {
+    "en": "Mr. Honorary Knight",
+    "ja": "栄誉騎士のお兄ちゃん",
+    "notes": "クレーの空に対する呼び方",
+    "notesZh": "可莉对空的称呼",
+    "tags": [
+      "mondstadt",
+      "how-to-call"
+    ],
+    "zhCN": "荣誉骑士哥哥"
+  },
+  {
     "en": "Miss Honorary Knight",
     "ja": "栄誉騎士のお姉ちゃん",
     "notes": "クレーの蛍に対する呼び方",
+    "notesZh": "可莉对荧的称呼",
     "tags": [
       "mondstadt",
       "how-to-call"
@@ -355,11 +379,13 @@
       {
         "en": "Yeesh, if Jean was listening to this... Klee might find herself grounded for an awful lot longer.",
         "ja": "はあ、ジンがこの話を聞いたら…きっと、クレーの反省室で過ごす時間が長くなるだろうな…",
-        "ref": "パイモン, 四つ葉の章 第一幕"
+        "ref": "パイモン, 四つ葉の章 第一幕",
+        "zhCN": "唉，要是这段话被琴团长听见了…她的禁闭时间，估计又要加长了吧…"
       }
     ],
     "ja": "反省室",
     "notes": "「反省室に閉じ込められる」は \"be grounded\"。",
+    "notesZh": "「关禁闭室」的英语说法是\"be grounded\"",
     "pronunciationJa": "はんせいしつ",
     "tags": [
       "mondstadt"
@@ -367,14 +393,14 @@
     "zhCN": "禁闭室"
   },
   {
-    "en": "Diona",
-    "ja": "ディオナ",
-    "notes": "読みは「ダイオナ」",
+    "en": "Diona Kätzlein",
+    "ja": "ディオナ・カッツェレイン",
+    "notes": "英語版における読みは「ダイオナ」",
     "tags": [
       "mondstadt",
       "character-main"
     ],
-    "zhCN": "迪奥娜"
+    "zhCN": "迪奥娜·凯茨莱茵"
   },
   {
     "en": "Barbara Pegg",
@@ -461,6 +487,7 @@
     "en": "Rosaria",
     "ja": "ロサリア",
     "notes": "英語では「ロザリア」と発音される。カタカナで表すと崩壊 3rd のロザリア・アリーンと全く同名に見えるが、こちらは Rozaliya と綴る。",
+    "notesZh": "与崩坏3中的角色萝莎莉娅·阿琳的名字几乎完全一样。该角色的英语官方名字写作Rozaliya，中文写作「**萝**莎莉**娅**」，日语写作「ロ**ザ**リア」。",
     "tags": [
       "mondstadt",
       "character-main"
@@ -471,6 +498,12 @@
     "en": "Eula Lawrence",
     "ja": "エウルア・ローレンス",
     "notes": "英語での発音は「ユーラ」",
+    "pinyins": [
+      {
+        "char": "菈",
+        "pron": "la1"
+      }
+    ],
     "tags": [
       "mondstadt",
       "character-main"
@@ -509,6 +542,7 @@
     "en": "aristocrat",
     "ja": "旧貴族",
     "notes": "聖遺物ではなく、ローレンス家等を指す方の「旧貴族」。aristocrat は単に「貴族」の意で、「旧」の意味は省略されている。",
+    "notesZh": "指劳伦斯家族等旧贵族。aristocrat本身只是「贵族」的意思，并不包含「旧」的意思。",
     "pronunciationJa": "きゅうきぞく",
     "tags": [
       "mondstadt"
@@ -516,18 +550,29 @@
     "zhCN": "旧贵族"
   },
   {
-    "en": "Mika",
-    "ja": "ミカ",
+    "en": "Mika Schmidt",
+    "ja": "ミカ・シュミット",
     "tags": [
       "mondstadt",
       "character-main"
     ],
-    "zhCN": "米卡"
+    "variants": {
+      "en": [
+        "Mika",
+        "Schmidt"
+      ],
+      "ja": [
+        "ミカ",
+        "シュミット"
+      ]
+    },
+    "zhCN": "米卡·施密特"
   },
   {
     "en": "Front-Line Surveyor",
     "ja": "前進測量士",
     "notes": "ミカの西風騎士団における職名",
+    "notesZh": "米卡的在西风骑士团中的职位名",
     "pronunciationJa": "ぜんしんそくりょうし",
     "tags": [
       "mondstadt",
@@ -548,6 +593,7 @@
     "en": "Anemo Archon",
     "ja": "風神",
     "notes": "Anemo God、God of Anemo などのように表記される場合もある。",
+    "notesZh": "也有写作Anemo God, God of Anemo等的情况。",
     "pronunciationJa": "ふうじん",
     "tags": [
       "mondstadt",
@@ -586,6 +632,7 @@
     "en": "Caelestinum Finale Termini",
     "ja": "終天のフィナーレ",
     "notes": "トワリンの技、又はトワリン戦の曲名 (※曲名は日本語では「終焉のフィナーレ」となっている)",
+    "notesZh": "特瓦林的技能名，也是与特瓦林战斗时的BGM的曲名。",
     "pronunciationJa": "しゅうてんのフィナーレ",
     "tags": [
       "mondstadt"
@@ -616,6 +663,7 @@
     "en": "Andrius",
     "ja": "アンドリアス",
     "notes": "日本語では単に「狼」と呼ばれることもあり、英語でも同様に \"wolf\" と呼ばれる",
+    "notesZh": "日语中常常单独称作「狼」，英语中同样也有称作\"wolf\"的情况。中文中常常称作「北风的狼王」或北风狼。",
     "tags": [
       "mondstadt",
       "enemy-boss",
@@ -632,6 +680,7 @@
     "en": "Boreas",
     "ja": "ボレアス",
     "notes": "日本語では単に「狼」と呼ばれることもあり、英語でも同様に \"wolf\" と呼ばれる",
+    "notesZh": "英语中有时直接称作 \"Wolf\"，日语中也有直接称作「狼」的情况。中文中常常称作「北风的狼王」或「北风狼」。",
     "tags": [
       "mondstadt",
       "enemy-boss",
@@ -654,6 +703,7 @@
     "en": "Alice",
     "ja": "アリス",
     "notes": "クレーの母。魔女会・コードA",
+    "notesZh": "可莉的母亲。魔女会代号A。",
     "tags": [
       "mondstadt",
       "character-sub"
@@ -664,6 +714,7 @@
     "en": "Rhinedottir",
     "ja": "レインドット",
     "notes": "アルベドの創造者。魔女会・コードR。英語における発音は「ラインドッタァ」",
+    "notesZh": "阿贝多的创造者。魔女会代号R。",
     "tags": [
       "mondstadt",
       "character-sub"
@@ -674,6 +725,7 @@
     "en": "Barbeloth",
     "ja": "バーべロス",
     "notes": "魔女会・コードB。バーベロスがモナの師匠 (おばば) という説もあるが明言されておらず、おばばはバーベロスの後継者という説もある。",
+    "notesZh": "魔女会代号B。虽然已经明说芭比洛斯是莫娜的师傅（老太婆），但是也有老太婆是芭比洛斯的继承人的说法。",
     "tags": [
       "mondstadt",
       "character-sub"
@@ -684,6 +736,7 @@
     "en": "the old hag",
     "ja": "おばば",
     "notes": "モナの自身の師匠に対する呼び方。old hag は、一般には意地悪な高齢女性を揶揄して呼ぶ言葉。",
+    "notesZh": "莫娜对她的师傅的称呼。old hag一般是对高龄女性的带有贬义的称呼。",
     "tags": [
       "mondstadt",
       "how-to-call"
@@ -694,6 +747,7 @@
     "en": "I. Ivanovna N.",
     "ja": "I・イヴァノヴナ・N",
     "notes": "魔女会・コードJ",
+    "notesZh": "魔女会代号J。",
     "tags": [
       "mondstadt",
       "character-sub"
@@ -704,6 +758,7 @@
     "en": "Andersdotter",
     "ja": "アンデシュドッテル",
     "notes": "魔女会・コードM。イノシシプリンセスの作者。",
+    "notesZh": "魔女会代号M。《野猪公主》的作者。",
     "tags": [
       "mondstadt",
       "character-sub"
@@ -714,6 +769,7 @@
     "en": "Nicole",
     "ja": "ニコ",
     "notes": "魔女会・コードN。英語版における発音は「ニコル」",
+    "notesZh": "魔女会代号N。",
     "tags": [
       "mondstadt",
       "character-sub"
@@ -733,8 +789,10 @@
     "en": "Cyrus",
     "ja": "サイリュス / ジュライセン",
     "notes": "サイリュスはモンドの冒険者協会の支部長。ジュライセンはスメール教令院におけるリサとセノの師。英語版ではどちらも Cyrus と表記される。発音も同じで、どちらも「サイラス」。",
+    "notesZh": "塞琉斯是蒙德冒险家协会的分会长。居勒什事须弥教令院的丽莎和赛诺的老师。在英语版中两人都被称作Cyrus，发音也相同。",
     "tags": [
       "mondstadt",
+      "sumeru",
       "character-sub"
     ],
     "zhCN": "塞琉斯 / 居勒什"
@@ -742,6 +800,8 @@
   {
     "en": "Adelinde",
     "ja": "アデリン",
+    "notes": "ラグヴィンド家のメイド長",
+    "notesZh": "莱艮芬德家族（迪卢克的家族）的女仆长",
     "tags": [
       "mondstadt",
       "character-sub"
@@ -751,11 +811,35 @@
   {
     "en": "Hertha",
     "ja": "ヘルター",
+    "notes": "モンド評判任務の受付キャラクター",
+    "notesZh": "蒙德声望任务的交付角色",
     "tags": [
       "mondstadt",
       "character-sub"
     ],
     "zhCN": "赫塔"
+  },
+  {
+    "en": "Margaret",
+    "ja": "マーガレット",
+    "notes": "キャッツテールの店主",
+    "notesZh": "猫尾酒馆的店主",
+    "tags": [
+      "mondstadt",
+      "character-sub"
+    ],
+    "zhCN": "玛格丽特"
+  },
+  {
+    "en": "Draff Kätzlein",
+    "ja": "ドゥラフ・カッツェレイン",
+    "notes": "ディオナの父親で清泉町の狩人のリーダー",
+    "notesZh": "迪奥娜的父亲、清泉镇的猎人首领",
+    "tags": [
+      "mondstadt",
+      "character-sub"
+    ],
+    "zhCN": "杜拉夫·凯茨莱茵"
   },
   {
     "en": "Ellin",
@@ -803,6 +887,36 @@
     "zhCN": "艾迪丝博士"
   },
   {
+    "en": "Huffman Schmidt",
+    "ja": "ホフマン・シュミット",
+    "notes": "ミカの兄",
+    "notesZh": "米卡的哥哥",
+    "tags": [
+      "mondstadt",
+      "character-sub"
+    ],
+    "variants": {
+      "en": [
+        "Huffman",
+        "Schmidt"
+      ],
+      "ja": [
+        "ホフマン",
+        "シュミット"
+      ]
+    },
+    "zhCN": "霍夫曼·施密特"
+  },
+  {
+    "en": "Stanley",
+    "ja": "スタンレー",
+    "tags": [
+      "mondstadt",
+      "character-sub"
+    ],
+    "zhCN": "斯坦利"
+  },
+  {
     "en": "Reckless Pallad",
     "ja": "うっかりパラド",
     "tags": [
@@ -846,11 +960,13 @@
         "en": "I will now be reading Grand Master Varka's letter aloud for you all.",
         "ja": "ファルカ大団長からの手紙を読ませていただきます。",
         "ref": "ミカ, Ver3.1 公式 PV 「赤砂の王と三人の巡礼者」",
-        "refURL": "https://www.youtube.com/watch?v=owxvZ9-0JE0&t=221s"
+        "refURL": "https://www.youtube.com/watch?v=owxvZ9-0JE0&t=221s",
+        "zhCN": "下面由我代为朗读法尔伽大团长的来信。"
       }
     ],
     "ja": "大団長",
     "notes": "ファルカの西風騎士団における職名。",
+    "notesZh": "法尓迦在西风骑士团的职位名。",
     "pronunciationJa": "だいだんちょう",
     "tags": [
       "mondstadt",
@@ -962,11 +1078,23 @@
   {
     "en": "Nantuck",
     "ja": "ナンタック",
+    "notes": "モンドの漁師",
     "tags": [
       "mondstadt",
       "character-sub"
     ],
     "zhCN": "楠塔克"
+  },
+  {
+    "en": "Marjorie",
+    "ja": "マージョリー",
+    "notes": "「栄光の風」の店主",
+    "notesZh": "「荣光之风」的店主",
+    "tags": [
+      "mondstadt",
+      "character-sub"
+    ],
+    "zhCN": "玛乔丽"
   },
   {
     "en": "Xiangling",
@@ -993,7 +1121,8 @@
   {
     "en": "Yuheng",
     "ja": "玉衡",
-    "notes": "刻晴の称号",
+    "notes": "刻晴の称号。中国では、北斗七星の1つであるおおぐま座ε星が「玉衡」と呼ばれることに由来。 参考: [Wikipedia: 北斗七星](https://ja.wikipedia.org/wiki/%E5%8C%97%E6%96%97%E4%B8%83%E6%98%9F#%E5%8C%97%E6%96%97%E4%B8%83%E6%98%9F%E3%82%92%E6%A7%8B%E6%88%90%E3%81%99%E3%82%8B%E6%98%9F)",
+    "notesZh": "刻晴的称号。该名字来自于北斗七星中的玉衡星。 [维基百科](https://zh.wikipedia.org/wiki/%E7%8E%89%E8%A1%A1_(%E6%81%92%E6%98%9F)) [百度百科](https://baike.baidu.com/item/%E7%8E%89%E8%A1%A1/75319)",
     "pronunciationJa": "ユーヘン",
     "tags": [
       "liyue",
@@ -1015,7 +1144,8 @@
   {
     "en": "Tianquan",
     "ja": "天権",
-    "notes": "凝光の称号",
+    "notes": "凝光の称号。中国では、北斗七星の1つであるおおぐま座δ星が「天権」と呼ばれることに由来。参考: [Wikipedia: 北斗七星](https://ja.wikipedia.org/wiki/%E5%8C%97%E6%96%97%E4%B8%83%E6%98%9F#%E5%8C%97%E6%96%97%E4%B8%83%E6%98%9F%E3%82%92%E6%A7%8B%E6%88%90%E3%81%99%E3%82%8B%E6%98%9F)",
+    "notesZh": "凝光的称号。该名字来自于北斗七星中的天权星，也被称作文曲星，掌管学问。 [维基百科](https://zh.wikipedia.org/zh-cn/%E5%A4%A9%E6%AC%8A) [百度百科](https://baike.baidu.com/item/%E5%A4%A9%E6%9D%83/5233911)",
     "pronunciationJa": "テンチュエン",
     "tags": [
       "liyue",
@@ -1049,6 +1179,7 @@
     "en": "Zhenyu",
     "ja": "枕玉",
     "notes": "行秋のペンネーム",
+    "notesZh": "行秋的笔名",
     "pronunciationJa": "ちんぎょく",
     "tags": [
       "liyue",
@@ -1081,6 +1212,12 @@
   {
     "en": "Xinyan",
     "ja": "辛炎",
+    "pinyins": [
+      {
+        "char": "焱",
+        "pron": "yan4"
+      }
+    ],
     "pronunciationJa": "しんえん",
     "tags": [
       "liyue",
@@ -1092,6 +1229,7 @@
     "en": "Zhongli",
     "ja": "鍾離",
     "notes": "読みは「ヂョンリー」([参考動画](https://youtu.be/p10yiwULJA8?t=118))",
+    "notesZh": "锺离是中国古代早已有之的一个汉字复姓。根据国务院在2013年公布的由国家语委和教育部制定的《通用规范汉字表》，在人名姓氏中使用的「钟」字应当恢复使用「锺」字。 [维基百科：钟离姓](https://zh.wikipedia.org/wiki/鍾離姓) [百度百科：钟离姓](https://baike.baidu.com/item/钟离姓/10971667) [教育部：通用规范汉字表](https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201306/t20130601_186002.html)",
     "pronunciationJa": "しょうり",
     "tags": [
       "liyue",
@@ -1108,6 +1246,7 @@
     "en": "consultant",
     "ja": "客卿",
     "notes": "鍾離の往生堂における地位。guest と訳されている箇所もある。",
+    "notesZh": "钟离在往生堂的职位。也有被翻译为guest的地方。",
     "pronunciationJa": "かっけい",
     "tags": [
       "liyue",
@@ -1119,7 +1258,8 @@
     "en": "Mr. Zhongli",
     "ja": "鍾離先生 / 鍾離さん",
     "notes": "日本語版では「鍾離先生」と呼んでいるシーンでも、英語版では Mr. なしで \"Zhongli\" と呼んでいる箇所もあり、必ずしも常に Mr. が付いているわけでもない。香菱などは、英語版では Mr. Zhongli、日本語では「鍾離さん」と呼ぶ。(鍾離のエピソード動画「想定外の支出」など [日本語](https://youtu.be/5slzVViNrtA?t=79) / [英語](https://youtu.be/CvCzYbVei04?t=80))",
-    "pronunciationJa": "しょうりせんせい",
+    "notesZh": "中文版中称作「钟离先生」的地方，英语版中并非一定使用了 Mr. 的前缀。",
+    "pronunciationJa": "しょうりせんせい / しょうりさん",
     "tags": [
       "liyue",
       "how-to-call"
@@ -1127,9 +1267,25 @@
     "zhCN": "钟离先生"
   },
   {
+    "en": "Jade Shield",
+    "ja": "玉璋シールド",
+    "notes": "鍾離の元素スキルで生成されるシールド",
+    "pronunciationJa": "ぎょくしょうシールド",
+    "tags": [
+      "liyue"
+    ],
+    "zhCN": "玉璋护盾"
+  },
+  {
     "en": "Xiao",
     "ja": "魈",
     "notes": "発音は「シァオ」([参考動画](https://youtu.be/p10yiwULJA8?t=310))",
+    "pinyins": [
+      {
+        "char": "魈",
+        "pron": "xiao1"
+      }
+    ],
     "pronunciationJa": "しょう",
     "tags": [
       "liyue",
@@ -1141,6 +1297,7 @@
     "en": "Conqueror of Demons",
     "ja": "降魔大聖",
     "notes": "魈の称号",
+    "notesZh": "魈的称号",
     "pronunciationJa": "こうまたいせい",
     "tags": [
       "liyue",
@@ -1152,6 +1309,7 @@
     "en": "Guardian Yaksha",
     "ja": "護法夜叉",
     "notes": "魈の称号。「護法夜叉大将」(Vigilant Yaksha) と記される場合もある。",
+    "notesZh": "魈的称号",
     "pronunciationJa": "ごほうやしゃ",
     "tags": [
       "liyue",
@@ -1163,6 +1321,7 @@
     "en": "Alatus",
     "ja": "金鵬",
     "notes": "魈の称号",
+    "notesZh": "魈的称号",
     "pronunciationJa": "きんほう",
     "tags": [
       "liyue",
@@ -1187,7 +1346,8 @@
         "en": "The blood of the qilin, an illuminated beast, flows within her veins.",
         "ja": "その身には仙獣「麒麟」の血が流れている。",
         "ref": "v2.4「流るる星霜、華咲きて」特設ページ ― 甘雨の紹介文",
-        "refURL": "https://webstatic-sea.hoyoverse.com/ys/event/e20211227-pre/"
+        "refURL": "https://webstatic-sea.hoyoverse.com/ys/event/e20211227-pre/",
+        "zhCN": "体内流淌着仙兽「麒麟」的血脉。"
       }
     ],
     "ja": "麒麟",
@@ -1223,10 +1383,16 @@
     "en": "Baizhu",
     "ja": "白朮",
     "notes": "英語の発音は「バイジュ」",
+    "pinyins": [
+      {
+        "char": "术",
+        "pron": "zhu2"
+      }
+    ],
     "pronunciationJa": "びゃくじゅつ",
     "tags": [
       "liyue",
-      "character-sub"
+      "character-main"
     ],
     "zhCN": "白术"
   },
@@ -1234,6 +1400,7 @@
     "en": "Dr. Baizhu",
     "ja": "白先生",
     "notes": "七七などからの白朮の呼び名",
+    "notesZh": "七七等对白术的称呼",
     "pronunciationJa": "びゃくせんせい",
     "tags": [
       "liyue",
@@ -1313,6 +1480,27 @@
     "zhCN": "月桂"
   },
   {
+    "en": "Jade Radish",
+    "ja": "白玉大根",
+    "notes": "月桂が投げる武器",
+    "pronunciationJa": "しらたまだいこん",
+    "tags": [
+      "liyue"
+    ],
+    "zhCN": "白玉萝卜"
+  },
+  {
+    "en": "Mega Radish",
+    "ja": "超スゴイ! 大根",
+    "notes": "ヨォーヨが完凸している場合に月桂が投げる武器",
+    "notesZh": "瑶瑶满命之后月桂投掷的武器的名字",
+    "pronunciationJa": "ちょうスゴイだいこん",
+    "tags": [
+      "liyue"
+    ],
+    "zhCN": "超厉害·大萝卜"
+  },
+  {
     "en": "Morax",
     "ja": "モラクス",
     "tags": [
@@ -1330,6 +1518,12 @@
       "title",
       "how-to-call"
     ],
+    "variants": {
+      "zhCN": [
+        "岩王爷",
+        "阎王爷"
+      ]
+    },
     "zhCN": "岩王帝君"
   },
   {
@@ -1362,6 +1556,7 @@
     "en": "Streetward Rambler",
     "ja": "歌塵浪市真君",
     "notes": "ピンばあやの称号",
+    "notesZh": "萍姥姥的仙号",
     "pronunciationJa": "かじんろういちしんくん",
     "tags": [
       "liyue",
@@ -1383,7 +1578,8 @@
   {
     "en": "Tianshu",
     "ja": "天枢",
-    "notes": "天おじの称号",
+    "notes": "天おじの称号。中国では、北斗七星の1つであるおおぐま座α星が「天枢」と呼ばれることに由来。参考: [Wikipedia: 北斗七星](https://ja.wikipedia.org/wiki/%E5%8C%97%E6%96%97%E4%B8%83%E6%98%9F#%E5%8C%97%E6%96%97%E4%B8%83%E6%98%9F%E3%82%92%E6%A7%8B%E6%88%90%E3%81%99%E3%82%8B%E6%98%9F)",
+    "notesZh": "天叔的称号。来自于北斗七星中的天枢星。",
     "pronunciationJa": "てんすう",
     "tags": [
       "liyue",
@@ -1415,6 +1611,7 @@
     "en": "Uncle Mountain Shaper",
     "ja": "理水おじちゃん",
     "notes": "ヨォーヨの理水畳山真君に対する呼び方",
+    "notesZh": "瑶瑶对理水叠山真君的称呼",
     "pronunciationJa": "りすいおじちゃん",
     "tags": [
       "liyue",
@@ -1436,6 +1633,7 @@
     "en": "Aunty Cloud Retainer",
     "ja": "留雲おばちゃん",
     "notes": "ヨォーヨの留雲借風真君に対する呼び方",
+    "notesZh": "瑶瑶对留云借风真君的称呼",
     "pronunciationJa": "りゅううんおばちゃん",
     "tags": [
       "liyue",
@@ -1447,6 +1645,12 @@
     "en": "Azhdaha",
     "ja": "若陀龍王",
     "notes": "読みは「エイジダハ」",
+    "pinyins": [
+      {
+        "char": "若",
+        "pron": "re3"
+      }
+    ],
     "pronunciationJa": "じゃくだりゅうおう",
     "tags": [
       "liyue",
@@ -1458,6 +1662,9 @@
         "若陀竜王",
         "若蛇龍王",
         "若蛇竜王",
+        "若陀"
+      ],
+      "zhCN": [
         "若陀"
       ]
     },
@@ -1475,6 +1682,7 @@
   {
     "en": "Marchosius",
     "ja": "マルコシアス",
+    "notes": "グゥオパァーのかつての名前",
     "tags": [
       "liyue",
       "title"
@@ -1484,6 +1692,7 @@
   {
     "en": "God of the Stove",
     "ja": "竈神",
+    "notes": "マルコシアス (グゥオパァー) の称号",
     "pronunciationJa": "かまどがみ",
     "tags": [
       "liyue",
@@ -1495,6 +1704,7 @@
     "en": "Bosacius",
     "ja": "浮舎",
     "notes": "仙衆夜叉の1人",
+    "notesZh": "仙众夜叉之一",
     "pronunciationJa": "ふしゃ",
     "tags": [
       "liyue",
@@ -1506,6 +1716,7 @@
     "en": "Marshal Vritras",
     "ja": "騰蛇太元帥",
     "notes": "仙衆夜叉・浮舎の称号",
+    "notesZh": "仙众夜叉·浮舍的称号",
     "pronunciationJa": "とうだたいげんすい",
     "tags": [
       "liyue",
@@ -1517,6 +1728,7 @@
     "en": "Menogias",
     "ja": "弥怒",
     "notes": "仙衆夜叉の1人",
+    "notesZh": "仙众夜叉之一",
     "pronunciationJa": "みぬ",
     "tags": [
       "liyue",
@@ -1528,6 +1740,7 @@
     "en": "General Kapisas",
     "ja": "心猿大将",
     "notes": "仙衆夜叉・弥怒の称号",
+    "notesZh": "仙众夜叉·弥怒的称号",
     "pronunciationJa": "しんえんたいしょう",
     "tags": [
       "liyue",
@@ -1539,6 +1752,7 @@
     "en": "Bonanus",
     "ja": "伐難",
     "notes": "仙衆夜叉の1人",
+    "notesZh": "仙众夜叉之一",
     "pronunciationJa": "ばつなん",
     "tags": [
       "liyue",
@@ -1550,6 +1764,7 @@
     "en": "General Chizapus",
     "ja": "螺巻大将",
     "notes": "仙衆夜叉・伐難の称号",
+    "notesZh": "仙众夜叉·伐难的称号",
     "pronunciationJa": "らかんたいしょう",
     "tags": [
       "liyue",
@@ -1561,6 +1776,7 @@
     "en": "Indarias",
     "ja": "応達",
     "notes": "仙衆夜叉の1人",
+    "notesZh": "仙众夜叉之一",
     "pronunciationJa": "おうたつ",
     "tags": [
       "liyue",
@@ -1572,6 +1788,7 @@
     "en": "General Musatas",
     "ja": "火鼠大将",
     "notes": "仙衆夜叉・応達の称号",
+    "notesZh": "仙众夜叉·应达的称号",
     "pronunciationJa": "かそたいしょう",
     "tags": [
       "liyue",
@@ -1602,6 +1819,16 @@
   {
     "en": "Starsnatcher",
     "ja": "掇星攫辰天君",
+    "pinyins": [
+      {
+        "char": "掇",
+        "pron": "duo1"
+      },
+      {
+        "char": "攫",
+        "pron": "jue2"
+      }
+    ],
     "tags": [
       "liyue",
       "title"
@@ -1611,6 +1838,8 @@
   {
     "en": "Chef Mao",
     "ja": "卯師匠",
+    "notes": "香菱の父",
+    "notesZh": "香菱的父亲",
     "pronunciationJa": "うーししょう",
     "tags": [
       "liyue",
@@ -1628,6 +1857,26 @@
     "zhCN": "宝儿"
   },
   {
+    "en": "Yan'er",
+    "ja": "イェン",
+    "notes": "世界任務『「螭」の話』「広海の守護」などに登場する宝盗団の幹部",
+    "tags": [
+      "liyue",
+      "character-sub"
+    ],
+    "zhCN": "胭儿"
+  },
+  {
+    "en": "\"Big Sis\"",
+    "ja": "「姉御」",
+    "notes": "イェンの通り名",
+    "tags": [
+      "liyue",
+      "title"
+    ],
+    "zhCN": "「大姐」"
+  },
+  {
     "en": "Guizhong",
     "ja": "帰終",
     "notes": "発音は「グウェィヂョン」([参考動画](https://youtu.be/p10yiwULJA8?t=179))",
@@ -1642,6 +1891,7 @@
     "en": "Haagentus",
     "ja": "ハーゲントゥス",
     "notes": "帰終の異名",
+    "notesZh": "归终的魔神名",
     "tags": [
       "liyue",
       "title"
@@ -1652,6 +1902,7 @@
     "en": "God of Dust",
     "ja": "塵の魔神",
     "notes": "帰終の魔神としての称号",
+    "notesZh": "归终的魔神称号",
     "pronunciationJa": "ちりのまじん",
     "tags": [
       "liyue",
@@ -1682,6 +1933,7 @@
     "en": "Sea Gazer",
     "ja": "鳴海栖霞真君",
     "notes": "璃月の仙人の一人",
+    "notesZh": "璃月仙人之一",
     "pronunciationJa": "なるみせいかしんくん",
     "tags": [
       "liyue",
@@ -1690,9 +1942,22 @@
     "zhCN": "鸣海栖霞真君"
   },
   {
+    "en": "Changsheng",
+    "ja": "長生",
+    "notes": "白朮が連れている蛇",
+    "notesZh": "跟着白术（其脖子上）的蛇",
+    "pronunciationJa": "ちょうせい",
+    "tags": [
+      "liyue",
+      "character-sub"
+    ],
+    "zhCN": "长生"
+  },
+  {
     "en": "Baiwen",
     "ja": "百聞",
     "notes": "群玉閣の秘書の1人",
+    "notesZh": "群玉阁的秘书之一",
     "pronunciationJa": "ひゃくぶん",
     "tags": [
       "liyue",
@@ -1704,6 +1969,7 @@
     "en": "Baishi",
     "ja": "百識",
     "notes": "群玉閣の秘書の1人",
+    "notesZh": "群玉阁的秘书之一",
     "tags": [
       "liyue",
       "character-sub"
@@ -1714,6 +1980,7 @@
     "en": "Baixiao",
     "ja": "百暁",
     "notes": "群玉閣の秘書の1人",
+    "notesZh": "群玉阁的秘书之一",
     "tags": [
       "liyue",
       "character-sub"
@@ -1764,11 +2031,23 @@
   {
     "en": "Ms. Yu",
     "ja": "シャオユウ",
+    "notes": "璃月評判任務の受付キャラクター",
+    "notesZh": "璃月声望任务的交付角色",
     "tags": [
       "liyue",
       "character-sub"
     ],
     "zhCN": "小雨"
+  },
+  {
+    "en": "Jiawei",
+    "ja": "嘉瑋",
+    "notes": "璃月の漁師",
+    "tags": [
+      "liyue",
+      "character-sub"
+    ],
+    "zhCN": "嘉玮"
   },
   {
     "en": "Ying'er",
@@ -1780,6 +2059,17 @@
       "character-sub"
     ],
     "zhCN": "莺儿"
+  },
+  {
+    "en": "Shitou",
+    "ja": "石商",
+    "notes": "鉱石を売っている店「解翠行」の店主",
+    "pronunciationJa": "せきしょう",
+    "tags": [
+      "liyue",
+      "character-sub"
+    ],
+    "zhCN": "石头"
   },
   {
     "en": "Lan",
@@ -1968,7 +2258,8 @@
       "liyue",
       "snezhnaya",
       "character-sub"
-    ]
+    ],
+    "zhCN": "安托哈"
   },
   {
     "en": "Ninth Company Brevet Commander",
@@ -2106,6 +2397,7 @@
     "en": "milady / my lady",
     "ja": "お嬢",
     "notes": "トーマの神里綾華に対する呼び方",
+    "notesZh": "托马对神里绫华的称呼",
     "pronunciationJa": "おじょう",
     "tags": [
       "inazuma",
@@ -2132,6 +2424,7 @@
     "en": "my lord",
     "ja": "若",
     "notes": "トーマの神里綾人に対する呼び方",
+    "notesZh": "托马对神里绫人的称呼",
     "pronunciationJa": "わか",
     "tags": [
       "inazuma",
@@ -2157,6 +2450,7 @@
     "en": "Kamisato Clan's housekeeper",
     "ja": "神里家の家司",
     "notes": "神里家でのトーマの役職",
+    "notesZh": "神里家中托马的职位",
     "pronunciationJa": "かみさとけのけいし",
     "tags": [
       "inazuma",
@@ -2168,6 +2462,7 @@
     "en": "fixer",
     "ja": "顔役",
     "notes": "トーマは稲妻の「顔役」である。",
+    "notesZh": "托马是稻妻的地头蛇",
     "pronunciationJa": "かおやく",
     "tags": [
       "inazuma",
@@ -2196,6 +2491,29 @@
     "zhCN": "八重神子"
   },
   {
+    "en": "Lady Yae",
+    "ja": "八重様",
+    "notes": "八重神子が部下などから呼ばれる際の敬称",
+    "notesZh": "八重神子的部下对其的敬称",
+    "pronunciationJa": "やえさま",
+    "tags": [
+      "inazuma",
+      "how-to-call"
+    ],
+    "zhCN": "八重大人"
+  },
+  {
+    "en": "Fried Tofu With All the Frills",
+    "ja": "焜焜油揚げ",
+    "notes": "八重神子のハンドルネーム (?)",
+    "pronunciationJa": "こんこんあぶらあげ",
+    "tags": [
+      "inazuma",
+      "title"
+    ],
+    "zhCN": "玲珑油豆腐"
+  },
+  {
     "en": "Arataki Itto",
     "ja": "荒瀧一斗",
     "pronunciationJa": "あらたきいっと",
@@ -2209,6 +2527,7 @@
     "en": "Arataki \"Numero Uno\" Itto",
     "ja": "荒瀧・天下第一・一斗",
     "notes": "Numero Uno はイタリア語で「ナンバーワン」の意。",
+    "notesZh": "Numero Uno是意大利语中 Number One 的意思。",
     "pronunciationJa": "あらたき・てんかだいいち・いっと",
     "tags": [
       "inazuma",
@@ -2286,21 +2605,43 @@
     "zhCN": "现人神巫女"
   },
   {
+    "en": "Sole of the Deep",
+    "examples": [
+      {
+        "en": "You took your time. I was starting to wonder if you got lost walking on the seabed, Miss \"Sole of the Deep.\"",
+        "ja": "こうもゆっくり登場するとは、海底を散歩していて迷子にでもなったのかと心配したぞ、「深海ウシノシタ」さん。",
+        "ref": "八重神子, v3.7 期間限定イベント「決闘! 召喚の頂!」",
+        "zhCN": "这么晚才到，我还以为是在海底散步迷路了呢，「深海舌鲆鱼」小姐。"
+      }
+    ],
+    "ja": "深海ウシノシタ",
+    "notes": "珊瑚宮心海のハンドルネーム (?)",
+    "pronunciationJa": "しんかいウシノシタ",
+    "tags": [
+      "inazuma",
+      "title"
+    ],
+    "zhCN": "深海舌鲆鱼"
+  },
+  {
     "en": "Her Excellency",
     "examples": [
       {
         "en": "The fact we're even able to hold out is thanks to the brilliant strategic mind of Her Excellency, Sangonomiya. We're also indebted to the great courage shown by General Gorou and the resistance troops.",
         "ja": "今こうしてなんとか保っているのは、 珊瑚宮様が立てた数々の妙計奇策、それとゴロー様と抵抗軍兵士たちによる奮闘のおかげさ。",
-        "ref": "哲平, 第二章 第二幕 無念無想、抱影を滅す"
+        "ref": "哲平, 第二章 第二幕 無念無想、抱影を滅す",
+        "zhCN": "目前还能顶住压力，一方面是靠珊瑚宫大人的各种奇谋妙计，另一方面是靠五郎大人与反抗军战士们的英勇奋战。"
       },
       {
         "en": "Yes, Your Excellency!",
         "ja": "はっ、珊瑚宮様!",
-        "ref": "ゴロー, 第二章 第三幕 千手百目の浮世"
+        "ref": "ゴロー, 第二章 第三幕 千手百目の浮世",
+        "zhCN": "是，珊瑚宫大人！"
       }
     ],
     "ja": "(珊瑚宮心海や雷電将軍に対する尊称)",
     "notes": "単に Her Excellency のみで主君を指したり、Her Excellency, Sangonomiya などのように名前の前に付けて用いたりする。一般用語でも、高貴な人物に対して [Her/His/Your] Excellency が用いられる。",
+    "notesZh": "单纯使用 Her Excellency 即指代君主，如 Her Excellency, Sangonomiya 这样加在名字前面。在一般用语中，对高贵的任务也使用 [Her/His/Your] Excellency 的说法。",
     "tags": [
       "inazuma",
       "how-to-call"
@@ -2308,18 +2649,24 @@
     "zhCN": "（对珊瑚宫心海或雷电将军的尊称）"
   },
   {
-    "en": "Captain of Swordfish Ⅱ",
-    "ja": "メカジキ二番隊隊長",
-    "pronunciationJa": "メカジキにばんたいたいちょう",
+    "en": "Swordfish Ⅱ",
+    "ja": "メカジキ二番隊",
+    "pronunciationJa": "メカジキにばんたい",
     "tags": [
       "inazuma",
       "title"
     ],
-    "zhCN": "剑鱼二番队队长"
+    "zhCN": "剑鱼二番队"
   },
   {
     "en": "Kujou Sara",
     "ja": "九条裟羅",
+    "pinyins": [
+      {
+        "char": "裟",
+        "pron": "sha1"
+      }
+    ],
     "pronunciationJa": "くじょうさら",
     "tags": [
       "inazuma",
@@ -2341,6 +2688,35 @@
       "character-main"
     ],
     "zhCN": "鹿野院平藏"
+  },
+  {
+    "en": "Kirara",
+    "ja": "綺良々",
+    "pronunciationJa": "きらら",
+    "tags": [
+      "inazuma",
+      "character-main"
+    ],
+    "zhCN": "绮良良"
+  },
+  {
+    "en": "Urgent Neko Parcel",
+    "ja": "ネコ箱急便",
+    "notes": "綺良々が元素スキルで変身する、ダンボールのような箱に入ったネコの状態のこと",
+    "pronunciationJa": "ネコそうきゅうびん",
+    "tags": [
+      "inazuma"
+    ],
+    "zhCN": "猫箱急件"
+  },
+  {
+    "en": "Cat Grass Cardamom",
+    "ja": "ニャルダモン",
+    "notes": "綺良々が元素爆発で生成するネコ型の草元素爆弾のこと",
+    "tags": [
+      "inazuma"
+    ],
+    "zhCN": "猫草豆蔻"
   },
   {
     "en": "Raiden Shogun",
@@ -2387,6 +2763,7 @@
     "en": "Electro Archon",
     "ja": "雷神",
     "notes": "雷電将軍のことを \"God\" と称するシーンがあることから、Electro God も間違いではないと思われる。",
+    "notesZh": "因为有直接对雷电将军称呼 \"God\" 的情况，所以我认为 Electro God 的说法也不算错。",
     "pronunciationJa": "らいじん",
     "tags": [
       "inazuma",
@@ -2452,6 +2829,8 @@
   {
     "en": "Naganohara Ryuunosuke",
     "ja": "長野原龍之介",
+    "notes": "宵宮の父",
+    "notesZh": "长野原宵宫的父亲",
     "pronunciationJa": "ながのはらりゅうのすけ",
     "tags": [
       "inazuma",
@@ -2490,6 +2869,7 @@
     "en": "Hanachirusato",
     "ja": "花散里",
     "notes": "以前は英語版では \"Kazari\" となっていたが、v2.7で修正された。",
+    "notesZh": "以前英语版中称作 \"Kazari\"，但在 v2.7 中被修正了。",
     "pronunciationJa": "はなちるさと",
     "tags": [
       "inazuma",
@@ -2508,12 +2888,29 @@
   {
     "en": "Hiiragi Hiroshi",
     "ja": "柊弘嗣",
+    "pinyins": [
+      {
+        "char": "柊",
+        "pron": "zhong1"
+      }
+    ],
     "pronunciationJa": "ひいらぎひろし",
     "tags": [
       "inazuma",
       "character-sub"
     ],
     "zhCN": "柊弘嗣"
+  },
+  {
+    "en": "Wakamurasaki",
+    "ja": "若紫",
+    "notes": "四方八方の網を売ってくれる人物",
+    "pronunciationJa": "わかむらさき",
+    "tags": [
+      "inazuma",
+      "character-sub"
+    ],
+    "zhCN": "若紫"
   },
   {
     "en": "Ioroi",
@@ -2538,6 +2935,7 @@
     "en": "Xavier",
     "ja": "グザヴィエ",
     "notes": "空想クラブの一員",
+    "notesZh": "空想俱乐部的一员",
     "tags": [
       "inazuma",
       "character-sub"
@@ -2552,6 +2950,12 @@
   {
     "en": "Ruu",
     "ja": "ルー",
+    "pinyins": [
+      {
+        "char": "瑠",
+        "pron": "liu2"
+      }
+    ],
     "tags": [
       "inazuma",
       "character-sub"
@@ -2597,19 +3001,29 @@
     "zhCN": "雷鸟"
   },
   {
-    "en": "Orobaxi",
+    "en": "Orobashi / Orobaxi",
     "ja": "オロバシ",
-    "notes": "v2.0では Orobashi と表記されていたが、v2.1で Orobaxi に変更されたようである。しかし Orobashi のまま変更されていないままの箇所が多数ある。「オロバシノミコト」はそのまま \"Orobashi no Mikoto\" (※未変更) と表記される。",
+    "notes": "v2.1 以降、Orobashi と Orobaxi の両表記が混在している",
+    "tags": [
+      "inazuma",
+      "character-sub"
+    ],
+    "zhCN": "奥罗巴斯"
+  },
+  {
+    "en": "Orobashi no Mikoto",
+    "ja": "オロバシノミコト",
+    "notes": "「オロバシ」については、v2.1 以降 Orobashi と Orobaxi の両表記が混在しているが、「オロバシノミコト」については \"Orobaxi no Mikoto\" と表記されている箇所は見つかっていない",
     "tags": [
       "inazuma",
       "character-sub"
     ],
     "variants": {
       "en": [
-        "Orobashi"
+        "Orobaxi no Mikoto"
       ]
     },
-    "zhCN": "奥罗巴斯"
+    "zhCN": "远吕羽氏尊"
   },
   {
     "en": "Enjou",
@@ -2670,6 +3084,58 @@
     "zhCN": "乌帽子"
   },
   {
+    "en": "Clymene",
+    "ja": "久利由売",
+    "notes": "世界任務「パエトーンたちはみな踊る」に登場するキャラクター",
+    "tags": [
+      "inazuma",
+      "character-sub"
+    ],
+    "zhCN": "久利由卖"
+  },
+  {
+    "en": "Date",
+    "ja": "伊達",
+    "notes": "世界任務「伊達の挑戦状」に登場するキャラクター",
+    "pronunciationJa": "だて",
+    "tags": [
+      "inazuma",
+      "character-sub"
+    ],
+    "zhCN": "伊达"
+  },
+  {
+    "en": "Michiya",
+    "ja": "宮地",
+    "notes": "世界任務「三色の帳面」に登場するキャラクター。英語名は Miyaji の誤訳?",
+    "pronunciationJa": "みやじ",
+    "tags": [
+      "inazuma",
+      "character-sub"
+    ],
+    "zhCN": "宫地"
+  },
+  {
+    "en": "Spartacus",
+    "ja": "スパルタクス",
+    "tags": [
+      "inazuma",
+      "character-sub"
+    ],
+    "zhCN": "斯巴达克"
+  },
+  {
+    "en": "Supada no Hiko",
+    "ja": "須婆達の彦",
+    "notes": "スパルタクスの稲妻式の名前",
+    "pronunciationJa": "すぱだのひこ",
+    "tags": [
+      "inazuma",
+      "character-sub"
+    ],
+    "zhCN": "须婆达之彦"
+  },
+  {
     "en": "Teppei",
     "ja": "哲平",
     "pronunciationJa": "てっぺい",
@@ -2710,14 +3176,38 @@
     "en": "Kamei Munehisa",
     "ja": "亀井宗久",
     "notes": "全能グルメチームの一員",
+    "pronunciationJa": "かめいむねひさ",
     "tags": [
       "character-sub"
     ],
     "zhCN": "龟井宗久"
   },
   {
+    "en": "Hiromi",
+    "ja": "広海",
+    "notes": "世界任務「広海の守護」に登場する勘定奉行の役人",
+    "pronunciationJa": "ひろみ",
+    "tags": [
+      "inazuma",
+      "character-sub"
+    ],
+    "zhCN": "广海"
+  },
+  {
+    "en": "Shun",
+    "ja": "順",
+    "notes": "世界任務「広海の守護」に登場する宝盗団員",
+    "pronunciationJa": "じゅん",
+    "tags": [
+      "inazuma",
+      "character-sub"
+    ],
+    "zhCN": "阿顺"
+  },
+  {
     "en": "Neko",
     "ja": "寝子",
+    "pronunciationJa": "ねこ",
     "tags": [
       "inazuma",
       "character-sub"
@@ -2727,6 +3217,7 @@
   {
     "en": "Self-Proclaimed \"Provisional Head Priestess of the Asase Shrine\"",
     "ja": "自称「浅瀬神社の代理宮司」",
+    "pronunciationJa": "じしょうあさせじんじゃのだいりぐうじ",
     "tags": [
       "inazuma",
       "title"
@@ -2772,6 +3263,23 @@
       "character-sub"
     ],
     "zhCN": "天目十五"
+  },
+  {
+    "en": "Kujirai Momiji",
+    "ja": "鯨井椛",
+    "notes": "稲妻の漁師",
+    "pinyins": [
+      {
+        "char": "椛",
+        "pron": "hua1"
+      }
+    ],
+    "pronunciationJa": "くじらいもみじ",
+    "tags": [
+      "inazuma",
+      "character-sub"
+    ],
+    "zhCN": "鲸井椛"
   },
   {
     "en": "Kid Kujirai",
@@ -2919,6 +3427,16 @@
     "zhCN": "巡林官"
   },
   {
+    "en": "Master Tighnari",
+    "ja": "ティナリ師匠",
+    "notes": "コレイのティナリに対する呼び方",
+    "tags": [
+      "sumeru",
+      "how-to-call"
+    ],
+    "zhCN": "提纳里师父"
+  },
+  {
     "en": "Collei",
     "ja": "コレイ",
     "notes": "中国語の発音は「クライ」に近い",
@@ -2940,6 +3458,7 @@
     "en": "Eleazar",
     "ja": "魔鱗病",
     "notes": "Eleazar の原義はユダヤ人の男性名で、聖書にも Eleazar という司教が登場する。意味は「神が助けた」",
+    "notesZh": "Eleazar的原意是犹太人的男性名，在《圣经》中也有名为Eleazar的祭司。",
     "pronunciationJa": "まりんびょう",
     "tags": [
       "sumeru"
@@ -3034,6 +3553,7 @@
     "en": "Madam Faruzan",
     "ja": "ファルザン先輩",
     "notes": "ファルザンが、自身をこのように呼ぶよう他人に求める呼び方",
+    "notesZh": "珐露珊希望他人如此称呼她自己。",
     "tags": [
       "sumeru",
       "how-to-call"
@@ -3141,6 +3661,16 @@
     "zhCN": "花神"
   },
   {
+    "en": "Nabu Malikata",
+    "ja": "ナブ・マリカッタ",
+    "notes": "花神の真名",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "娜布·玛莉卡塔"
+  },
+  {
     "en": "Greater Load Rukkhadevata",
     "ja": "マハールッカデヴァータ",
     "tags": [
@@ -3208,6 +3738,7 @@
     "en": "Haypasia",
     "ja": "ハイパシア",
     "notes": "スメールの魔神任務に登場",
+    "notesZh": "在须弥的魔神任务中登场的角色。",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3215,14 +3746,15 @@
     "zhCN": "海芭夏"
   },
   {
-    "en": "Dunyarzad",
-    "ja": "ドニアザード",
-    "notes": "スメールの魔神任務に登場するキャラクター",
+    "en": "Dunyarzad Homayani",
+    "ja": "ドニアザード・フーマイ",
+    "notes": "スメールの魔神任務等に登場するキャラクター。ディシアの雇い主の家の娘",
+    "notesZh": "在须弥的魔神任务中登场的角色。迪希雅的雇主家的女儿。",
     "tags": [
       "sumeru",
       "character-sub"
     ],
-    "zhCN": "迪娜泽黛"
+    "zhCN": "迪娜泽黛·呼玛伊"
   },
   {
     "en": "Asfand",
@@ -3246,6 +3778,7 @@
     "en": "Setaria",
     "ja": "セタレ",
     "notes": "スメールの魔神任務に登場するキャラクター",
+    "notesZh": "在须弥的魔神任务中登场的角色。",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3256,6 +3789,7 @@
     "en": "Rahman",
     "ja": "ラフマン",
     "notes": "スメールの魔神任務に登場するキャラクター",
+    "notesZh": "在须弥的魔神任务中登场的角色。",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3263,9 +3797,20 @@
     "zhCN": "拉赫曼"
   },
   {
+    "en": "Loumelat",
+    "ja": "ルーメラ",
+    "notes": "スメールの漁師",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "鲁梅拉"
+  },
+  {
     "en": "Karkata",
     "ja": "カカタ",
     "notes": "ティナリの伝説任務に登場するキャラクター",
+    "notesZh": "提纳里的传说任务中登场的智能机器",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3276,6 +3821,7 @@
     "en": "Mechanical Crab",
     "ja": "機械ガニ",
     "notes": "ティナリの伝説任務に登場するキャラクター",
+    "notesZh": "提纳里的传说任务中登场的角色",
     "tags": [
       "sumeru",
       "title"
@@ -3286,6 +3832,7 @@
     "en": "Abattouy",
     "ja": "アバッドイ",
     "notes": "ティナリの伝説任務に登場するキャラクター",
+    "notesZh": "提纳里的传说任务中登场的角色",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3296,6 +3843,7 @@
     "en": "Inayah",
     "ja": "イナヤ",
     "notes": "ニィロウの伝説任務に登場するキャラクター",
+    "notesZh": "妮露的传说任务中登场的角色",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3306,6 +3854,7 @@
     "en": "Sheikh Zubayr",
     "ja": "シェイクズバイル",
     "notes": "ニィロウが所属するズバイルシアターのマネージャー",
+    "notesZh": "妮露所属的祖拜尔剧场的经理",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3335,6 +3884,7 @@
     "en": "Nabiya",
     "ja": "ナビヤ",
     "notes": "スメールシティ内にいる占い師の少女",
+    "notesZh": "须弥城内的少女占卜师",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3345,6 +3895,7 @@
     "en": "Harut",
     "ja": "ハールート",
     "notes": "スメールシティ内にいる占い師の少女ナビヤの飼い猫",
+    "notesZh": "须弥城内的少女占卜师饲养的猫",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3355,6 +3906,7 @@
     "en": "Marut",
     "ja": "マールート",
     "notes": "スメールシティ内にいる占い師の少女ナビヤの飼い猫",
+    "notesZh": "须弥城内的少女占卜师饲养的猫",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3362,9 +3914,62 @@
     "zhCN": "玛鲁特"
   },
   {
+    "en": "Aryadeva",
+    "ja": "アーリヤデーバ",
+    "notes": "スメールシティ内にいる小説家で、元スケプティック団員。元ネタは2〜3世紀頃の僧アーリヤデーヴァか",
+    "notesZh": "须弥城内的小说家，矫论团前成员。原型可能是2-3世纪的印度大乘佛教中的人物圣天。",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "阿亚德瓦"
+  },
+  {
+    "en": "Arezo",
+    "ja": "アレソ",
+    "notes": "ヴィマラ村にいるホッセイニの姉",
+    "notesZh": "维摩庄中的胡塞尼的姐姐",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "阿莲佐"
+  },
+  {
+    "en": "Sadife",
+    "ja": "サディーフ",
+    "notes": "世界任務「プルビルニの戒め」に登場する人物",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "赛达菲"
+  },
+  {
+    "en": "Augustus Lovelace",
+    "ja": "オーガスタス・ラヴレス",
+    "notes": "世界任務「とあるフォンテーヌ人の思い出」に登場する人物",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "奥古斯都·洛夫莱斯"
+  },
+  {
+    "en": "Oleg",
+    "ja": "オレグ",
+    "notes": "世界任務「騙す者は騙される」に登場するデットエージェント",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "奥列格"
+  },
+  {
     "en": "Effendi",
     "ja": "エフェンディ",
     "notes": "スメール評判任務の受付キャラクター",
+    "notesZh": "须弥声望任务的交付角色",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3372,9 +3977,20 @@
     "zhCN": "阿芬迪"
   },
   {
+    "en": "Desertfolk",
+    "ja": "砂漠の民",
+    "pronunciationJa": "さばくのたみ",
+    "tags": [
+      "sumeru",
+      "title"
+    ],
+    "zhCN": "沙漠子民"
+  },
+  {
     "en": "Jeht",
     "ja": "ジェイド",
     "notes": "世界任務「黄金の眠り」や「ビルキースの哀歌」に登場するキャラクター",
+    "notesZh": "世界任务「黄金梦乡」和「比勒琪丝的哀歌」中登场的角色。",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3385,6 +4001,7 @@
     "en": "Jebrael",
     "ja": "ジェブライラ",
     "notes": "世界任務「黄金の眠り」に登場するキャラクター",
+    "notesZh": "世界任务「黄金梦乡」中登场的角色。",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3395,6 +4012,7 @@
     "en": "Ufairah",
     "ja": "ユフィ",
     "notes": "世界任務「黄金の眠り」や「ビルキースの哀歌」で言及されるキャラクター",
+    "notesZh": "世界任务「黄金梦乡」和「比勒琪丝的哀歌」中提及的角色。",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3405,6 +4023,7 @@
     "en": "Tirzad",
     "ja": "ティルザード",
     "notes": "世界任務「黄金の眠り」に登場するキャラクター",
+    "notesZh": "世界任务「黄金梦乡」中登场的角色。",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3415,6 +4034,7 @@
     "en": "Benben",
     "ja": "ブンブン",
     "notes": "世界任務「黄金の眠り」に登場するキャラクター",
+    "notesZh": "世界任务「黄金梦乡」中登场的角色。",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3425,6 +4045,7 @@
     "en": "Samail",
     "ja": "サミエル",
     "notes": "世界任務「黄金の眠り」に登場するキャラクター",
+    "notesZh": "世界任务「黄金梦乡」中登场的角色。",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3434,7 +4055,8 @@
   {
     "en": "Babel Tanit",
     "ja": "バベル・タニット",
-    "notes": "世界任務「ビルキースの哀歌」に登場するキャラクター",
+    "notes": "世界任務「ビルキースの哀歌」に登場するキャラクター。タニット部族の主母。",
+    "notesZh": "世界任务「比勒琪丝的哀歌」中登场的角色。塔尼特部族的主母。",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3445,6 +4067,7 @@
     "en": "Matriarch",
     "ja": "主母",
     "notes": "バベル・タニットの役職名",
+    "notesZh": "芭别尔·塔尼特的职位名",
     "tags": [
       "sumeru",
       "title"
@@ -3454,7 +4077,8 @@
   {
     "en": "Liloupar",
     "ja": "リルパァール",
-    "notes": "世界任務「ビルキースの哀歌」に登場するキャラクター",
+    "notes": "世界任務「ビルキースの哀歌」に登場するキャラクター。ジンニー。",
+    "notesZh": "世界任务「比勒琪丝的哀歌」中登场的角色（镇灵）。",
     "tags": [
       "sumeru",
       "character-sub",
@@ -3465,7 +4089,8 @@
   {
     "en": "Azariq",
     "ja": "アザリク",
-    "notes": "世界任務「ビルキースの哀歌」に登場するキャラクター",
+    "notes": "世界任務「ビルキースの哀歌」に登場するキャラクター。タニット部族の1人。",
+    "notesZh": "世界任务「比勒琪丝的哀歌」中登场的角色。塔尼特部族的成员之一。",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3475,12 +4100,64 @@
   {
     "en": "Aderfi",
     "ja": "アデルフィ",
-    "notes": "世界任務「ビルキースの哀歌」に登場するキャラクター",
+    "notes": "世界任務「ビルキースの哀歌」に登場するキャラクター。タニット部族の1人。",
+    "notesZh": "世界任务「比勒琪丝的哀歌」中登场的角色。塔尼特部族的成员之一。",
     "tags": [
       "sumeru",
       "character-sub"
     ],
     "zhCN": "阿德菲"
+  },
+  {
+    "en": "Yuften",
+    "ja": "ユフトゥン",
+    "notes": "世界任務「ビルキースの哀歌」などに登場するキャラクター。タニット部族の1人。",
+    "notesZh": "世界任务「比勒琪丝的哀歌」中登场的角色。塔尼特部族的成员之一。",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "尤夫腾"
+  },
+  {
+    "en": "Tadhla",
+    "ja": "タッドラー",
+    "notes": "世界任務「翼の折れた猟鷹」「過ぎ去りし終末」などに登場するキャラクター。タニット部族の1人。マシーラの娘。",
+    "notesZh": "世界任务「翅膀折断的猎鹰」「已逝去的末日」中登场的角色。塔尼特部族的成员之一。马塞拉的女儿。",
+    "pinyins": [
+      {
+        "char": "菈",
+        "pron": "la1"
+      }
+    ],
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "塔德菈"
+  },
+  {
+    "en": "Masseira",
+    "ja": "マシーラ",
+    "notes": "世界任務「翼の折れた猟鷹」「過ぎ去りし終末」などに登場するキャラクター。タニット部族の1人。タッドラーの父親。",
+    "notesZh": "世界任务「翅膀折断的猎鹰」「已逝去的末日」中登场的角色。塔尼特部族的成员之一。塔德菈的父亲。",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "马塞拉"
+  },
+  {
+    "en": "Zoya Snezhevna",
+    "ja": "ゾーヤ・シュナイツェフナ",
+    "notes": "世界任務「ビルキースの哀歌」などで言及されるキャラクター。ファデュイの大尉。",
+    "notesZh": "世界任务「比勒琪丝的哀歌」中登场的角色。愚人众的大尉。",
+    "tags": [
+      "sumeru",
+      "snezhnaya",
+      "character-sub"
+    ],
+    "zhCN": "佐娅·雪奈茨芙娜"
   },
   {
     "en": "Parvezravan",
@@ -3494,6 +4171,7 @@
     ],
     "ja": "パーヴェズラヴァン",
     "notes": "世界任務「ビルキースの哀歌」で言及されるキャラクター。「パーヴェズラヴァン陛下」は \"His Majesty Parvezravan\"",
+    "notesZh": "世界任务「比勒琪丝的哀歌」中登场的角色。\"帕维兹拉万陛下\" = \"His Majesty Parvezravan\"",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3504,6 +4182,7 @@
     "en": "Froderock Fronkonsteen",
     "ja": "フロドラッカー・フランケンシュタイン",
     "notes": "世界任務「ビルキースの哀歌」などで言及されるキャラクター",
+    "notesZh": "世界任务「比勒琪丝的哀歌」等中提及的角色。",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3522,6 +4201,7 @@
     ],
     "ja": "フェリギス",
     "notes": "世界任務「ビルキースの哀歌」に登場するキャラクター。「フェリギス殿下」は \"Lady Ferigees\"",
+    "notesZh": "世界任务「比勒琪丝的哀歌」中登场的角色。\"菲莉吉丝殿下\" = \"Lady Ferigees\"",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3529,14 +4209,37 @@
     "zhCN": "菲莉吉丝"
   },
   {
-    "en": "King Deshret / Scarlet King",
-    "ja": "キングデシェレト / スカーレットキング",
-    "notes": "日本語版と英語版においては、v3.1 から Scarlet King (King Deshret) / スカーレットキング (キングデシェレト) などのような表記が行われているが、中国語版では特に変更はないようである",
+    "en": "King Deshret",
+    "ja": "キングデシェレト",
+    "notes": "日本語版と英語版においては、v3.1 以前は スカーレットキング (Scarlet King) という名前だったが変更された。中国語版では特に変更は発生していない",
+    "notesZh": "日文版和英文版在 v3.1 之前，此角色的名字为「スカーレットキング」(Scarlet King)。中文版没有变化。",
     "tags": [
       "sumeru",
       "character-sub"
     ],
     "zhCN": "赤王"
+  },
+  {
+    "en": "Al-Ahmar",
+    "ja": "アフマル",
+    "notes": "キングデシェレトの真名",
+    "notesZh": "赤王的真名",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "阿赫玛尔"
+  },
+  {
+    "en": "Amun",
+    "ja": "アモン",
+    "notes": "キングデシェレトの別名",
+    "notesZh": "赤王的别名",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "阿蒙"
   },
   {
     "en": "Rana",
@@ -3551,6 +4254,7 @@
     "en": "Varuna",
     "ja": "ヴァルナ",
     "notes": "アランナラが過去に出会ったもう1人の金色の髪の人間。通例 Nara (人間) を付けて Nara Varuna。",
+    "notesZh": "兰拉娜遇到的另一个金发人类。通常会加上 Nara (人类) 作为后缀，即 Nara Varuna。",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3588,6 +4292,7 @@
     "en": "Arapacati",
     "ja": "アランパカティ",
     "notes": "料理修行をしていたアランナラたちの妹",
+    "notesZh": "进行料理修行的兰那罗们的妹妹",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3643,6 +4348,7 @@
     "en": "Arachanda",
     "ja": "アランチャントラ",
     "notes": "料理修行をしていたアランナラの1体",
+    "notesZh": "进行料理修行的兰那罗之一",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3653,6 +4359,7 @@
     "en": "Arasaka",
     "ja": "アランサカ",
     "notes": "料理修行をしていたアランナラの1体",
+    "notesZh": "进行料理修行的兰那罗之一",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3663,6 +4370,7 @@
     "en": "Arapas",
     "ja": "アランパス",
     "notes": "料理修行をしていたアランナラの1体",
+    "notesZh": "进行料理修行的兰那罗之一",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3673,6 +4381,7 @@
     "en": "Araphala",
     "ja": "アランファラ",
     "notes": "料理修行をしていたアランナラの1体",
+    "notesZh": "进行料理修行的兰那罗之一",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3736,6 +4445,12 @@
   {
     "en": "Aragita",
     "ja": "アランハドゥ",
+    "pinyins": [
+      {
+        "char": "耆",
+        "pron": "qi2"
+      }
+    ],
     "tags": [
       "sumeru",
       "character-sub"
@@ -3761,9 +4476,42 @@
     "zhCN": "兰帝裟"
   },
   {
+    "en": "Arashakun",
+    "ja": "アランシャクン",
+    "notes": "世界任務「勇気を心につけて」に登場するアランナラ",
+    "notesZh": "世界任务「勇气戴于心上」中的兰那罗",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "兰沙恭"
+  },
+  {
+    "en": "Araminali",
+    "ja": "アランミナリ",
+    "notes": "たくさんの宝箱がある部屋にいるアランナラ",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "兰弥那离"
+  },
+  {
+    "en": "Khayyam",
+    "ja": "ハイヤーム",
+    "notes": "世界任務「アランナガの思い出」に登場する人物",
+    "notesZh": "世界任务「兰纳迦的回忆」中登场的人物",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "海亚姆"
+  },
+  {
     "en": "Ilyas",
     "ja": "イリヤース",
     "notes": "アルハイゼンの伝説任務に登場するキャラクター",
+    "notesZh": "艾尔海森的传说任务中登场的角色",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3774,6 +4522,7 @@
     "en": "Siraj",
     "ja": "シラージ",
     "notes": "アルハイゼンの伝説任務に登場するキャラクター",
+    "notesZh": "艾尔海森的传说任务中登场的角色",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3781,9 +4530,76 @@
     "zhCN": "西拉杰"
   },
   {
+    "en": "Kusayla",
+    "ja": "クセラ",
+    "notes": "ディシアの父。アフマルの鬚のリーダー",
+    "notesZh": "迪希雅的父亲。阿赫玛尔之须的首领。",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "库塞拉"
+  },
+  {
+    "en": "Shahzaman Homayani",
+    "ja": "サッザマン・フーマイ",
+    "notes": "ドニアザードの父",
+    "notesZh": "迪娜泽黛的父亲",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "沙扎曼·呼玛伊"
+  },
+  {
+    "en": "Idrisi",
+    "ja": "イドリシ",
+    "notes": "ディシアの伝説任務に登場するキャラクター。アフマルの鬚のメンバー",
+    "notesZh": "迪希雅的传说任务中登场的角色。阿赫玛尔之须的成员。",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "伊德里西"
+  },
+  {
+    "en": "Bashar",
+    "ja": "バシャール",
+    "notes": "ディシアの伝説任務に登場するキャラクター。アフマルの鬚のメンバー",
+    "notesZh": "迪希雅的传说任务中登场的角色。阿赫玛尔之须的成员。",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "巴沙尔"
+  },
+  {
+    "en": "Tikriti",
+    "ja": "ティクリッティ",
+    "notes": "ディシアの伝説任務に登場するキャラクター。アフマルの鬚のメンバー",
+    "notesZh": "迪希雅的传说任务中登场的角色。阿赫玛尔之须的成员。",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "提克里蒂"
+  },
+  {
+    "en": "Mishal",
+    "ja": "ミジャール",
+    "notes": "ディシアの伝説任務に登場するキャラクター。神王のレリクスの首領",
+    "notesZh": "迪希雅的传说任务中登场的角色。神王之遗的首领。",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "米沙勒"
+  },
+  {
     "en": "Eide",
     "ja": "エデ",
     "notes": "魔神任務 第三章第六幕「カリベルト」に登場するキャラクター",
+    "notesZh": "魔神任务 第三章第六幕「卡利贝尔」中登场的角色",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3794,6 +4610,7 @@
     "en": "Chlothar Alberich",
     "ja": "コロタール・アルベリヒ",
     "notes": "魔神任務 第三章第六幕「カリベルト」に登場するキャラクター",
+    "notesZh": "魔神任务 第三章第六幕「卡利贝尔」中登场的角色",
     "tags": [
       "sumeru",
       "character-sub"
@@ -3804,6 +4621,7 @@
     "en": "Sinner",
     "ja": "罪人",
     "notes": "魔神任務 第三章第六幕「カリベルト」に登場するキャラクター",
+    "notesZh": "魔神任务 第三章第六幕「卡利贝尔」中登场的角色",
     "pronunciationJa": "つみびと",
     "tags": [
       "sumeru",
@@ -3812,9 +4630,252 @@
     "zhCN": "罪人"
   },
   {
+    "en": "Mehrak",
+    "ja": "メラック",
+    "notes": "カーヴェの工具箱",
+    "notesZh": "卡维的工具箱",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "梅赫拉克"
+  },
+  {
+    "en": "Zaha Hadi",
+    "ja": "ザハハディ",
+    "notes": "カーヴェのデートイベントに登場する人物。カーヴェの母の師",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "萨赫哈蒂"
+  },
+  {
+    "en": "Nur",
+    "ja": "ヌール",
+    "notes": "ナヒーダの伝説任務第二章に登場するプカプカ水キノコン",
+    "notesZh": "纳西妲的传说任务第二章中登场的水蕈兽",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "努尔"
+  },
+  {
+    "en": "Apep",
+    "ja": "アペプ",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "阿佩普"
+  },
+  {
+    "en": "Dragon of Verdure",
+    "ja": "翠の草龍",
+    "notes": "アペプの称号",
+    "notesZh": "阿佩普的称号",
+    "pronunciationJa": "すいのそうりゅう",
+    "tags": [
+      "sumeru",
+      "title"
+    ],
+    "zhCN": "翠草之龙"
+  },
+  {
+    "en": "Dragon King",
+    "ja": "龍王",
+    "pronunciationJa": "りゅうおう",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "龙王"
+  },
+  {
+    "en": "Sorush",
+    "ja": "ソルシュ",
+    "tags": [
+      "sumeru",
+      "character-sub",
+      "item"
+    ],
+    "zhCN": "斯露莎"
+  },
+  {
+    "en": "Lady Sorush",
+    "ja": "ソルシュ様",
+    "notes": "スケプティック団からのソルシュに対する敬称",
+    "notesZh": "矫论团对斯露莎的称呼",
+    "pronunciationJa": "ソルシュさま",
+    "tags": [
+      "sumeru",
+      "how-to-call"
+    ],
+    "zhCN": "斯露莎大人"
+  },
+  {
+    "en": "Bloomguard of the Pari",
+    "ja": "花霊の「勇者」",
+    "notes": "ソルシュの称号",
+    "notesZh": "斯露莎的称号",
+    "pronunciationJa": "かれいのゆうしゃ",
+    "tags": [
+      "sumeru",
+      "title"
+    ],
+    "zhCN": "花灵之「勇者」"
+  },
+  {
+    "en": "Twin-Horned Chaplet",
+    "ja": "二本角の花冠",
+    "notes": "ソルシュが被る冠",
+    "notesZh": "斯露莎所戴的花冠",
+    "pronunciationJa": "にほんづののかかん",
+    "tags": [
+      "sumeru"
+    ],
+    "zhCN": "双角的花冠"
+  },
+  {
+    "en": "Yasnapati",
+    "ja": "謁賛主",
+    "notes": "ソルシュが旅人に任じた記録者としての役割",
+    "notesZh": "斯露莎给旅行者的称号",
+    "pinyins": [
+      {
+        "char": "谒",
+        "pron": "ye4"
+      }
+    ],
+    "pronunciationJa": "えっさんしゅ",
+    "tags": [
+      "sumeru",
+      "title"
+    ],
+    "zhCN": "谒颂主"
+  },
+  {
+    "en": "Nasejuna",
+    "ja": "ナセジュナ",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "那先朱那"
+  },
+  {
+    "en": "Vijnanapati",
+    "ja": "識主",
+    "notes": "ナセジュナのスケプティック団における役職",
+    "notesZh": "那先朱那在矫论团中的职位",
+    "pronunciationJa": "しきしゅ",
+    "tags": [
+      "sumeru",
+      "title"
+    ],
+    "zhCN": "识主"
+  },
+  {
+    "en": "Sosi",
+    "ja": "ソシー",
+    "notes": "世界任務「碑銘の研究」に登場するスケプティック団員",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "索希"
+  },
+  {
+    "en": "Zurvan",
+    "ja": "ズルヴァーン",
+    "notes": "最初の花霊",
+    "notesZh": "最初的花灵",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "祖尔宛"
+  },
+  {
+    "en": "Mihir",
+    "ja": "ミヒル",
+    "notes": "アシパトラ・ヴァナの沼に封じられていた花霊",
+    "notesZh": "锋刃林泽中被封印的花灵",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "米希尔"
+  },
+  {
+    "en": "Rashnu",
+    "ja": "ラシュヌ",
+    "notes": "バルソムの丘の巨木の下に眠っていた花霊",
+    "notesZh": "跋松顶的巨树下睡着的花灵",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "拉沙鲁"
+  },
+  {
+    "en": "Simurgh",
+    "ja": "シームルグ",
+    "notes": "世界任務「善悪のクヴァレナ」で言及される、霊光百種を創造した神鳥",
+    "notesZh": "世界任务「善恶的赫瓦雷纳」中提到的神鸟",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "西摩格"
+  },
+  {
+    "en": "Klingsor",
+    "ja": "クリングソル",
+    "notes": "世界任務「善悪のクヴァレナ」で言及される「巡回官」",
+    "notesZh": "世界任务「善恶的赫瓦雷纳」中提到的「巡回官」",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "克林索尔"
+  },
+  {
+    "en": "Jarjar",
+    "ja": "ジャルジャー",
+    "notes": "世界任務「浮光鳴召」で試練を課してくる花霊",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "贾尔贾"
+  },
+  {
+    "en": "Fedhri",
+    "ja": "フェドフ",
+    "notes": "甘露の池の前にいる花霊",
+    "tags": [
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "菲多赫"
+  },
+  {
+    "en": "Charlotte",
+    "ja": "シャルロット",
+    "notes": "英語の発音は「シャーロット」。タグのプレイアブル・NPC 分類は仮。",
+    "tags": [
+      "fontaine",
+      "character-main"
+    ],
+    "zhCN": "夏洛蒂"
+  },
+  {
     "en": "Lyney",
     "ja": "リネ",
     "tags": [
+      "fontaine",
       "character-main"
     ],
     "zhCN": "林尼"
@@ -3823,22 +4884,152 @@
     "en": "Lynette",
     "ja": "リネット",
     "tags": [
+      "fontaine",
       "character-main"
     ],
     "zhCN": "琳妮特"
   },
   {
+    "en": "Freminet",
+    "ja": "フレミネ",
+    "tags": [
+      "fontaine",
+      "character-main"
+    ],
+    "zhCN": "菲米尼"
+  },
+  {
+    "en": "Egeria",
+    "ja": "エゲリア",
+    "notes": "タグのプレイアブル・NPC 分類は仮",
+    "tags": [
+      "fontaine",
+      "character-main"
+    ],
+    "zhCN": "厄歌莉娅"
+  },
+  {
+    "en": "Navia",
+    "ja": "ナヴィア",
+    "notes": "タグのプレイアブル・NPC 分類は仮",
+    "tags": [
+      "fontaine",
+      "character-main"
+    ],
+    "zhCN": "娜维娅"
+  },
+  {
+    "en": "Demoiselle",
+    "ja": "お嬢様",
+    "notes": "ナヴィアの侍従たちからのナヴィアに対する呼び方",
+    "tags": [
+      "fontaine",
+      "how-to-call"
+    ],
+    "zhCN": "大小姐"
+  },
+  {
+    "en": "Wriothesley",
+    "ja": "リオセスリ",
+    "tags": [
+      "fontaine",
+      "character-main"
+    ],
+    "zhCN": "莱欧斯利"
+  },
+  {
+    "en": "Duke",
+    "ja": "公爵",
+    "notes": "リオセスリの爵位",
+    "tags": [
+      "fontaine",
+      "title"
+    ],
+    "zhCN": "公爵"
+  },
+  {
+    "en": "Sigewinne",
+    "ja": "シグウィン",
+    "notes": "タグのプレイアブル・NPC 分類は仮",
+    "tags": [
+      "fontaine",
+      "character-main"
+    ],
+    "zhCN": "希格雯"
+  },
+  {
+    "en": "Clorinde",
+    "ja": "クロリンデ",
+    "notes": "タグのプレイアブル・NPC 分類は仮",
+    "tags": [
+      "fontaine",
+      "character-main"
+    ],
+    "zhCN": "克洛琳德"
+  },
+  {
+    "en": "Champion Duelist",
+    "ja": "決闘代理人",
+    "tags": [
+      "fontaine",
+      "title"
+    ],
+    "zhCN": "决斗代理人"
+  },
+  {
+    "en": "Neuvillette",
+    "ja": "ヌヴィレット",
+    "tags": [
+      "fontaine",
+      "character-main"
+    ],
+    "zhCN": "那维莱特"
+  },
+  {
     "en": "Chief Justice",
     "ja": "最高審判官",
+    "notes": "ヌヴィレットの役職",
     "tags": [
+      "fontaine",
       "title"
     ],
     "zhCN": "最高审判官"
   },
   {
+    "en": "Monsieur Neuvillette",
+    "ja": "ヌヴィレット様",
+    "notes": "ヌヴィレットの部下たちからの呼び方。Monsieur はフランス語で Mr. に相当する語",
+    "tags": [
+      "fontaine",
+      "how-to-call"
+    ],
+    "zhCN": "那维莱特大人"
+  },
+  {
+    "en": "Furina",
+    "ja": "フリーナ",
+    "notes": "タグのプレイアブル・NPC 分類は仮",
+    "tags": [
+      "fontaine",
+      "character-main"
+    ],
+    "zhCN": "芙宁娜"
+  },
+  {
+    "en": "Lady Furina",
+    "ja": "フリーナ様",
+    "notes": "フリーナの部下たちからの呼び方",
+    "tags": [
+      "fontaine",
+      "how-to-call"
+    ],
+    "zhCN": "芙宁娜女士"
+  },
+  {
     "en": "Focalors",
     "ja": "フォカロルス",
     "tags": [
+      "fontaine",
       "title"
     ],
     "zhCN": "芙卡洛斯"
@@ -3846,31 +5037,715 @@
   {
     "en": "Hydro Archon",
     "ja": "水神",
+    "pronunciationJa": "すいじん",
     "tags": [
+      "fontaine",
       "title"
     ],
     "zhCN": "水神"
   },
   {
+    "en": "Alain Guillotin",
+    "ja": "アラン・ギヨタン",
+    "notes": "フォンテーヌ科学院の創立者",
+    "notesZh": "枫丹科学院的创始人",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "阿兰·吉约丹"
+  },
+  {
+    "en": "Lord-Artificer",
+    "ja": "奇械公",
+    "notes": "アラン・ギヨタンの称号",
+    "pronunciationJa": "きかいこう",
+    "tags": [
+      "fontaine",
+      "title"
+    ],
+    "zhCN": "奇械公"
+  },
+  {
+    "en": "Silver",
+    "ja": "シルヴァ",
+    "notes": "ナヴィアの侍従の1人。サングラスを掛けている若い方",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "西尔弗"
+  },
+  {
+    "en": "Melus",
+    "ja": "マルシラック",
+    "notes": "ナヴィアの侍従の1人。眼鏡を掛けている高齢な方",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "迈勒斯"
+  },
+  {
+    "en": "Callas",
+    "ja": "カーレス",
+    "notes": "ナヴィアの父",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "卡雷斯"
+  },
+  {
+    "en": "Euphrasie",
+    "ja": "ユーフラシア",
+    "notes": "フォンテーヌ評判任務の受付キャラクター。スチームバード新聞の編集長",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "欧芙"
+  },
+  {
+    "en": "Estelle",
+    "ja": "エスタブレ",
+    "notes": "フォンテーヌの鍛冶屋",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "伊丝黛莱"
+  },
+  {
+    "en": "Livre",
+    "ja": "リーヴァ",
+    "notes": "レシュッツのクロックワーク工房の店主",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "利弗"
+  },
+  {
+    "en": "Caron",
+    "ja": "カロン",
+    "notes": "ルポート時計店の店主",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "卡隆"
+  },
+  {
+    "en": "Maillardet",
+    "ja": "マイヤルデ",
+    "notes": "氷風組曲の戦闘開始受付キャラクター",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "梅雅德"
+  },
+  {
+    "en": "Antoine Roger",
+    "ja": "アントーン・ロジャー",
+    "notes": "アントーン・ロジャー飛行マシナリーの開発者",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "安东·罗杰"
+  },
+  {
+    "en": "Arouet",
+    "ja": "アルエ",
+    "notes": "カフェ・ルツェルンの店主",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "阿鲁埃"
+  },
+  {
+    "en": "Delaroche",
+    "ja": "デラロッシュ",
+    "notes": "フォンテーヌの漁師",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "德拉萝诗"
+  },
+  {
+    "en": "Boucicaut",
+    "ja": "ブシコー",
+    "notes": "ダーモヴィル雑貨店の店主",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "布希柯"
+  },
+  {
+    "en": "Aeval",
+    "ja": "アイベル",
+    "notes": "クレメンタイン線 (ロマリタイムハーバー ↔ フォンテーヌ廷) の巡水船のガイドを務めるメリュジーヌ",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "爱贝尔"
+  },
+  {
+    "en": "Elphane",
+    "ja": "エルファネ",
+    "notes": "ナヴィア線 (フォンテーヌ廷 ↔ ポート・マルコット) の巡水船のガイドを務めるメリュジーヌ",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "欧菲妮"
+  },
+  {
+    "en": "Gestionnaire",
+    "ja": "共律官",
+    "notes": "フォンテーヌの役人",
+    "tags": [
+      "fontaine",
+      "title"
+    ],
+    "zhCN": "复律官"
+  },
+  {
+    "en": "Salsa",
+    "ja": "サルサ",
+    "notes": "フォンテーヌ各地で風景画を描こうとしている少女",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "萨莎"
+  },
+  {
+    "en": "Berrypuff",
+    "ja": "ウーウーブドウ",
+    "notes": "希望の道にいるプクプク獣",
+    "tags": [
+      "fontaine",
+      "character-sub",
+      "living-being"
+    ],
+    "zhCN": "呜呜葡萄"
+  },
+  {
+    "en": "Cowell",
+    "ja": "コーウェル",
+    "notes": "魔神任務第4章第1幕に登場するキャラクター",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "考威尔"
+  },
+  {
+    "en": "Halsey",
+    "ja": "ホールジー",
+    "notes": "魔神任務第4章第1幕に登場するキャラクター",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "海尔希"
+  },
+  {
+    "en": "Liliane",
+    "ja": "リリア",
+    "notes": "魔神任務第4章第1幕に登場するキャラクター",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "莉莉安"
+  },
+  {
+    "en": "Marcel",
+    "ja": "マーセル",
+    "notes": "カブリエール商会の会長。魔神任務第4章第2幕に登場",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "玛塞勒"
+  },
+  {
+    "en": "Vacher",
+    "ja": "ヴァシェ",
+    "notes": "魔神任務第4章第2幕に登場するキャラクター",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "瓦谢"
+  },
+  {
+    "en": "Vigneire",
+    "ja": "ヴェニール",
+    "notes": "魔神任務第4章第2幕に登場するキャラクター",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "薇涅尔"
+  },
+  {
+    "en": "Jacques",
+    "ja": "ジャック",
+    "notes": "魔神任務第4章第2幕で言及されるキャラクター",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "杰克"
+  },
+  {
+    "en": "Phantom Weasel",
+    "ja": "怪盗マーテン",
+    "notes": "リネの伝説任務で言及されるキャラクター",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "怪盗貂将"
+  },
+  {
+    "en": "Cesar",
+    "ja": "セサル",
+    "notes": "リネの伝説任務で言及されるキャラクター",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "塞萨尔"
+  },
+  {
+    "en": "Jemma",
+    "ja": "ジェマ",
+    "notes": "リネの伝説任務に登場するキャラクター",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "嘉玛"
+  },
+  {
+    "en": "Lorenzo",
+    "ja": "ロレンツォ",
+    "notes": "リネの伝説任務に登場するキャラクター",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "洛伦佐"
+  },
+  {
+    "en": "Mamere",
+    "ja": "マメール",
+    "notes": "世界任務「古き色合い」に登場するメリュジーヌ",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "玛梅赫"
+  },
+  {
+    "en": "Seymour",
+    "ja": "セイモア",
+    "notes": "世界任務「古き色合い」に登場するクロックワーク・マシナリー",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "西摩尔"
+  },
+  {
+    "en": "Ann",
+    "ja": "アン",
+    "notes": "世界任務「水仙のアン」に登場する純水精霊",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "安"
+  },
+  {
+    "en": "Narcissus",
+    "ja": "ナルキッソス",
+    "notes": "世界任務「水仙のアン」に登場する「悪龍」",
+    "tags": [
+      "fontaine",
+      "character-sub",
+      "enemy"
+    ],
+    "zhCN": "纳西索斯"
+  },
+  {
+    "en": "Verenata",
+    "ja": "べレナータ",
+    "notes": "世界任務「こんなのかぼちゃスープじゃない…」「旧世の残した音」などに登場するメリュジーヌ",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "薇蕾娜妲"
+  },
+  {
+    "en": "Carabosse",
+    "ja": "カラボス",
+    "notes": "世界任務「旧世の残した音」に登場するメリュジーヌ",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "卡莉珀丝"
+  },
+  {
+    "en": "Topyas",
+    "ja": "トピア",
+    "notes": "世界任務「旧世の残した音」に登場するメリュジーヌ",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "托皮娅"
+  },
+  {
+    "en": "Canotila",
+    "ja": "カノティラ",
+    "notes": "世界任務「秘教と啓示の書」に登場するメリュジーヌ",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "夏诺蒂拉"
+  },
+  {
+    "en": "Ahes",
+    "ja": "アッシェン",
+    "notes": "世界任務「孤帆幽影」に登場するメリュジーヌ",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "艾伊丝"
+  },
+  {
+    "en": "Puca",
+    "ja": "プーカ",
+    "notes": "世界任務「奇石冒険記」などに登場するメリュジーヌ",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "芙佳"
+  },
+  {
+    "en": "Chesil",
+    "ja": "チェシル",
+    "notes": "世界任務「奇石冒険記」に登場する人物",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "切瑟尔"
+  },
+  {
+    "en": "Cosanzeana",
+    "ja": "コスンツァーナ",
+    "notes": "世界任務「好事魔多し」などに登場する、花を育てているメリュジーヌ",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "柯莎"
+  },
+  {
+    "en": "Jakob Ingold",
+    "ja": "ジェイコブ・インゴルド",
+    "notes": "水仙十字結社の一員。世界任務「古き色合い」などに登場する人物",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "雅各布·英戈德"
+  },
+  {
+    "en": "Mary-Ann",
+    "ja": "マリアン",
+    "notes": "世界任務「水仙のアン」などに登場する人物",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "玛丽安"
+  },
+  {
+    "en": "Karl",
+    "ja": "カール",
+    "notes": "日本語版では通例「カールおじさん」と呼ばれるが、英語版には「おじさん」に該当する表現はなく、単に \"Karl\" と呼ばれている",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "卡尔"
+  },
+  {
+    "en": "Carter",
+    "ja": "カーター",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "卡特"
+  },
+  {
+    "en": "Basil Elton",
+    "ja": "バザル・エルトン",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "贝瑟·埃尔顿"
+  },
+  {
+    "en": "Virgil",
+    "ja": "ヴァージル",
+    "notes": "世界任務「フォンテーヌからのメッセージ」などに登場する人物",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "维吉尔"
+  },
+  {
+    "en": "Sonny",
+    "ja": "ソニィ",
+    "notes": "世界任務「フォンテーヌからのメッセージ」に登場する人物",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "桑尼"
+  },
+  {
+    "en": "\"The White Glove\"",
+    "ja": "「白手袋」",
+    "notes": "ソニィの称号",
+    "tags": [
+      "fontaine",
+      "title"
+    ],
+    "zhCN": "「白手套」"
+  },
+  {
+    "en": "Luca",
+    "ja": "ルカ",
+    "notes": "世界任務「フォンテーヌからのメッセージ」に登場する人物",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "卢卡"
+  },
+  {
+    "en": "\"The Fisherman\"",
+    "ja": "「漁師」",
+    "notes": "ルカの称号",
+    "tags": [
+      "fontaine",
+      "title"
+    ],
+    "zhCN": "「渔夫」"
+  },
+  {
+    "en": "Henri",
+    "ja": "アンリ",
+    "notes": "世界任務「ぜんぜんよだれが止まらない!」「まだまだよだれが止まらない!」に登場する人物",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "恩里"
+  },
+  {
+    "en": "Iaune",
+    "ja": "アイオーヌ",
+    "notes": "世界任務「一通の知らせ」「些細な出来事」「とある印章」などに登場する人物",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "艾尤恩"
+  },
+  {
+    "en": "Roialte",
+    "ja": "ロアルテ",
+    "notes": "アイオーヌの共律庭での先輩。世界任務「一通の知らせ」「些細な出来事」「とある印章」などに登場する人物",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "洛耶茨"
+  },
+  {
+    "en": "Semaine",
+    "ja": "スメイヌ",
+    "notes": "世界任務「些細な出来事」「とある印章」などに登場する共律官",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "瑟米安"
+  },
+  {
+    "en": "Remaudiere",
+    "ja": "レモディエール",
+    "notes": "世界任務「泉は再び湧きいづる」に登場する人物",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "勒莫迪埃"
+  },
+  {
+    "en": "Edel",
+    "ja": "エデル",
+    "notes": "世界任務「泉は再び湧きいづる」に登場する人物",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "厄代尔"
+  },
+  {
+    "en": "Linorea",
+    "ja": "リノレア",
+    "notes": "依頼任務「少なくともお魚は知っている」に登場する記者",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "莉诺蕾娅"
+  },
+  {
+    "en": "Depierris",
+    "ja": "デピエリ",
+    "notes": "依頼任務「審美眼の評定」シリーズに登場する画家",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "德皮耶里"
+  },
+  {
+    "en": "Aurele",
+    "ja": "オーレル",
+    "notes": "依頼任務「彼らの子供時代」シリーズに登場する人物",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "奥雷勒"
+  },
+  {
+    "en": "Verut",
+    "ja": "ヴェルー",
+    "notes": "依頼任務「彼らの子供時代」シリーズに登場する人物",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "韦吕"
+  },
+  {
+    "en": "Lovi",
+    "ja": "ロウ",
+    "notes": "依頼任務「彼らの子供時代」シリーズに登場する人物",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "洛薇"
+  },
+  {
+    "en": "Yves",
+    "ja": "イヴス",
+    "notes": "依頼任務「水底の日々」に登場する潜水士",
+    "tags": [
+      "fontaine",
+      "character-sub"
+    ],
+    "zhCN": "伊维斯"
+  },
+  {
+    "en": "Faranak",
+    "ja": "ファラナク",
+    "notes": "カーヴェの母",
+    "tags": [
+      "fontaine",
+      "sumeru",
+      "character-sub"
+    ],
+    "zhCN": "法拉娜"
+  },
+  {
+    "en": "Lochknight",
+    "ja": "純水騎士",
+    "pronunciationJa": "じゅんすいきし",
+    "tags": [
+      "fontaine",
+      "title"
+    ],
+    "zhCN": "纯水骑士"
+  },
+  {
     "en": "Garcia",
     "ja": "ガルシア",
     "notes": "空想クラブの一員",
+    "notesZh": "空想俱乐部的一员",
     "tags": [
+      "fontaine",
       "character-sub"
     ],
     "zhCN": "加尔恰"
   },
   {
+    "en": "Lutong",
+    "ja": "路通",
+    "notes": "ガルシアの助手 (?)",
+    "notesZh": "加尔恰的助手 (?)",
+    "tags": [
+      "character-sub",
+      "liyue"
+    ],
+    "zhCN": "路通"
+  },
+  {
     "en": "Numbering Machine",
     "ja": "ナンバリングマシン",
     "notes": "ガルシアの研究対象",
+    "notesZh": "加尔恰的研究对象",
+    "tags": [
+      "fontaine"
+    ],
     "zhCN": "推数机"
   },
   {
     "en": "Mécantre",
     "ja": "メカントル",
     "notes": "空想クラブの一員",
+    "notesZh": "空想俱乐部的一员",
     "tags": [
+      "fontaine",
       "character-sub"
     ],
     "zhCN": "梅康顿"
@@ -3879,14 +5754,21 @@
     "en": "Babisse",
     "ja": "バビス",
     "notes": "空想クラブの一員",
+    "notesZh": "空想俱乐部的一员",
     "tags": [
+      "fontaine",
       "character-sub"
-    ]
+    ],
+    "zhCN": "巴比斯"
   },
   {
     "en": "super-sized cannon",
     "ja": "スーパーキャノン",
     "notes": "メカントルとバビスの研究対象",
+    "notesZh": "梅康顿和巴比斯的研究对象",
+    "tags": [
+      "fontaine"
+    ],
     "zhCN": "超级大炮"
   },
   {
@@ -3901,6 +5783,7 @@
     "en": "Tartaglia",
     "ja": "タルタリヤ",
     "notes": "[公子](/childe/)の通称",
+    "notesZh": "[公子](/childe/)的通称",
     "tags": [
       "snezhnaya",
       "liyue",
@@ -3919,6 +5802,7 @@
     "en": "Childe",
     "ja": "公子",
     "notes": "[タルタリヤ](/tartaglia/)のコードネーム。英語圏では Tartaglia よりも Childe と呼ばれることが多い印象。",
+    "notesZh": "[达达利亚](/tartaglia/)的代号。英语圈中，Childe 比 Tartaglia 更常见。",
     "pronunciationJa": "こうし",
     "tags": [
       "snezhnaya",
@@ -3942,15 +5826,30 @@
     "zhCN": "阿贾克斯"
   },
   {
-    "en": "comrade",
+    "en": "comrade / partner",
+    "examples": [
+      {
+        "en": "It's a deal then, partner!",
+        "ja": "さすが相棒! そうこなくっちゃ!",
+        "ref": "鹿野院平蔵, デートイベント: 鹿野院平蔵"
+      },
+      {
+        "en": "I'll see you again, partner!",
+        "ja": "またね、相棒!",
+        "ref": "ナヴィア, 魔神任務第四章第二幕 ゆえなく煙る霧雨のように"
+      }
+    ],
     "ja": "相棒",
-    "notes": "タルタリヤの旅人に対する呼び方",
+    "notes": "タルタリヤ、鹿野院平蔵、ナヴィアの旅人に対する呼び方。英語版では、タルタリヤは comrade と、鹿野院平蔵とナヴィアは partner と呼ぶ。中国語版では、タルタリヤは「伙伴」と、鹿野院平蔵とナヴィアは「搭档」と呼ぶ",
+    "notesZh": "公子、鹿野院平藏和娜维娅称呼旅行者的方式。在中文中，公子称呼旅行者为“伙伴”，但是鹿野院平藏和娜维娅称呼旅行者为“搭档”。在英文中，公子称呼旅行者为“comrade”，但是鹿野院平藏和娜维娅称呼旅行者为“partner”。在日语中，他们三人都称呼旅行者为“相棒“。",
     "tags": [
       "snezhnaya",
       "liyue",
+      "inazuma",
+      "fontaine",
       "how-to-call"
     ],
-    "zhCN": "伙伴"
+    "zhCN": "伙伴 / 搭档"
   },
   {
     "en": "Foul Legacy Transformation",
@@ -3967,11 +5866,13 @@
       {
         "en": "Her name is Signora, No. 8 of the harbingers.",
         "ja": "彼女は 『シニョーラ』 ― ファデュイ十一人の執行官の第8位、コードネーム『淑女』 だよ。",
-        "ref": "ウェンティ, 序章 第三幕 龍と自由の歌"
+        "ref": "ウェンティ, 序章 第三幕 龍と自由の歌",
+        "zhCN": "她是「女士」——愚人众十一执行官的第八席，代号「女士」。"
       }
     ],
     "ja": "淑女 / シニョーラ",
     "notes": "単に \"Signora\" と、イタリア語の定冠詞 \"La\" を省略して呼ばれることも多い。「淑女」の訳として \"The Fair Lady\" が当てられているように見える箇所もあるが、一般に他のキャラクターから「淑女」と呼ばれる際は、英語版では \"Signora\" と呼ばれており、また「シニョーラ」とコードネーム「淑女」の区別もないものとして扱われているため、ここでは「淑女」の訳として \"Signora\" を当てた。",
+    "notesZh": "单纯使用 \"Signora\" 而护士意大利语的定冠词 \"La\" 的情况也很常见。一般其他的角色称呼「女士」的时候，英语版中常常直接使用 \"Signora\" 称呼。日语中使用汉字或片假名的情况都有，两者并无区别。",
     "pronunciationJa": "しゅくじょ / シニョーラ",
     "tags": [
       "snezhnaya",
@@ -4019,6 +5920,7 @@
     "en": "Scaramouche",
     "ja": "スカラマシュ",
     "notes": "英語での発音は「スカラムーシュ」。([出典動画](https://youtu.be/TmaAOV4SJNQ?t=122)) 中国のプレイヤーの間では「スカラマシュ」(斯卡拉姆齐) よりも「散兵」の名で呼ばれることが多い。",
+    "notesZh": "中国的玩家往往称呼「散兵」，而英语和日语的玩家常常使用「斯卡拉姆齐」称呼。",
     "tags": [
       "snezhnaya",
       "inazuma",
@@ -4031,6 +5933,7 @@
     "en": "Balladeer",
     "ja": "散兵",
     "notes": "中国のプレイヤーの間では「スカラマシュ」(斯卡拉姆齐) よりも「散兵」の名で呼ばれることが多い。",
+    "notesZh": "中国的玩家往往称呼「散兵」，而英语和日语的玩家常常使用「斯卡拉姆齐」称呼。",
     "pronunciationJa": "ざんひょう",
     "tags": [
       "snezhnaya",
@@ -4095,6 +5998,7 @@
     "en": "Pantalone",
     "ja": "パンタローネ",
     "notes": "[富者](/regrator/)の通称",
+    "notesZh": "[富人](/regrator/)的通称",
     "tags": [
       "snezhnaya",
       "character-sub"
@@ -4105,6 +6009,7 @@
     "en": "Regrator",
     "ja": "富者",
     "notes": "[パンタローネ](/pantalone/)のコードネーム",
+    "notesZh": "[潘塔罗涅](/pantalone/)的代号",
     "pronunciationJa": "ふしゃ",
     "tags": [
       "snezhnaya",
@@ -4117,6 +6022,7 @@
     "en": "Il Dottore",
     "ja": "ドットーレ",
     "notes": "[博士](/the-doctor/)の通称。英語版でも、イタリア語の定冠詞 Il を省略して呼ばれることがある。",
+    "notesZh": "[博士](/the-doctor/)的通称。英语版也有省略意大利语定冠词 Il 的情况。",
     "tags": [
       "snezhnaya",
       "character-sub"
@@ -4127,6 +6033,7 @@
     "en": "The Doctor",
     "ja": "博士",
     "notes": "[ドットーレ](/il-dottore/)のコードネーム",
+    "notesZh": "[多托雷](/il-dottore/)的代号",
     "pronunciationJa": "はかせ",
     "tags": [
       "snezhnaya",
@@ -4144,6 +6051,7 @@
     "en": "Pulcinella",
     "ja": "プルチネッラ",
     "notes": "[雄鶏](/the-rooster/)の通称",
+    "notesZh": "[公鸡](/the-rooster/)的通称",
     "tags": [
       "snezhnaya",
       "character-sub"
@@ -4154,6 +6062,7 @@
     "en": "The Rooster",
     "ja": "雄鶏",
     "notes": "[プルチネッラ](/pulcinella/)のコードネーム",
+    "notesZh": "[普契涅拉](/pulcinella/)的代号",
     "pronunciationJa": "おんどり",
     "tags": [
       "snezhnaya",
@@ -4166,6 +6075,7 @@
     "en": "Il Capitano",
     "ja": "カピターノ",
     "notes": "[隊長](/the-captain/)の通称",
+    "notesZh": "[队长](/the-captain/)的通称",
     "tags": [
       "snezhnaya",
       "character-sub"
@@ -4176,6 +6086,7 @@
     "en": "The Captain",
     "ja": "隊長",
     "notes": "[カピターノ](/il-capitano/)のコードネーム",
+    "notesZh": "[卡皮塔诺](/il-capitano/)的代号",
     "pronunciationJa": "たいちょう",
     "tags": [
       "snezhnaya",
@@ -4188,6 +6099,7 @@
     "en": "Columbina",
     "ja": "コロンビーナ",
     "notes": "[少女](/damselette/)の通称",
+    "notesZh": "[少女](/damselette/)的通称",
     "tags": [
       "snezhnaya",
       "character-sub"
@@ -4198,6 +6110,7 @@
     "en": "Damselette",
     "ja": "少女",
     "notes": "[コロンビーナ](/columbina/)のコードネーム",
+    "notesZh": "[哥伦比娅](/columbina/)的代号",
     "pronunciationJa": "しょうじょ",
     "tags": [
       "snezhnaya",
@@ -4210,6 +6123,7 @@
     "en": "Arlecchino",
     "ja": "アルレッキーノ",
     "notes": "[召使](/the-knave/)の通称",
+    "notesZh": "[仆人](/the-knave/)的通称",
     "tags": [
       "snezhnaya",
       "character-sub"
@@ -4220,6 +6134,7 @@
     "en": "The Knave",
     "ja": "召使",
     "notes": "[アルレッキーノ](/arlecchino/)のコードネーム",
+    "notesZh": "[阿蕾奇诺](/arlecchino/)的代号",
     "pronunciationJa": "めしつかい",
     "tags": [
       "snezhnaya",
@@ -4232,6 +6147,7 @@
     "en": "Sandrone",
     "ja": "サンドローネ",
     "notes": "[傀儡](/marionette/)の通称",
+    "notesZh": "[木偶](/marionette/)的通称",
     "tags": [
       "snezhnaya",
       "character-sub"
@@ -4242,6 +6158,7 @@
     "en": "Marionette",
     "ja": "傀儡",
     "notes": "[サンドローネ](/sandrone/)のコードネーム",
+    "notesZh": "[桑多涅](/sandrone/)的代号",
     "pronunciationJa": "かいらい",
     "tags": [
       "snezhnaya",
@@ -4254,6 +6171,7 @@
     "en": "Pierro",
     "ja": "ピエロ",
     "notes": "[道化](/the-jester/)の通称。以前はペドロリーノという名前だったが変更されたという情報もある",
+    "notesZh": "[丑角](/the-jester/)的通称。",
     "tags": [
       "snezhnaya",
       "character-sub"
@@ -4272,6 +6190,7 @@
     "en": "The Jester",
     "ja": "道化",
     "notes": "[ピエロ](/pierro/)のコードネーム",
+    "notesZh": "[皮耶罗](/pierro/)的代号",
     "pronunciationJa": "どうけ",
     "tags": [
       "snezhnaya",
@@ -4284,6 +6203,7 @@
     "en": "Tsaritsa",
     "ja": "氷の女皇",
     "notes": "原義はロシアなどにおける女王や王妃に対する尊称。ツァーリ (Tsar) の女性形。",
+    "notesZh": "原义是指俄罗斯等国的女王或王妃的尊称。女性形式的“帝王”（Tsar）。",
     "pronunciationJa": "こおりのじょこう",
     "tags": [
       "snezhnaya",
@@ -4321,6 +6241,7 @@
     "en": "Skirk",
     "ja": "スカーク",
     "notes": "タルタリヤの師匠",
+    "notesZh": "达达利亚的师傅",
     "tags": [
       "snezhnaya",
       "character-sub"
@@ -4328,9 +6249,30 @@
     "zhCN": "丝柯克"
   },
   {
+    "en": "Snezhevna",
+    "ja": "シュナイツェフナ",
+    "notes": "召使の孤児院出身の女性が名乗る姓",
+    "notesZh": "仆人的孤儿院出身的女性所用的姓",
+    "tags": [
+      "snezhnaya"
+    ],
+    "zhCN": "雪奈茨芙娜"
+  },
+  {
+    "en": "Snezhevich",
+    "ja": "シュナイツェビッチ",
+    "notes": "召使の孤児院出身の男性が名乗る姓",
+    "notesZh": "仆人的孤儿院出身的男性所用的姓",
+    "tags": [
+      "snezhnaya"
+    ],
+    "zhCN": "雪奈茨维奇"
+  },
+  {
     "en": "Dainsleif",
     "ja": "ダインスレイヴ",
     "tags": [
+      "khaenriah",
       "character-sub"
     ],
     "zhCN": "戴因斯雷布"
@@ -4339,17 +6281,32 @@
     "en": "Dain",
     "ja": "ダイン",
     "notes": "ダインスレイヴ (Dainsleif) の呼び名",
+    "notesZh": "戴因斯雷布 (Dainsleif) 的称呼",
     "tags": [
+      "khaenriah",
       "how-to-call"
     ],
     "zhCN": "戴因"
   },
   {
+    "en": "Bough Keeper",
+    "ja": "枝を拾う者",
+    "notes": "ダインスレイヴの現在の称号",
+    "notesZh": "戴因斯雷布的现在的称号",
+    "tags": [
+      "khaenriah",
+      "title"
+    ],
+    "zhCN": "拾枝者"
+  },
+  {
     "en": "Twilight Sword",
     "ja": "末光の剣",
-    "notes": "ダインスレイヴ (Dainsleif) の称号",
+    "notes": "ダインスレイヴのかつての称号",
+    "notesZh": "戴因斯雷布的曾经的称号",
     "pronunciationJa": "まっこうのつるぎ",
     "tags": [
+      "khaenriah",
       "title"
     ],
     "zhCN": "末光之剑"
@@ -4359,6 +6316,7 @@
     "ja": "ハールヴダン",
     "notes": "発音は「ハーフダン」",
     "tags": [
+      "khaenriah",
       "character-sub"
     ],
     "zhCN": "哈夫丹"
@@ -4367,8 +6325,24 @@
     "en": "Irmin",
     "ja": "エルミン",
     "tags": [
+      "khaenriah",
       "character-sub"
     ],
     "zhCN": "伊尔明"
+  },
+  {
+    "en": "Schwanenritter",
+    "ja": "白鵠騎士",
+    "pinyins": [
+      {
+        "char": "鹄",
+        "pron": "hu2"
+      }
+    ],
+    "tags": [
+      "khaenriah",
+      "title"
+    ],
+    "zhCN": "白鹄骑士"
   }
 ]
