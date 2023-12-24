@@ -72,7 +72,7 @@
     "common": "assets\\imgs\\Windows\\Talk\\common\\AreaTalkSelects.jpg"
   },
   "ButtonBigmapCloseMarkTableInTP": {
-    "common": "assets\\imgs\\Windows\\Bigmap\\common\\ButtonBigmapCloseMarkTableInTP.jpg"
+    "common": "assets\\imgs\\Windows\\Bigmap\\common\\ButtonBigmapCloseMarkTableInTP.png"
   },
   "ButtonBigmapSwitchDomainModeOff": {
     "common": "assets\\imgs\\Windows\\Bigmap\\common\\ButtonBigmapSwitchDomainModeOff.jpg"
@@ -85,6 +85,9 @@
   },
   "ButtonBigmapTP": {
     "common": "assets\\imgs\\Windows\\Bigmap\\common\\ButtonBigmapTP.png"
+  },
+  "ButtonClaimBattlePathDailyMission": {
+    "common": "assets\\imgs\\Windows\\ClaimReward\\common\\ButtonClaimBattlePathDailyMission.png"
   },
   "ButtonCombatSwitchTeamLeft": {
     "common": "assets\\imgs\\Windows\\Combat\\common\\ButtonCombatSwitchTeamLeft.jpg"
@@ -103,6 +106,9 @@
   "ButtonExpeditionClaim": {
     "common": "assets\\imgs\\Windows\\Expedition\\common\\ButtonExpeditionClaim.jpg"
   },
+  "ButtonExpeditionClaimAll": {
+    "common": "assets\\imgs\\Windows\\Expedition\\common\\ButtonExpeditionClaimAll.png"
+  },
   "ButtonExpeditionDQ": {
     "common": "assets\\imgs\\Windows\\Expedition\\common\\ButtonExpeditionDQ.jpg"
   },
@@ -114,6 +120,9 @@
   },
   "ButtonExpeditionMD": {
     "common": "assets\\imgs\\Windows\\Expedition\\common\\ButtonExpeditionMD.jpg"
+  },
+  "ButtonExpeditionRestart": {
+    "common": "assets\\imgs\\Windows\\Expedition\\common\\ButtonExpeditionRestart.png"
   },
   "ButtonExpeditionSelectCharacters": {
     "common": "assets\\imgs\\Windows\\Expedition\\common\\ButtonExpeditionSelectCharacters.jpg"
@@ -141,6 +150,9 @@
   "ButtonGeneralUseOriginResin": {
     "common": "assets\\imgs\\Windows\\General\\common\\ButtonGeneralUseOriginResin.jpg"
   },
+  "ButtonSwitchToBattlePathDailyMission": {
+    "common": "assets\\imgs\\Windows\\ClaimReward\\common\\ButtonSwitchToBattlePathDailyMission.png"
+  },
   "ButtonTalkSkip": {
     "common": "assets\\imgs\\Windows\\Talk\\common\\ButtonTalkSkip.jpg"
   },
@@ -156,6 +168,9 @@
   "CombatButtonGoToFight": {
     "en_US": "assets\\imgs\\Windows\\Combat\\en_US\\CombatButtonGoToFight.jpg",
     "zh_CN": "assets\\imgs\\Windows\\Combat\\zh_CN\\CombatButtonGoToFight.jpg"
+  },
+  "IconBattlePathExclamation": {
+    "common": "assets\\imgs\\Windows\\ClaimReward\\common\\IconBattlePathExclamation.png"
   },
   "IconBigMapScaling": {
     "common": "assets\\imgs\\Windows\\Bigmap\\common\\IconBigMapScaling.jpg"
@@ -274,6 +289,15 @@
   },
   "IconUIInDomain": {
     "common": "assets\\imgs\\Windows\\UI\\common\\IconUIInDomain.jpg"
+  },
+  "IconUILoading1": {
+    "common": "assets\\imgs\\Windows\\UI\\common\\IconUILoading1.png"
+  },
+  "IconUILoading2": {
+    "common": "assets\\imgs\\Windows\\UI\\common\\IconUILoading2.png"
+  },
+  "IconUILogin": {
+    "common": "assets\\imgs\\Windows\\UI\\common\\IconUILogin.png"
   },
   "IconUIPartySetup": {
     "common": "assets\\imgs\\Windows\\UI\\common\\IconUIPartySetup.jpg"
