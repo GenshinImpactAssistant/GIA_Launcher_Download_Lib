@@ -42,5 +42,7 @@ jobs:
 
             - name: Commit Changes
               run: |
+                git add .
+                git commit -m "Copy files from genshin_impact_assistant"
                 git push -f
                 
