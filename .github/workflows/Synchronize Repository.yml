@@ -45,4 +45,4 @@ jobs:
                 committer_name: github-actions[bot]
                 committer_email: github-actions[bot]@users.noreply.github.com
                 message: 'Copy files from genshin_impact_assistant'
-                add: '. --all'
+                add: '.'
