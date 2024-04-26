@@ -39,10 +39,10 @@ jobs:
                 git checkout ${{ inputs.branch }} --
                 python dev_tools/file_to_download.py
                 cd ../GIA_Launcher_Download_Lib
-
             - name: Commit Changes
-              run: |
-                git add .
-                git commit -m "Copy files from genshin_impact_assistant"
-                git push -f
-                
+              uses: EndBug/add-and-commit@v9.1.3
+              with:
+                committer_name: github-actions[bot]
+                committer_email: github-actions[bot]@users.noreply.github.com
+                message: 'Copy files from genshin_impact_assistant'
+                add: '. --all'
