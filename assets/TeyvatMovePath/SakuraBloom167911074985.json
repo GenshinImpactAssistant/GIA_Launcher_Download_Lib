@@ -1,0 +1,374 @@
+{
+  "break_position": [
+    [
+      9608.950299999999,
+      3668.272200000001
+    ],
+    [
+      9589.005700000002,
+      3661.624
+    ],
+    [
+      9573.919400000002,
+      3674.6647000000007
+    ],
+    [
+      9554.7419,
+      3687.449700000001
+    ]
+  ],
+  "end_position": [
+    9554.7419,
+    3687.449700000001
+  ],
+  "name": "",
+  "position_list": [
+    {
+      "id": 1,
+      "motion": "WALKING",
+      "position": [
+        9608.950299999999,
+        3668.272200000001
+      ],
+      "special_key": null
+    },
+    {
+      "id": 2,
+      "motion": "WALKING",
+      "position": [
+        9607.416099999999,
+        3668.0164999999997
+      ],
+      "special_key": null
+    },
+    {
+      "id": 3,
+      "motion": "WALKING",
+      "position": [
+        9604.3477,
+        3667.5051000000003
+      ],
+      "special_key": null
+    },
+    {
+      "id": 4,
+      "motion": "WALKING",
+      "position": [
+        9600.512200000001,
+        3665.4595
+      ],
+      "special_key": null
+    },
+    {
+      "id": 5,
+      "motion": "WALKING",
+      "position": [
+        9598.7223,
+        3663.925299999999
+      ],
+      "special_key": null
+    },
+    {
+      "id": 6,
+      "motion": "WALKING",
+      "position": [
+        9597.6995,
+        3663.4138999999996
+      ],
+      "special_key": null
+    },
+    {
+      "id": 7,
+      "motion": "WALKING",
+      "position": [
+        9594.3754,
+        3662.9024999999997
+      ],
+      "special_key": null
+    },
+    {
+      "id": 8,
+      "motion": "WALKING",
+      "position": [
+        9592.3298,
+        3662.3911000000003
+      ],
+      "special_key": null
+    },
+    {
+      "id": 9,
+      "motion": "WALKING",
+      "position": [
+        9589.005700000002,
+        3661.624
+      ],
+      "special_key": null
+    },
+    {
+      "id": 10,
+      "motion": "WALKING",
+      "position": [
+        9588.494299999998,
+        3662.646799999999
+      ],
+      "special_key": null
+    },
+    {
+      "id": 11,
+      "motion": "WALKING",
+      "position": [
+        9586.960099999998,
+        3663.1582000000008
+      ],
+      "special_key": null
+    },
+    {
+      "id": 12,
+      "motion": "WALKING",
+      "position": [
+        9584.403099999998,
+        3665.203799999999
+      ],
+      "special_key": null
+    },
+    {
+      "id": 13,
+      "motion": "WALKING",
+      "position": [
+        9583.636,
+        3667.5051000000003
+      ],
+      "special_key": null
+    },
+    {
+      "id": 14,
+      "motion": "WALKING",
+      "position": [
+        9583.636,
+        3667.2493999999992
+      ],
+      "special_key": null
+    },
+    {
+      "id": 15,
+      "motion": "WALKING",
+      "position": [
+        9580.311900000002,
+        3668.7836
+      ],
+      "special_key": null
+    },
+    {
+      "id": 16,
+      "motion": "WALKING",
+      "position": [
+        9578.7777,
+        3671.596299999999
+      ],
+      "special_key": null
+    },
+    {
+      "id": 17,
+      "motion": "WALKING",
+      "position": [
+        9578.010599999998,
+        3672.6191000000003
+      ],
+      "special_key": null
+    },
+    {
+      "id": 18,
+      "motion": "WALKING",
+      "position": [
+        9576.732099999997,
+        3673.386200000001
+      ],
+      "special_key": null
+    },
+    {
+      "id": 19,
+      "motion": "WALKING",
+      "position": [
+        9573.919400000002,
+        3674.6647000000007
+      ],
+      "special_key": null
+    },
+    {
+      "id": 20,
+      "motion": "WALKING",
+      "position": [
+        9574.175099999999,
+        3674.6647000000007
+      ],
+      "special_key": null
+    },
+    {
+      "id": 21,
+      "motion": "WALKING",
+      "position": [
+        9573.1523,
+        3677.221700000001
+      ],
+      "special_key": null
+    },
+    {
+      "id": 22,
+      "motion": "WALKING",
+      "position": [
+        9572.1295,
+        3677.988799999999
+      ],
+      "special_key": null
+    },
+    {
+      "id": 23,
+      "motion": "WALKING",
+      "position": [
+        9572.1295,
+        3677.988799999999
+      ],
+      "special_key": null
+    },
+    {
+      "id": 24,
+      "motion": "WALKING",
+      "position": [
+        9569.5725,
+        3677.988799999999
+      ],
+      "special_key": null
+    },
+    {
+      "id": 25,
+      "motion": "WALKING",
+      "position": [
+        9569.5725,
+        3677.988799999999
+      ],
+      "special_key": null
+    },
+    {
+      "id": 26,
+      "motion": "WALKING",
+      "position": [
+        9568.549700000001,
+        3678.2445
+      ],
+      "special_key": null
+    },
+    {
+      "id": 27,
+      "motion": "WALKING",
+      "position": [
+        9568.038299999998,
+        3678.7558999999997
+      ],
+      "special_key": null
+    },
+    {
+      "id": 28,
+      "motion": "WALKING",
+      "position": [
+        9567.782599999999,
+        3679.0116000000003
+      ],
+      "special_key": null
+    },
+    {
+      "id": 29,
+      "motion": "WALKING",
+      "position": [
+        9566.759799999998,
+        3680.0343999999996
+      ],
+      "special_key": null
+    },
+    {
+      "id": 30,
+      "motion": "WALKING",
+      "position": [
+        9565.737,
+        3680.8015
+      ],
+      "special_key": null
+    },
+    {
+      "id": 31,
+      "motion": "WALKING",
+      "position": [
+        9565.737,
+        3680.8015
+      ],
+      "special_key": null
+    },
+    {
+      "id": 32,
+      "motion": "WALKING",
+      "position": [
+        9563.4357,
+        3682.5913999999993
+      ],
+      "special_key": null
+    },
+    {
+      "id": 33,
+      "motion": "WALKING",
+      "position": [
+        9562.668599999997,
+        3683.102799999999
+      ],
+      "special_key": null
+    },
+    {
+      "id": 34,
+      "motion": "WALKING",
+      "position": [
+        9560.367299999998,
+        3683.614200000001
+      ],
+      "special_key": null
+    },
+    {
+      "id": 35,
+      "motion": "WALKING",
+      "position": [
+        9558.065999999999,
+        3684.381299999999
+      ],
+      "special_key": null
+    },
+    {
+      "id": 36,
+      "motion": "WALKING",
+      "position": [
+        9557.298900000002,
+        3686.4268999999995
+      ],
+      "special_key": null
+    },
+    {
+      "id": 37,
+      "motion": "WALKING",
+      "position": [
+        9554.7419,
+        3687.449700000001
+      ],
+      "special_key": null
+    },
+    {
+      "id": 38,
+      "motion": "WALKING",
+      "position": [
+        9554.7419,
+        3687.449700000001
+      ],
+      "special_key": null
+    }
+  ],
+  "start_position": [
+    9608.950299999999,
+    3668.272200000001
+  ],
+  "time": ""
+}

@@ -1,0 +1,29 @@
+{
+  "break_position": [
+    [
+      2467.505,
+      -4883.1029
+    ]
+  ],
+  "end_position": [
+    2467.249299999999,
+    -4883.3586
+  ],
+  "name": "",
+  "position_list": [
+    {
+      "id": 1,
+      "motion": "WALKING",
+      "position": [
+        2467.505,
+        -4883.1029
+      ],
+      "special_key": null
+    }
+  ],
+  "start_position": [
+    2467.505,
+    -4883.1029
+  ],
+  "time": ""
+}

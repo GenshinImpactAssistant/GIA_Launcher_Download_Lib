@@ -1,0 +1,69 @@
+{
+  "break_position": [
+    [
+      2582.314299999999,
+      -5900.5332
+    ],
+    [
+      2588.4511,
+      -5906.4143
+    ]
+  ],
+  "end_position": [
+    2588.4511,
+    -5906.4143
+  ],
+  "name": "",
+  "position_list": [
+    {
+      "id": 1,
+      "motion": "WALKING",
+      "position": [
+        2582.314299999999,
+        -5900.5332
+      ],
+      "special_key": null
+    },
+    {
+      "id": 2,
+      "motion": "WALKING",
+      "position": [
+        2583.0813999999996,
+        -5901.556
+      ],
+      "special_key": null
+    },
+    {
+      "id": 3,
+      "motion": "WALKING",
+      "position": [
+        2584.871299999999,
+        -5904.3687
+      ],
+      "special_key": null
+    },
+    {
+      "id": 4,
+      "motion": "WALKING",
+      "position": [
+        2587.428299999999,
+        -5905.647199999999
+      ],
+      "special_key": null
+    },
+    {
+      "id": 5,
+      "motion": "WALKING",
+      "position": [
+        2588.4511,
+        -5906.4143
+      ],
+      "special_key": null
+    }
+  ],
+  "start_position": [
+    2582.314299999999,
+    -5900.5332
+  ],
+  "time": ""
+}
