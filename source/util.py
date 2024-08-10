@@ -263,6 +263,16 @@ def save_json(x, json_name='General.json', default_path=f'{ROOT_PATH}\\config\\s
         json.dump(x, open(all_path, 'w', encoding='utf-8'),
               ensure_ascii=False)
 
+def get_name(x):
+    (filename, line_number, function_name, text) = x
+    # = traceback.extract_stack()[-2]
+    return text[:text.find('=')].strip()
+
+def auto_name():
+    return get_name(traceback.extract_stack()[-2])
+
+AN = auto_name
+
 def verify_path(root):
     if not os.path.exists(root):
         verify_path(os.path.join(root, "../"))
@@ -924,7 +934,7 @@ def match_multiple_img(img, template, is_gray=False, is_show_res: bool = False, 
     return matched_coordinates
 
 def diff_angle(a1, a2):
-    return min(360-((a1-a2)&360), ((a1-a2)&360))
+    return min(360-(int(a1-a2)&360), (int(a1-a2)&360))
     
 
 def ansl_code2col(ansl_code ,reserve = True):

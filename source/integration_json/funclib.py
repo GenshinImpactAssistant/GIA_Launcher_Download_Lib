@@ -23,9 +23,13 @@ def correction_collection_position(pos:list, name:str='', threshold=15):
     else:
         if name != '' and name not in JIApi.data.keys():
             logger.warning(f"Unknow name: {name}")
-        for i in JIApi.data.values():
-            for j in i:
-                possible_list.append(j)
+        if GIAconfig.Dev_UseAllPositionToCorrectionWhenItemNameNotFound:
+            for i in JIApi.data.values():
+                for j in i:
+                    possible_list.append(j)
+        else:
+            logger.warning(f"Cannot find {name}, return original position.")
+            return pos
     possible_pos = []
     for i in possible_list:
         i: PositionJson

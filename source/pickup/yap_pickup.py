@@ -1,13 +1,13 @@
+import datetime
 import os
 
 from source.util import *
 import giayap as yap
 import pydantic
 from threading import Thread
-from multiprocessing import Process
 
 class PickupResult(pydantic.BaseModel):
-    pk_time:str
+    pk_time:datetime.datetime
     pk_name:str
 
 
@@ -15,6 +15,7 @@ class YapPickupper(Thread):
     def __init__(self):
         super().__init__()
         self.rust_path = os.environ["PYO_YAP_PATH"]
+        self.yaper = yap.PickupC()
         self.file_reader = open(f"{self.rust_path}\\logs\\log.log", 'r', encoding='utf-8')
         self.pickup_result = []
         self.pickup_result:t.List[PickupResult]
@@ -22,21 +23,21 @@ class YapPickupper(Thread):
 
         self.start_count = 0
         self.stop_count = 0
-        self.start_pickup()
-        os.system(f"start /min cmd /c python {self.rust_path}\\run.py")
-        # Process(target=yap.runner).start()
+
+        if GIAconfig.Dev_DisableF:
+            self.yaper.pausef()
 
 
     def start_pickup(self):
-        with open(f"{self.rust_path}\\running.flag", 'w') as f:
-            pass
+        if not GIAconfig.Dev_DisableF:
+            self.yaper.startf()
+
         self.start_count += 1
 
     def stop_pickup(self):
         self.stop_count += 1
         if self.start_count <= self.stop_count:
-            if os.path.exists(f"{self.rust_path}\\running.flag"):
-                os.remove(f"{self.rust_path}\\running.flag")
+            self.yaper.pausef()
         else:
             logger.debug(f"start {self.start_count} > stop {self.stop_count}, will not stop.")
 
@@ -46,7 +47,9 @@ class YapPickupper(Thread):
             for i in _:
                 if "ITEM_PICKUPED" in i:
                     pk = i.split('|')
-                    pkt = pk[0]
+                    pkt_str = list(map(int, pk[0].split('-')))
+                    pkt = datetime.datetime(pkt_str[0], pkt_str[1], pkt_str[2], pkt_str[3], pkt_str[4], pkt_str[5])
+
                     pkn = pk[2].replace("ITEM_PICKUPED: ", "")
                     self.pickup_result.append(PickupResult(pk_time=pkt, pk_name=pkn))
 

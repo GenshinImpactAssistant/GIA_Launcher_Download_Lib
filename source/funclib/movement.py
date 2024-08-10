@@ -89,13 +89,16 @@ def angle2movex(angle):
     return cvn
 
 def angle2movex_v2(angle):
-    cvn = angle * 12  # 10: magic num, test from test246.py
+    cvn = angle * 10  # 10: magic num, test from test246.py
     return cvn
 
-def cview(angle=10, mode=HORIZONTAL, rate=0.9):  # left<0,right>0
+def cview(angle=10, mode=HORIZONTAL, rate=0.9, use_CVDC = False):  # left<0,right>0
     # logger.debug(f"cview: angle: {angle} mode: {mode}")
     if IS_DEVICE_PC:
-        cvn = angle2movex(angle) * rate
+        if not use_CVDC:
+            cvn = angle2movex(angle) * rate
+        else:
+            cvn = CVDC.predict_target(abs(angle))
         if abs(cvn) < 1:
             if cvn < 0:
                 cvn = -1
@@ -121,6 +124,7 @@ def reset_view():
 
 
 def calculate_delta_angle(cangle, tangle):
+
     dangle = cangle - tangle
     if dangle > 180:
         dangle = -(360 - dangle)
@@ -187,7 +191,7 @@ class CViewDynamicCalibration:
             os.remove(self.CVDC_PREPROCESSED_CACHE)
 
     def __init__(self):
-        self.available_angles = list(range(0, 10, 1)) + list(range(10, 180, 5))
+        self.available_angles = list(range(1, 10)) + list(range(10, 180, 5))
         self.CVDC_CACHE = f'{CACHE_PATH}\\cvdc_2.json'
         self.CVDC_PREPROCESSED_CACHE = f'{CACHE_PATH}\\cvdc_preprocessed_2.json'
         self.append_times = 0
@@ -203,14 +207,23 @@ class CViewDynamicCalibration:
                     self.preprocessed_id.append(i)
 
     def calibration_cvdc(self):
-        genshin_map.reinit_smallmap()
+        if True:
+            from source.teyvat_move.teyvat_move_flow_upgrade import TeyvatMoveFlowController
+            _ = TeyvatMoveFlowController()
+            _.set_parameter(MODE="AUTO", target_posi=[ 3321.088,-5110.272], is_tp=False, is_auto_pickup=False)
+            _.start_flow()
+            _.start()
+
+            while 1:
+                siw()
+                if _.is_thread_paused(): break
         self.clean_CACHE()
         self.__init__()
-        for ts in range(10):
-            for i in range(0, 2000, 50):
+        for ts in range(15):
+            for i in list(range(0, 100, 10)) + list(range(100, 2000, 50)):
                 direct_cview(i)
                 time.sleep(0.2)
-                change_view_to_angle(90, offset=1.5, maxloop= 100)
+                change_view_to_angle(90, offset=1.5, maxloop= 100, edit_cvdc=True)
                 logger.info(f't: {ts} i: {i}')
             print(CVDC.angles)
         self.run_isolation_forest()
@@ -250,25 +263,37 @@ class CViewDynamicCalibration:
 CVDC = CViewDynamicCalibration()
 
 
-def change_view_to_angle(tangle, stop_func=lambda: False, maxloop=25, offset=5, print_log=True, loop_sleep=0, precise_mode = True):
+def change_view_to_angle(tangle, stop_func=lambda: False, maxloop=25, offset:float=5, print_log=True, loop_sleep=0, precise_mode = True, use_last_rotation = False, edit_cvdc = False):
     i = 0
     dangle = 0
     loop_sleep = 0
 
-    @timer
-    def get_rotation():
-        last_angle = genshin_map.get_rotation()
+    first_enter_flag = True
+
+    def get_rotation(last_angle = None):
+        pt=time.time()
+        if last_angle is not None:
+            cangle = last_angle = last_angle
+        else:
+            cangle = last_angle = genshin_map.get_rotation()
         for ii in range(10):  # 过滤不准确的角度
+            logger.trace(f"get_rotation: {ii}: {time.time()-pt}")
             cangle = genshin_map.get_rotation()
+            if not precise_mode:
+                break
             if diff_angle(cangle, last_angle) < 5 + i * 0.1:
                 break
             last_angle = cangle
-            if not precise_mode:
-                break
+
+        logger.trace(f"get_rotation: end: {time.time() - pt}")
         return cangle
 
     while 1:
-        cangle = get_rotation()
+        if first_enter_flag and use_last_rotation:
+            cangle = get_rotation(last_angle=genshin_map.rotation)
+            first_enter_flag = False
+        else:
+            cangle = get_rotation()
         last_angle = cangle
         # print(ii)
         dangle = calculate_delta_angle(cangle, tangle)
@@ -290,8 +315,9 @@ def change_view_to_angle(tangle, stop_func=lambda: False, maxloop=25, offset=5, 
             break
         i += 1
         logger.trace(f"cangle {cangle} dangle {dangle}") #  rate {rate}
-        changed_angle = get_rotation()
-        if precise_mode:
+
+        if precise_mode and edit_cvdc:
+            changed_angle = get_rotation()
             CVDC.append_angle_result(move_px, calculate_delta_angle(last_angle, changed_angle))
 
 
@@ -435,8 +461,10 @@ def get_current_motion_state() -> str:
     # else:
     #     return WALKING
 
+def get_move_duration(distance:float):
+    return min(distance * 0.1, 0.8)
 
-def move_to_posi_LoopMode(target_posi, stop_func, threshold:float=6):
+def move_to_posi_LoopMode(target_posi, stop_func, threshold:float=6, fast_move = True):
     """移动到指定坐标。适合用于while循环的模式。
 
     Args:
@@ -444,12 +472,22 @@ def move_to_posi_LoopMode(target_posi, stop_func, threshold:float=6):
         stop_func (_type_): 停止函数
     """
     delta_degree = abs(calculate_delta_angle(genshin_map.get_rotation(), calculate_posi2degree(target_posi)))
+    curr_posi = genshin_map.get_position()
+    dist = euclidean_distance(curr_posi, target_posi)
+    move_duration = get_move_duration(dist)
     if delta_degree >= 20:
         itt.key_up('w')
-        change_view_to_posi(target_posi, stop_func=stop_func)
-        itt.key_down('w')
+        change_view_to_posi(target_posi, stop_func=stop_func, curr_posi=curr_posi)
     else:
-        change_view_to_posi(target_posi, stop_func=stop_func, max_loop=4, offset=2, print_log=False)
+        change_view_to_posi(target_posi, stop_func=stop_func, max_loop=4, offset=2, print_log=False, curr_posi=curr_posi)
+    if fast_move:
+        if move_duration>0.5:
+            itt.key_down('w')
+        else:
+            itt.key_up('w')
+            move(MOVE_AHEAD, move_duration)
+    else:
+        move(MOVE_AHEAD, move_duration)
     return euclidean_distance(genshin_map.get_position(), target_posi) <= threshold
 # if os.path.exists(CVDC.CVDC_PREPROCESSED_CACHE):
 #     if time.time() - os.path.getmtime(CVDC.CVDC_PREPROCESSED_CACHE) > 86400:

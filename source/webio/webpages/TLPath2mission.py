@@ -47,7 +47,7 @@ class TLPath2Mission(AdvancePage):
 
     def __init__(self) -> None:
         super().__init__(
-            document_link='https://genshinimpactassistant.github.io/GIA-Document/#/convert_tavern_route_to_mission')
+            document_link='https://genshinimpactassistant.github.io/GIA-Document/#/create_mission_in_GUI')
         self.file_last_modify_time = 0
         self.route_dict = None
         self.tavern_dict = None
@@ -224,14 +224,15 @@ class TLPath2Mission(AdvancePage):
                               init_run=True)
             pin.put_input(self.INPUT_MISSION_FILE_NAME, help_text=t2t(
                 'input mission file name, it should be `AuthorName`_`MissionName`_`id(1,2,3,etc.)` '))
+            output.put_link(t2t("Open Genshin dictionary"), url="https://genshin-dictionary.com/zh-CN", new_window=True)
             pin.put_input(self.INPUT_MISSION_NAME, help_text=t2t('input mission name'))
             pin.put_input(self.INPUT_AUTHOR, help_text=t2t('input author'))
             pin.put_input(self.INPUT_DESCRIPTION, help_text=t2t('input description'))
             pin.put_input(self.INPUT_NOTE, help_text=t2t('input note'))
             pin.put_checkbox(self.CHECKBOX_ADDITIONAL_INFO, options=[
                 {'label': t2t('is collection in cliff'), 'value': "is_cliff_collection"},
-                {'label': t2t('whether active pickup in waypoints'), 'value': "is_active_pickup_in_bp"},
-                {'label': t2t('whether disable adsorptive positions'), 'value': "is_disable_ads_points"},
+                {'label': t2t('是否在所有转折点使用自动吸附'), 'value': "is_active_pickup_in_bp"},
+                {'label': t2t('是否在禁用所有自动吸附'), 'value': "is_disable_ads_points"},
                 {'label': t2t('whether Nahida is needed'), 'value': "is_nahida_needed"},
             ])
             pin.put_input(self.INPUT_OPTIMIZE_THRESHOLD, help_text=t2t('input optimize threshold. default is 1. The larger the threshold, the stronger the optimization.'),value="1")

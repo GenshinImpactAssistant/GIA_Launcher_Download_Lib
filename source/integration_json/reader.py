@@ -57,14 +57,17 @@ class JsonIntegrationApi():
         return data
 
     def read_folder(self, rel_path: str = "", collection_type: str = COLL_TYPE_ANY):
-        pt = time.time()
+        pt = time.time();pt2=time.time()
         for root, dirs, files in os.walk(self.path + f"\\{rel_path}"):
             for f in files:
                 complete_file_path = os.path.join(root, f)
+                # print(complete_file_path)
+                if f == '.json':
+                    logger.warning(f"read {complete_file_path}, skip.")
+                    continue
                 if not f[-5:] == '.json':
                     continue
-                if collection_type == COLL_TYPE_PLANT:
-
+                if collection_type in [COLL_TYPE_PLANT, COLL_TYPE_ENEMY]:
                     if "渊下宫" in complete_file_path or r"层岩巨渊·地下矿区" in complete_file_path or "金苹果群岛" in complete_file_path or "一次性" in complete_file_path:
                         continue
                 j = [i for i in complete_file_path.split('\\')]
@@ -90,7 +93,8 @@ class JsonIntegrationApi():
 
                 self.read_times += 1
                 if self.read_times % 500 == 0:
-                    logger.info(f'load data: {self.read_times}/11792+')
+                    logger.info(f'load data: {self.read_times}/20591+; speed: {round(500/(time.time()-pt2), 2)}/s')
+                    pt2=time.time()
         logger.info(t2t("data loaded. cost") + f'{round(time.time() - pt, 2)}')
         logger.info(f'load {self.read_times} data')
 
@@ -120,6 +124,7 @@ class JsonIntegrationApi():
             self.read_folder(i, collection_type=COLL_TYPE_TELEPORTER)
         self.read_folder(r"圣遗物狗粮\AB线狗粮全部", collection_type=COLL_TYPE_ARTIFACT)
         self.read_folder("植物", collection_type=COLL_TYPE_PLANT)
+        self.read_folder("怪物", collection_type=COLL_TYPE_ENEMY)
         save_json(self.preprocessing_data, json_name='preprocessing_integration_json.json', default_path=save_in)
 
         # for root, dirs, files in os.walk(self.path):

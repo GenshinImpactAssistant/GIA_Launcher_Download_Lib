@@ -63,14 +63,14 @@ This software is open source, free of charge and for learning and exchange purpo
 Thanks to all the friends who participated in the development/testing！ 
 
 
-### GIA主仓库贡献者 Contributors to the GIA Main Repository 
+GIA主仓库贡献者 Contributors to the GIA Main Repository 
 
 [![Contributors](https://contributors-img.web.app/image?repo=infstellar/genshin_impact_assistant)](https://github.com/infstellar/genshin_impact_assistant/graphs/contributors)
 
-### [GIA任务仓库贡献者 Contributors to the GIA Missions Repository](https://github.com/GenshinImpactAssistant/GIA-Missions)
+[GIA任务仓库贡献者 Contributors to the GIA Missions Repository](https://github.com/GenshinImpactAssistant/GIA-Missions)
 
 [![Contributors](https://contributors-img.web.app/image?repo=GenshinImpactAssistant/GIA-Missions)](https://github.com/GenshinImpactAssistant/GIA-Missions/graphs/contributors)
 
-### [GIA文档仓库贡献者 Contributors to the GIA Document Repository](https://github.com/GenshinImpactAssistant/GIA-Document)
+[GIA文档仓库贡献者 Contributors to the GIA Document Repository](https://github.com/GenshinImpactAssistant/GIA-Document)
 
 [![Contributors](https://contributors-img.web.app/image?repo=GenshinImpactAssistant/GIA-Document)](https://github.com/GenshinImpactAssistant/GIA-Document/graphs/contributors)
