@@ -60,12 +60,13 @@ class MissionDownloadPage(AdvancePage):
         self.REMOTE_REPO = "https://github.com/GenshinImpactAssistant/GIA-Missions"
         
         self.INDEX_SOURCE = {
+            "Gitee  (中国大陆镜像)": "https://gitee.com/GenshinImpactAssistant/GIA-Missions/raw/main/index.json",
             "Github (Direct)": "https://raw.githubusercontent.com/GenshinImpactAssistant/GIA-Missions/main/index.json",
             "Github (ghproxy.com)": "https://ghproxy.com/https://raw.githubusercontent.com/GenshinImpactAssistant/GIA-Missions/main/index.json",
             "Github (ghrpoxy.net)": "https://ghproxy.net/https://raw.githubusercontent.com/GenshinImpactAssistant/GIA-Missions/main/index.json"
         }
         self.INDEX_SOURCE_OPTIONS = [key+":  "+value for key, value in self.INDEX_SOURCE.items()]
-        self.INDEX_SOURCE_SELECT = "Github (Direct)"
+        self.INDEX_SOURCE_SELECT = "Gitee  (中国大陆镜像)" if GLOBAL_LANG == 'zh_CN' else "Github (Direct)"
         self.INDEX_URL = self.INDEX_SOURCE[self.INDEX_SOURCE_SELECT]
         self.INDEX_URL = self.INDEX_URL.replace("index.json", "index_"+GLOBAL_LANG+".json") if GLOBAL_LANG in ["zh_CN", "en_US"] else self.INDEX_URL
         self.requests_headers = {"Cache-Control": "no-cache", "Pragma": "no-cache"}
@@ -386,6 +387,8 @@ class MissionDownloadPage(AdvancePage):
             return "https://ghproxy.com/" + url
         elif self.INDEX_SOURCE_SELECT == "Github (ghproxy.net)":
             return "https://ghproxy.net/" + url
+        elif "Gitee" in self.INDEX_SOURCE_SELECT:
+            url = url.replace("https://github.com", "https://gitee.com")
         return url
 
     def _refresh_available_missions(self):
@@ -416,6 +419,9 @@ class MissionDownloadPage(AdvancePage):
             return os.path.join(self.DISABLE_MISSION_FOLDER, mission_name+".py")
         return os.path.join(self.LOCAL_MISSION_FOLDER, mission_name+".py")
 
+    def _convert_url_to_mirror(self):
+        pass
+
     def _download_mission(self, mission_meta):
         """
         Download the mission from the remote (i.e. github).
@@ -431,7 +437,7 @@ class MissionDownloadPage(AdvancePage):
         file_path = self._get_file_path(name)
         url = self._convert_url_to_download_link(url)
         try:
-            r = requests.get(url, headers=self.requests_headers, verify=False)
+            r = requests.get(url, headers=self.requests_headers, verify=False, proxies=None)
             if r.status_code == 200:
                 # If the mission is already exist, it will be put into the backup folder.
                 if os.path.exists(file_path):

@@ -788,7 +788,7 @@ def circle_mask(img,inner_r, outer_r):
     
     return masked_img
 
-def get_circle_points(x,y,  show_res = False):
+def get_circle_points(x,y,  show_res = False, radius=6):
     """围绕圆心绘制离散点.
 
     Args:
@@ -803,7 +803,7 @@ def get_circle_points(x,y,  show_res = False):
         import turtle
         turtle.speed(0)
     points = []
-    for r in range(5, 5*6, 5):
+    for r in range(5, 5*(radius+1), 5):
         n = int(2 * math.pi * r / (5))
         for i in range(n):
             angle = 2 * math.pi / n * i

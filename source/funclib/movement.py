@@ -146,6 +146,19 @@ def discard_abnormal_data(data: list):
         r = data
     return r
 
+def land():
+    """
+    land to land.
+    :return: is land successfully.
+    """
+    if get_current_motion_state() == FLYING:
+        for i in range(20):
+            itt.left_click()
+            time.sleep(2)
+            if get_current_motion_state() != FLYING:
+                break
+    return get_current_motion_state() != FLYING
+
 
 
 class CViewDynamicCalibration:
@@ -462,32 +475,38 @@ def get_current_motion_state() -> str:
     #     return WALKING
 
 def get_move_duration(distance:float):
-    return min(distance * 0.1, 0.8)
+    return min(distance * 0.08, 0.8)
 
-def move_to_posi_LoopMode(target_posi, stop_func, threshold:float=6, fast_move = True):
+def move_to_posi_LoopMode(target_posi, stop_func, threshold:float=6, fast_move = False):
     """移动到指定坐标。适合用于while循环的模式。
 
     Args:
         target_posi (_type_): 目标坐标
         stop_func (_type_): 停止函数
     """
-    delta_degree = abs(calculate_delta_angle(genshin_map.get_rotation(), calculate_posi2degree(target_posi)))
     curr_posi = genshin_map.get_position()
+    if euclidean_distance(curr_posi, target_posi) <= threshold:
+        return True
+
     dist = euclidean_distance(curr_posi, target_posi)
     move_duration = get_move_duration(dist)
-    if delta_degree >= 20:
+    logger.debug(f"move_to_posi_LoopMode: dist: {dist}; duration: {move_duration}")
+    degree = calculate_posi2degree(target_posi, curr_posi=curr_posi)
+    delta_degree = calculate_delta_angle(genshin_map.get_rotation(), degree)
+
+    if abs(delta_degree) >= 20:
         itt.key_up('w')
-        change_view_to_posi(target_posi, stop_func=stop_func, curr_posi=curr_posi)
+        change_view_to_angle(degree, maxloop=25, stop_func=stop_func, offset=5, print_log=True)
     else:
-        change_view_to_posi(target_posi, stop_func=stop_func, max_loop=4, offset=2, print_log=False, curr_posi=curr_posi)
+        change_view_to_angle(degree, maxloop=4, stop_func=stop_func, offset=5, print_log=True)
     if fast_move:
         if move_duration>0.5:
             itt.key_down('w')
         else:
             itt.key_up('w')
-            move(MOVE_AHEAD, move_duration)
+            move(MOVE_AHEAD, move_duration*10)
     else:
-        move(MOVE_AHEAD, move_duration)
+        move(MOVE_AHEAD, move_duration*10)
     return euclidean_distance(genshin_map.get_position(), target_posi) <= threshold
 # if os.path.exists(CVDC.CVDC_PREPROCESSED_CACHE):
 #     if time.time() - os.path.getmtime(CVDC.CVDC_PREPROCESSED_CACHE) > 86400:

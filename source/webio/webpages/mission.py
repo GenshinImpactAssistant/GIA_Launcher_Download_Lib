@@ -1,3 +1,5 @@
+import os.path
+
 from source.webio.util import *
 from pywebio import *
 from source.webio.advance_page import AdvancePage
@@ -30,6 +32,14 @@ class MissionPage(AdvancePage):
     def _load_json_config(self):
         return load_json('mission_settings.json', f"{CONFIG_PATH}\\mission")
 
+    def update_local_edit_mission_meta(self):
+        if os.path.exists(fr"{ROOT_PATH}/config/mission/local_edit_mission_meta.json"):
+            meta = load_json('local_edit_mission_meta.json', fr"{ROOT_PATH}/config/mission")
+            for i in list(meta.keys()):
+                if not os.path.exists(f"{ROOT_PATH}\\local_edit_missions\\{i}.py"):
+                    meta.pop(i)
+            save_json(meta, all_path=f"{ROOT_PATH}\\config\\mission\\local_edit_mission_meta.json")
+
     def _refresh(self):
         from source.mission.index_generator import generate_mission_index
         generate_mission_index()
@@ -41,6 +51,7 @@ class MissionPage(AdvancePage):
         if os.path.exists(fr"{ROOT_PATH}/config/missiondownload/missiondownload_meta.json"):
             self.MISSION_META.update(load_json('missiondownload_meta.json', fr"{ROOT_PATH}/config/missiondownload"))
         if os.path.exists(fr"{ROOT_PATH}/config/mission/local_edit_mission_meta.json"):
+            self.update_local_edit_mission_meta()
             self.MISSION_META.update(load_json('local_edit_mission_meta.json', fr"{ROOT_PATH}/config/mission"))
         self.missions = self.MISSION_INDEX
 
@@ -65,6 +76,16 @@ class MissionPage(AdvancePage):
         for i in self.missions:
             if i not in show_missions:
                 show_missions.append(i)
+
+        def pop_not_ascii():
+            for i in range(len(show_missions)):
+                if not show_missions[i].isascii():
+                    logger.error(f"{show_missions} contain non-ascii characters, which will be abandoned.")
+                    show_missions.pop(i)
+                    return pop_not_ascii()
+
+        pop_not_ascii()
+
         for i in range(len(show_missions)):
             if i%3==0:
                 grid_content.append([])

@@ -81,6 +81,20 @@ def session_check_thread():
         pywebio.session.get_current_session()
         status = True
         time.sleep(0.1)'''
+import asyncio
+
+def server_thread():
+    # https://zhuanlan.zhihu.com/p/101586682
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    platform.tornado.start_server(main, auto_open_webbrowser=False, port=22268, debug=False, )
+
 
 if __name__ == '__main__':
-    platform.tornado.start_server(main, auto_open_webbrowser=True, debug=True)
+    import threading
+    threading.Thread(target=server_thread, daemon=False).start()
+    while 1:
+        time.sleep(1)
+    # platform.tornado.start_server(main, auto_open_webbrowser=True, debug=True)
+
+

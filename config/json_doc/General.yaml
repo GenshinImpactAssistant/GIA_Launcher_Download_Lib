@@ -42,4 +42,7 @@ RecordPath_CollectionType:
   - Artifact
   - Combat
 
+RecordPath_CollectionName:
+  special_index: $INPUT_VERIFY$#collection_names
+
 

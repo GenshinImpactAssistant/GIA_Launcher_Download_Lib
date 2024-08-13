@@ -6,11 +6,13 @@ from source.config.cvars import *
 
 
 class SettingPage(ConfigPage):
+    collection_names = load_json("ITEM_NAME.json", f"assets\\POI_JSON_API\\{GLOBAL_LANG}")
     def __init__(self):
         super().__init__(config_file_name = CONFIGNAME_GENERAL)
         self.domain_name = load_json(f"Domain_Names_{GLOBAL_LANG}.json", fr"{ASSETS_PATH}/domain_names")
         self.input_verify={
-            "domain_name":self.domain_name
+            "domain_name":self.domain_name,
+            "collection_names": self.collection_names
         }
 
     def _load(self):

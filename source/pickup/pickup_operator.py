@@ -125,17 +125,15 @@ class PickupOperator(BaseThreading):
         if len(self.absorptive_positions) > 0:
             return euclidean_distance_plist(genshin_map.get_position(use_cache=True), self.absorptive_positions).min() < self.ABSORPTION_THRESHOLD
 
+    def get_absorb_pos(self, curr_pos):
+        return list(quick_sort_euclidean_distance_plist(curr_pos, self.absorptive_positions)[0])
+
     def absorb(self):
         curr_pos = genshin_map.get_position()
         for abs_pos in self.absorptive_positions:
             if euclidean_distance(abs_pos, curr_pos) < self.ABSORPTION_THRESHOLD:
-                if movement.get_current_motion_state() == FLYING:
-                    for i in range(20):
-                        itt.left_click()
-                        time.sleep(2)
-                        if movement.get_current_motion_state() != FLYING:
-                            break
-                if movement.get_current_motion_state() != FLYING:
+
+                if movement.land():
                     self.absorptive_pickup(abs_pos)
                 else:
                     logger.error(f"LAND FAIL")

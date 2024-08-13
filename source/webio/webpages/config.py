@@ -31,7 +31,7 @@ class ConfigPage(AdvancePage):
         self.read_only = False
 
         self.input_verify={
-            "test":lambda x:x
+
         }
 
     def _load_config_files(self):
@@ -84,8 +84,9 @@ class ConfigPage(AdvancePage):
             try:
                 pin.pin['isSessionExist']
             except SessionNotFoundException:
-                logger.info(t2t("未找到会话，可能由于窗口关闭。请刷新页面重试。"))
-                return
+                logger.info(t2t("未找到会话，程序退出。"))
+                os._exit(0)
+                sys.exit()
             except AssertionError:
                 pass
                 

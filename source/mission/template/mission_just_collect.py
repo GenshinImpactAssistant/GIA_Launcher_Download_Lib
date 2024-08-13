@@ -2,7 +2,7 @@ from source.mission.mission_template import MissionExecutor, time
 from source.cvars import STOP_RULE_F
 
 class MissionJustCollect(MissionExecutor):
-    def __init__(self, dictname, name:str):
+    def __init__(self, dictname, name:str, **kwargs):
         """
 
         Args:

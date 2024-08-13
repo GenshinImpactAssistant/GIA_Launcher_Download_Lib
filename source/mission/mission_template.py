@@ -142,7 +142,15 @@ class MissionExecutor(BaseThreading):
             while combat_lib.CSDL.get_combat_state():
                 time.sleep(0.5)
             self.stop_combat()
-    
+
+    def _exec_absorption(self):
+        """
+        执行absorption的具体代码。
+        由于不同自定义任务的吸附有所不同，因此单独实现更加方便。
+        :return:
+        """
+        self.PUO.absorb()
+
     def move(self, MODE:str = None,
              stop_rule = None,
              target_posi:list = None,
@@ -153,8 +161,7 @@ class MissionExecutor(BaseThreading):
              is_tp:bool = None,
              is_reinit:bool = None, 
              is_precise_arrival:bool = None,
-             stop_offset:int = None,
-             absorption_reaction_to_enemy = ENEMY_REACTION_NONE):
+             stop_offset:int = None):
         self._init_sub_threading("TMCF")
         self._detect_fight_if_needed()
         puo_start_flag = False
@@ -186,24 +193,8 @@ class MissionExecutor(BaseThreading):
                             siw()
                             if self.TMCF.is_thread_paused(): break
                         itt.key_up('w')
-                    if absorption_reaction_to_enemy == ENEMY_REACTION_FIGHT:
-                        combat_lib.CSDL.active_find_enemy()
-                        # r = combat_lib.combat_statement_detection()
-                        # if r[0] or r[1] or combat_lib.CSDL.get_combat_state():
-                        #     timer1=AdvanceTimer(10)
-                        #     while 1:
-                        #         siw()
-                        #         if combat_lib.CSDL.get_combat_state(): break
-                        #         if self.checkup_stop_func(): return
-                        #         if timer1.reached(): break
-                        if combat_lib.CSDL.get_combat_state():
-                            logger.info('enter combat')
-                            self.start_combat()
-                            while combat_lib.CSDL.get_combat_state():
-                                time.sleep(0.5)
-                            self.stop_combat()
 
-                    self.PUO.absorb()
+                    self._exec_absorption()
                     self.TMCF.continue_threading()
 
         if self.TMCF.get_and_reset_err_code() != ERR_PASS:
@@ -229,7 +220,7 @@ class MissionExecutor(BaseThreading):
         r = self.move(MODE="AUTO", target_posi=p, is_tp = is_tp, is_precise_arrival=is_precise_arrival, stop_rule=stop_rule)
         return r
         
-    def move_along(self, path, is_tp = None, is_precise_arrival=None, stop_rule = None, adsorb = True, absorption_reaction_to_enemy=ENEMY_REACTION_NONE):
+    def move_along(self, path, is_tp = None, is_precise_arrival=None, stop_rule = None, adsorb = True):
         if isinstance(path,str):
             path_dict = self.get_path_file(path)
         elif isinstance(path,dict):
@@ -249,7 +240,7 @@ class MissionExecutor(BaseThreading):
                 is_reinit = False
         if is_precise_arrival is None:
             is_precise_arrival = self.default_precise_arrive
-        r = self.move(MODE="PATH", path_dict = path_dict, is_tp = is_tp, is_reinit=is_reinit, is_precise_arrival=is_precise_arrival, stop_rule=stop_rule, absorption_reaction_to_enemy=absorption_reaction_to_enemy)
+        r = self.move(MODE="PATH", path_dict = path_dict, is_tp = is_tp, is_reinit=is_reinit, is_precise_arrival=is_precise_arrival, stop_rule=stop_rule)
         self.last_move_along_position = path_dict["end_position"]
         return r
     
@@ -292,16 +283,15 @@ class MissionExecutor(BaseThreading):
             self.CFCF.flow_connector.puo.reset_pickup_item_list()
         return self._handle_exception()
     
-    def circle_search(self, center_posi, stop_rule=STOP_RULE_F):
-        points = get_circle_points(center_posi[0],center_posi[1])
+    def circle_search(self, center_posi, stop_rule=STOP_RULE_F, radius=6):
+        points = get_circle_points(center_posi[0],center_posi[1], radius=radius)
         jil = movement.JumpInLoop(8)
         for p in points:
             offset_timer = Timer()
             while 1:
-                offset = max(1.2, (offset_timer.get_diff_time()+6)*0.2)
+                offset = offset_timer.get_diff_time()*0.2+1.6
                 if self.checkup_stop_func():return
-                movement.move_to_posi_LoopMode(p, self.checkup_stop_func)
-                if euclidean_distance(p, genshin_map.get_position())<=offset:
+                if movement.move_to_posi_LoopMode(p, self.checkup_stop_func, threshold=offset):
                     logger.debug(f"circle_search: {p} arrived")
                     break
                 if stop_rule == STOP_RULE_F:
@@ -315,6 +305,8 @@ class MissionExecutor(BaseThreading):
                 jil.jump_in_loop()
                     
         itt.key_up('w')
+        logger.info(f'circle search fail. back.')
+        movement.move_to_position(center_posi, stop_func=self.checkup_stop_func)
         return False        
     
     def start_pickup(self):

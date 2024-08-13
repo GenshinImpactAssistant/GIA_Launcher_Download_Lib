@@ -234,6 +234,7 @@ class TLPath2Mission(AdvancePage):
                 {'label': t2t('是否在所有转折点使用自动吸附'), 'value': "is_active_pickup_in_bp"},
                 {'label': t2t('是否在禁用所有自动吸附'), 'value': "is_disable_ads_points"},
                 {'label': t2t('whether Nahida is needed'), 'value': "is_nahida_needed"},
+                {'label': t2t('是否在吸附时进行环形搜索'), 'value': "is_circle_search_in_adsorption"},
             ])
             pin.put_input(self.INPUT_OPTIMIZE_THRESHOLD, help_text=t2t('input optimize threshold. default is 1. The larger the threshold, the stronger the optimization.'),value="1")
             # output.put_button(self.BUTTON_GENERATE, onclick=self._generate_mission)
@@ -318,6 +319,8 @@ class TLPath2Mission(AdvancePage):
         # 修正空荧酒馆误差
         # tianli_posi_list[0][1]+=10
 
+        mission_kwargs = {}
+
         note = f'{pin.pin[self.INPUT_NOTE]}'
         if 'is_nahida_needed' in pin.pin[self.CHECKBOX_ADDITIONAL_INFO]:
             note += '\n 必须需要纳西妲 Nahida must be needed'
@@ -349,8 +352,14 @@ class TLPath2Mission(AdvancePage):
             adsorptive_position = tianli_posi_list[1:]
         if 'is_nahida_needed' in pin.pin[self.CHECKBOX_ADDITIONAL_INFO]:
             additional_info['is_nahida_needed'] = True
+        if 'is_circle_search_in_adsorption' in pin.pin[self.CHECKBOX_ADDITIONAL_INFO]:
+            mission_kwargs["is_circle_search_enemy"]=True
 
         bps = tlpp_pos["break_position"]
+
+        kwargs_str = ''
+        for key, value in mission_kwargs.items():
+            kwargs_str += f"{key}={value},"
 
         with open(path, 'w', encoding='utf-8') as f:
             tlpp_path = {
@@ -380,7 +389,7 @@ META={META}
 
 class MissionMain({mission_import.split(' ')[-1]}):
     def __init__(self):
-        super().__init__(tlp2m_default_value, "tlp2m_default_name")
+        super().__init__(tlp2m_default_value, "tlp2m_default_name",{kwargs_str})
 
 if __name__ == '__main__':
     mission = MissionMain()

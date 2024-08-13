@@ -57,11 +57,13 @@ class MainPage(AdvancePage):
             try:
                 pin.pin['isSessionExist']
             except SessionNotFoundException:
-                logger.info(t2t("未找到会话，可能由于窗口关闭。请刷新页面重试。"))
-                return
+                logger.info(t2t("未找到会话，程序退出。"))
+                os._exit(0)
+                sys.exit()
             except SessionClosedException:
                 logger.info(t2t("未找到会话，可能由于窗口关闭。请刷新页面重试。"))
-                return
+                os._exit(0)
+                sys.exit()
             except AssertionError:
                 pass
             if pin.pin['FlowMode'] != listening.SEMIAUTO_FUNC_MANAGER.last_d:  # 比较变更是否被应用
