@@ -331,8 +331,8 @@ class TLPath2Mission(AdvancePage):
             },
             'author': f"{pin.pin[self.INPUT_AUTHOR]}",
             'tags': {
-                'zh_CN': [{"Plant":"采集","Artifact":"圣遗物","Combat":"战斗"}[GIAconfig.Dev_RecordPath_CollectionType]],
-                'en_US': [{"Plant":"Collect","Artifact":"Artifact","Combat":"Combat"}[GIAconfig.Dev_RecordPath_CollectionType]]
+                'zh_CN': [{"Plant":"采集","Artifact":"圣遗物","Combat":"战斗","Mineral":"矿物"}[GIAconfig.Dev_RecordPath_CollectionType]],
+                'en_US': [{"Plant":"Collect","Artifact":"Artifact","Combat":"Combat","Mineral":"Mineral"}[GIAconfig.Dev_RecordPath_CollectionType]]
             },
             'local_edit_mission': f'{pin.pin[self.INPUT_MISSION_NAME]}',
             'description': f'{pin.pin[self.INPUT_DESCRIPTION]}',
@@ -377,7 +377,8 @@ class TLPath2Mission(AdvancePage):
             mission_import = {
                 "Artifact":"from source.mission.template.mission_just_collect import MissionCollectArtifact",
                 "Plant":"from source.mission.template.mission_just_collect import MissionJustCollect",
-                "Combat":"from source.mission.template.mission_combat import MissionCombat"
+                "Combat":"from source.mission.template.mission_combat import MissionCombat",
+                "Mineral": "from source.mission.template.mission_miner import MissionMiner",
             }[GIAconfig.Dev_RecordPath_CollectionType]
 
             s = \

@@ -393,7 +393,7 @@ class PickupOperator(BaseThreading):
                     if combat_lib.CSDL.get_combat_state():
                         logger.info(f'absorption: fighting: break')
                         return False
-            if i - arrive_i > 10:
+            if i - arrive_i > 3:
                 logger.info(f'absorption: arrive but not find, break.')
                 return False
         logger.info(f'adsorption: timeout.')

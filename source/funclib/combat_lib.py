@@ -1,3 +1,5 @@
+import random
+
 from source.manager import img_manager, posi_manager, asset
 from source.util import *
 from source.common.base_threading import BaseThreading
@@ -243,6 +245,31 @@ def get_enemy_blood_bar_img(img):
         cv2.imshow("2131231", blood_bar_img)
         cv2.waitKey(10)
     return blood_bar_img
+
+def get_mineral_blood_bar_img(img):
+    """
+    挖矿也是战斗！
+    :param img:
+    :return:
+    """
+    red_num = 255
+    green_num = 217
+    blue_num = 98
+    # bg_num = 90
+    im_src = img
+    im_src = itt.png2jpg(im_src, channel='ui', alpha_num=254)
+    im_src[990:1080, :, :] = 0
+    im_src[:, :, 2][im_src[:, :, 2] != red_num] = 0
+    im_src[:, :, 2][im_src[:, :, 0] != blue_num] = 0
+    im_src[:, :, 2][im_src[:, :, 1] != green_num] = 0
+    # _, imsrc2 = cv2.threshold(imsrc[:, :, 2], 1, 255, cv2.THRESH_BINARY)
+    blood_bar_img = im_src[:, :, 2]
+    if CV_DEBUG_MODE:
+        # cv2.imshow("mask",mask)
+        cv2.imshow("21312231", cv2.cvtColor(im_src, cv2.COLOR_BGR2RGB))
+        cv2.imshow("2131231", blood_bar_img)
+        cv2.waitKey(10)
+    return blood_bar_img
     
 def combat_statement_detection():
     # return: ret[0]: blood bar; ret[1]: enemy arrow
@@ -351,8 +378,11 @@ def get_characters_name(max_retry = 50):
                     break
             if not succ:
                 if retry_times<max_retry-1:
-                    logger.warning(f"get characters name fail, retry {retry_times}")
-                    itt.move_to(200,0,relative=True)
+                    if retry_times < 20:
+                        logger.info(f"get characters name fail, retry {retry_times}")
+                    else:
+                        logger.warning(f"get characters name fail, retry {retry_times}")
+                    itt.move_to(200,random.randint(-50,50),relative=True)
                     break
                 else:
                     ret_list.append(None)
@@ -664,7 +694,7 @@ if __name__ == '__main__':
     # set_party_setup("Lisa")
     while 1:
         time.sleep(0.1)
-        get_enemy_blood_bar_img(itt.capture(jpgmode=FOUR_CHANNELS))
+        get_mineral_blood_bar_img(itt.capture(jpgmode=FOUR_CHANNELS))
         # print(get_characters_name())
         # print(is_character_busy())
         # print(unconventionality_situation_detection())

@@ -41,6 +41,7 @@ RecordPath_CollectionType:
   - Plant
   - Artifact
   - Combat
+  - Mineral
 
 RecordPath_CollectionName:
   special_index: $INPUT_VERIFY$#collection_names
