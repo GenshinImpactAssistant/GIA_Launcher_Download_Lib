@@ -85,14 +85,22 @@ class MainPage(AdvancePage):
 
             # Output log
 
-            self.log_list_lock.acquire()
-            for text, color in self.log_list:
-                if text == "$$end$$":
-                    output.put_text("", scope='LogArea')
-                else:
-                    output.put_text(text, scope='LogArea', inline=True).style(
-                        f'color: {color}; font_size: 20px')  # ; background: aqua
+            def printer(x):
+                for text, color in x:
+                    if text == "$$end$$":
+                        output.put_text("", scope='LogArea')
+                    else:
+                        output.put_text(text, scope='LogArea', inline=True).style(
+                            f'color: {color}; font_size: 20px')  # ; background: aqua
 
+            self.log_list_lock.acquire()
+            if len(self.log_history) > 600:
+                output.clear('LogArea')
+                printer(self.log_history[-100:])
+                self.log_history = []
+                logger.debug(f"webio clean logs.")
+            printer(self.log_list)
+            self.log_history += self.log_list
             self.log_list.clear()
             self.log_list_lock.release()
 

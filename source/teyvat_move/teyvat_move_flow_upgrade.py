@@ -411,7 +411,7 @@ class TeyvatMove_Automatic(FlowTemplate, TeyvatMoveCommon, Navigation):
             self._set_rfc(FC.END)
 
         # print(p1)
-        if movement.move_to_posi_LoopMode(self.posi_list[self.posi_index], self.upper.checkup_stop_func):
+        if movement.move_to_posi_LoopMode(self.posi_list[self.posi_index], self.upper.checkup_stop_func, fast_move=True):
             self.posi_index += 1
             self.posi_index = min(len(self.posi_list) - 1, self.posi_index)
             if self.upper.is_tianli_navigation:
@@ -493,6 +493,7 @@ class TeyvatMove_FollowPath(FlowTemplate, TeyvatMoveCommon):
 
         self.curr_target_pos = [0,0]
         self.curr_posi = [0,0]
+        self.last_posi = None
         self.inner_statement = STATEMENT_START
 
         self.landing_timer = Timer(2)
@@ -573,6 +574,7 @@ class TeyvatMove_FollowPath(FlowTemplate, TeyvatMoveCommon):
         self.curr_path_index = 0
         self.curr_break_point_index = 0
         self.end_times = 0
+        self.last_posi = None
         # itt.key_down('w')
         if self.upper.is_reinit:
             genshin_map.reinit_smallmap()
@@ -643,6 +645,7 @@ class TeyvatMove_FollowPath(FlowTemplate, TeyvatMoveCommon):
     # any_jump_timer = AdvanceTimer()
 
     def state_check_bp(self):
+        self.last_posi = self.curr_posi.copy()
         self.curr_target_pos = self.curr_breaks[self.curr_break_point_index]
         self.curr_posi = genshin_map.get_position()
         # 刷新当前position index
@@ -675,51 +678,70 @@ class TeyvatMove_FollowPath(FlowTemplate, TeyvatMoveCommon):
 
         # 检测是否要切换到下一个BP
         # TODO: 好丑，能重构吗[・ヘ・?]
-        if not self.ENABLE_OPTIMIZER:
-            if euclidean_distance(self.curr_target_pos, self.curr_posi) <= offset:
-                if len(self.curr_breaks) - 1 > self.curr_break_point_index:
-                    # if not self.curr_break_point_index == 0:
-                    #     self.switch_bp_flag_for_ads = True
-                    self.curr_break_point_index += 1  # BP+1
-                    logger.debug(
-                        f"index {self.curr_break_point_index} posi {self.curr_breaks[self.curr_break_point_index]}")
-                    # pass
-                elif not self.ready_to_end:
-                    if self.upper.is_precise_arrival:
-                        logger.info("path ready to end")
-                        self.ready_to_end = True
-                        self._set_inner_statement(STATEMENT_MOTION)
-                    else:
-                        logger.info("path end")
-                        itt.key_up('w')
-                        self._set_inner_statement(STATEMENT_END)
+
+        if len(self.curr_breaks) - 1 > self.curr_break_point_index:
+            pass
+        elif not self.ready_to_end:
+            if self.upper.is_precise_arrival:
+                logger.info("path ready to end")
+                self.ready_to_end = True
+        else:
+            pass
+
+        @timer
+        def linspace(point1, point2, num_points=10):
+            x_points = np.linspace(point1[0], point2[0], num_points)
+            y_points = np.linspace(point1[1], point2[1], num_points)
+            # 将x和y坐标合并成一个数组
+            points = np.array([x_points, y_points]).T
+            return points
+
+
+        agent_to_bp_dist = euclidean_distance(self.curr_target_pos, self.curr_posi)
+        # move path predict
+        if self.last_posi is not None:
+            points = linspace(self.last_posi, self.curr_posi)
+            min_dist = euclidean_distance_plist(self.curr_target_pos, points).min()
+            if DEBUG_MODE:
+                logger.trace(f"TMF: curr {self.curr_posi}; target {self.curr_target_pos}; dist {agent_to_bp_dist}; after predict {min_dist}")
+            agent_to_bp_dist = min_dist
+
+        else:
+            agent_to_bp_dist = euclidean_distance(self.curr_target_pos, self.curr_posi)
+
+
+        if True:
+            if agent_to_bp_dist <= offset:
+                if not self.ready_to_end:
+                    self.curr_break_point_index += 1
+                    logger.debug(f"index {self.curr_break_point_index} posi {self.curr_breaks[self.curr_break_point_index]}")
                 else:
                     logger.info("path end")
                     itt.key_up('w')
                     self._set_inner_statement(STATEMENT_END)
-            else:
-                self._set_inner_statement(STATEMENT_MOTION)
-        else:
-            if euclidean_distance(self.curr_target_pos, self.curr_posi) <= offset:
-                if not len(self.curr_breaks) - 1 > self.curr_break_point_index:
-                    if not self.ready_to_end:
-                        if self.upper.is_precise_arrival:
-                            logger.info("path ready to end")
-                            self.ready_to_end = True
-                            self._set_inner_statement(STATEMENT_MOTION)
-                        else:
-                            logger.info("path end")
-                            itt.key_up('w')
-                            self._set_inner_statement(STATEMENT_END)
-                    else:
-                        logger.info("path end")
-                        itt.key_up('w')
-                        self._set_inner_statement(STATEMENT_END)
-                else:
-                    self._set_inner_statement(STATEMENT_MOTION)
-            else:
-                self._set_inner_statement(STATEMENT_MOTION)
+                    return
+                    # else:
+        #     if euclidean_distance(self.curr_target_pos, self.curr_posi) <= offset:
+        #         if not len(self.curr_breaks) - 1 > self.curr_break_point_index:
+        #             if not self.ready_to_end:
+        #                 if self.upper.is_precise_arrival:
+        #                     logger.info("path ready to end")
+        #                     self.ready_to_end = True
+        #                     self._set_inner_statement(STATEMENT_MOTION)
+        #                 else:
+        #                     logger.info("path end")
+        #                     itt.key_up('w')
+        #                     self._set_inner_statement(STATEMENT_END)
+        #             else:
+        #                 logger.info("path end")
+        #                 itt.key_up('w')
+        #                 self._set_inner_statement(STATEMENT_END)
+        #         else:
+        #             self._set_inner_statement(STATEMENT_MOTION)
+        #     else:
+        #         self._set_inner_statement(STATEMENT_MOTION)
         self.offset = offset
+        self._set_inner_statement(STATEMENT_MOTION)
 
     def state_motion(self):
         # 动作识别
