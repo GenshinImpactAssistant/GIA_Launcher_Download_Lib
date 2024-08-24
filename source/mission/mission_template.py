@@ -283,7 +283,7 @@ class MissionExecutor(BaseThreading):
             self.CFCF.flow_connector.puo.reset_pickup_item_list()
         return self._handle_exception()
     
-    def circle_search(self, center_posi, stop_rule=STOP_RULE_F, radius=6, stop_func=lambda x: False):
+    def circle_search(self, center_posi, stop_rule=STOP_RULE_F, radius=6, stop_func=lambda : False):
         points = get_circle_points(center_posi[0],center_posi[1], radius=radius)
         jil = movement.JumpInLoop(8)
         for p in points:
