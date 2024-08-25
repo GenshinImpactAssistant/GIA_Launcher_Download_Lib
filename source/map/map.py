@@ -29,7 +29,7 @@ class Map(MiniMap, BigMap, MapConverter):
             super().__init__(device_type=MiniMap.DETECT_Mobile_720p)
 
         # Set bigmap tp arguments
-        self.MAP_POSI2MOVE_POSI_RATE = 0.3  # 移动距离与力度的比例
+        self.MAP_POSI2MOVE_POSI_RATE = 0.5  # 移动距离与力度的比例
         self.BIGMAP_TP_OFFSET = 20  # 距离目标小于该误差则停止
         self.BIGMAP_MOVE_MAX = 130  # 最大移动力度
         self.TP_RANGE = 200  # 在该像素范围内可tp
@@ -299,7 +299,7 @@ class Map(MiniMap, BigMap, MapConverter):
         logger.debug(f"_move_bigmap: {dx} {dy}")
 
         itt.move_to(dx, dy, relative=True)
-        itt.delay(0.2, comment="waiting genshin")
+        itt.delay(0.15, comment="waiting genshin")
         itt.left_up()
         # if itt.get_img_existence(asset.confirm):
         # itt.key_press('esc')
@@ -322,7 +322,7 @@ class Map(MiniMap, BigMap, MapConverter):
             else:
                 return list([1024 / 2, 768 / 2])
         else:
-            itt.delay(0.2, comment="wait for a moment")
+            itt.delay(0.05, comment="wait for a moment")
             if euclidean_distance(self.get_bigmap_posi(is_upd=False).position, curr_posi) <= self.BIGMAP_TP_OFFSET:
                 return self._move_bigmap(target_posi=target_posi, float_posi=float_posi + 45)
             else:
@@ -404,8 +404,10 @@ class Map(MiniMap, BigMap, MapConverter):
 
         ui_control.ensure_page(UIPage.page_bigmap)
         self.check_bigmap_scaling()
-
-        self._switch_to_area(tp_region)
+        curr_posi = genshin_map.get_bigmap_posi().gimap
+        if euclidean_distance(curr_posi, tp_posi) > 1000:
+            logger.info(f"dist big, switch area")
+            self._switch_to_area(tp_region)
 
         click_posi = self._move_bigmap(tp_posi, csf=csf)
         if tp_type == "Domain":  # 部分domain有特殊名字
@@ -451,7 +453,8 @@ class Map(MiniMap, BigMap, MapConverter):
         while not (ui_control.get_page() == UIPage.page_main):
             time.sleep(0.2)
 
-        self.reinit_smallmap()
+        self.init_position(tp_posi)
+        # self.reinit_smallmap()
 
         return GIMAPPosition(tp_posi)
 

@@ -33,6 +33,7 @@ t
 DEBUG_MODE = GIAconfig.General_DEBUG
 DEMO_MODE = CV_DEBUG_MODE = os.path.exists(os.path.join(ROOT_PATH, 'demomode.giamode'))
 CV_DEBUG_MODE = os.path.exists(os.path.join(ROOT_PATH, 'cvdebugmode.giamode'))
+THE_COMPUTER_IS_TOO_GOOD = os.path.exists(os.path.join(ROOT_PATH, 'pcgood.giamode'))
 INTERACTION_MODE = GIAconfig.General_InteractionMode
 IS_DEVICE_PC = True
 
@@ -934,7 +935,7 @@ def match_multiple_img(img, template, is_gray=False, is_show_res: bool = False, 
     return matched_coordinates
 
 def diff_angle(a1, a2):
-    return min(360-(int(a1-a2)&360), (int(a1-a2)&360))
+    return min(360-(int(a1-a2)%360), (int(a1-a2)%360))
     
 
 def ansl_code2col(ansl_code ,reserve = True):

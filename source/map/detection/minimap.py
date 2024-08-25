@@ -406,6 +406,7 @@ class MiniMap(MiniMapResource):
 
     @timer_module.timer
     def update_rotation(self, image, layer=MapConverter.LAYER_Teyvat, update_position=True):
+        pt = time.time()
         # if image.shape[2]==4:
         #     image = image[:,:,:3]
         #     use_alpha = (self.scene == 'city')
@@ -423,6 +424,10 @@ class MiniMap(MiniMapResource):
             self.rotation = self._predict_rotation(minimap, use_alpha=False)
             if CV_DEBUG_MODE:
                 self.show_rotation(minimap, self.degree)
+            # if THE_COMPUTER_IS_TOO_GOOD:
+            #     if time.time() - pt < 0.025:
+            #         time.sleep(0.025)
+                    # self.show_rotation(minimap, self.degree)
         else:
             minimap = None
             self.rotation = self._predict_rotation(minimap, use_alpha=True)

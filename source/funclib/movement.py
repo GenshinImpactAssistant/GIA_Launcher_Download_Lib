@@ -89,7 +89,7 @@ def angle2movex(angle):
     return cvn
 
 def angle2movex_v2(angle):
-    cvn = angle * 10  # 10: magic num, test from test246.py
+    cvn = angle * 9  # 10: magic num, test from test246.py
     return cvn
 
 def cview(angle=10, mode=HORIZONTAL, rate=0.9, use_CVDC = False):  # left<0,right>0
@@ -204,7 +204,7 @@ class CViewDynamicCalibration:
             os.remove(self.CVDC_PREPROCESSED_CACHE)
 
     def __init__(self):
-        self.available_angles = list(range(1, 10)) + list(range(10, 180, 5))
+        self.available_angles = list(range(10, 180, 5)) # list(range(1, 10)) +
         self.CVDC_CACHE = f'{CACHE_PATH}\\cvdc_2.json'
         self.CVDC_PREPROCESSED_CACHE = f'{CACHE_PATH}\\cvdc_preprocessed_2.json'
         self.append_times = 0
@@ -220,10 +220,11 @@ class CViewDynamicCalibration:
                     self.preprocessed_id.append(i)
 
     def calibration_cvdc(self):
+        from source.ingame_ui.ingame_ui import set_notice
         if True:
             from source.teyvat_move.teyvat_move_flow_upgrade import TeyvatMoveFlowController
             _ = TeyvatMoveFlowController()
-            _.set_parameter(MODE="AUTO", target_posi=[ 3321.088,-5110.272], is_tp=False, is_auto_pickup=False)
+            _.set_parameter(MODE="AUTO", target_posi=[ 3321.088,-5110.272], is_tp=True, is_auto_pickup=False)
             _.start_flow()
             _.start()
 
@@ -232,8 +233,12 @@ class CViewDynamicCalibration:
                 if _.is_thread_paused(): break
         self.clean_CACHE()
         self.__init__()
+        pt = time.time()
+        times = 0
         for ts in range(15):
             for i in list(range(0, 100, 10)) + list(range(100, 2000, 50)):
+                times += 1
+                set_notice(t2t("Calibrating. ") + f"{ts} / 15; ETA {datetime.timedelta(seconds=int(((time.time()-pt)/times)*(720-times)))}")
                 direct_cview(i)
                 time.sleep(0.2)
                 change_view_to_angle(90, offset=1.5, maxloop= 100, edit_cvdc=True)
@@ -267,7 +272,10 @@ class CViewDynamicCalibration:
         # pb = discard_abnormal_data(possible_angles)
         pb = self.__pre_isolation_forest(self._closest_angle(target_angel))
         if len(pb) >= 10:
-            logger.trace(f"gpr: {target_angel * sign} -> {np.mean(pb) * sign}")
+            result_movepx = np.mean(pb) * sign
+            if abs(result_movepx - (angle2movex_v2(target_angel) * sign)) > 100:
+                logger.warning_once(f"big err in cview calibration")
+            logger.trace(f"gpr: {target_angel * sign} -> {result_movepx}")
             return np.mean(pb) * sign
         else:
             return angle2movex_v2(target_angel) * sign
@@ -275,63 +283,97 @@ class CViewDynamicCalibration:
 
 CVDC = CViewDynamicCalibration()
 
+from source.ingame_ui.ingame_ui import set_notice
+def change_view_to_angle(tangle, stop_func=lambda: False, maxloop=25, offset:float=5, print_log=True, loop_sleep=0, precise_mode = True, use_last_rotation = False, edit_cvdc = False, delay=0.05):
+    MODE = 0
 
-def change_view_to_angle(tangle, stop_func=lambda: False, maxloop=25, offset:float=5, print_log=True, loop_sleep=0, precise_mode = True, use_last_rotation = False, edit_cvdc = False):
-    i = 0
-    dangle = 0
-    loop_sleep = 0
+    if MODE==0:
+        i = 0
+        dangle = 0
+        loop_sleep = 0
 
-    first_enter_flag = True
+        first_enter_flag = True
 
-    def get_rotation(last_angle = None):
-        pt=time.time()
-        if last_angle is not None:
-            cangle = last_angle = last_angle
-        else:
-            cangle = last_angle = genshin_map.get_rotation()
-        for ii in range(10):  # 过滤不准确的角度
-            logger.trace(f"get_rotation: {ii}: {time.time()-pt}")
-            cangle = genshin_map.get_rotation()
-            if not precise_mode:
-                break
-            if diff_angle(cangle, last_angle) < 5 + i * 0.1:
-                break
+        ###
+        precise_mode = True
+        ###
+
+        def get_rotation(last_angle = None):
+            get_timeout = TimeoutTimer(0.4)
+            angle_list = []
+            if last_angle is None:
+                angle_list.append(genshin_map.get_rotation())
+            else:
+                angle_list.append(last_angle)
+            succ_times = 0
+            while 1:
+                if get_timeout.istimeout():
+                    logger.trace(f"get_rotation break due to timeout")
+                    break
+                pt = time.time()
+                angle_list.append(genshin_map.get_rotation())
+                time_cost = round(time.time()-pt,5)
+
+                if diff_angle(angle_list[-1], angle_list[-2]) < offset:
+                    succ_times += 1
+                else:
+                    succ_times = 0
+
+                if time_cost < 0.04:
+                    time.sleep(0.04-time_cost)
+                    if succ_times >= 3:
+                        logger.trace(f"get_rotation break: succ >=2")
+                        break
+                else:
+                    if succ_times >= 1:
+                        logger.trace(f"get_rotation break: succ")
+                        break
+
+                print(f"get rotation:{angle_list[-1]} cost {time_cost}")
+            print(f"get rotation list: {angle_list}")
+            return angle_list[-1]
+
+
+
+
+        while 1:
+            if first_enter_flag and use_last_rotation:
+                cangle = get_rotation(last_angle=genshin_map.rotation)
+                first_enter_flag = False
+            else:
+                cangle = get_rotation()
             last_angle = cangle
+            # print(ii)
+            dangle = calculate_delta_angle(cangle, tangle)
+            # 感觉有问题，先禁用
+            if abs(dangle) < offset:
+                break
+            # if abs(dangle) > diff_angle(cangle, tangle):
+            #     logger.critical(f"{cangle}, {tangle}, {dangle}, {diff_angle(cangle, tangle)}")
+            move_px = CVDC.predict_target(dangle)  # 根据历史角度移动记录自适应角度移动大小。理论上这个模块应该加载到cview函数里，但是cview不能调用genshin_map，所以先这样吧。
+            move_px = round(move_px, 2)
 
-        logger.trace(f"get_rotation: end: {time.time() - pt}")
-        return cangle
+            # rate = min((0.6 / 50) * abs(dangle) + 0.4, 1)
+            if loop_sleep > 0:
+                time.sleep(loop_sleep)
+            # print(cangle, dangle, rate)
+            # rate = 1
+            direct_cview(move_px)
+            # time.sleep(0.3)
 
-    while 1:
-        if first_enter_flag and use_last_rotation:
-            cangle = get_rotation(last_angle=genshin_map.rotation)
-            first_enter_flag = False
-        else:
-            cangle = get_rotation()
-        last_angle = cangle
-        # print(ii)
-        dangle = calculate_delta_angle(cangle, tangle)
-        # 感觉有问题，先禁用
-        if abs(dangle) < offset:
-            break
-        move_px = CVDC.predict_target(dangle)  # 根据历史角度移动记录自适应角度移动大小。理论上这个模块应该加载到cview函数里，但是cview不能调用genshin_map，所以先这样吧。
-        move_px = round(move_px, 2)
-        
-        # rate = min((0.6 / 50) * abs(dangle) + 0.4, 1)
-        if loop_sleep > 0:
-            time.sleep(loop_sleep)
-        # print(cangle, dangle, rate)
-        # rate = 1
-        direct_cview(move_px)
-        if i > maxloop:
-            break
-        if stop_func():
-            break
-        i += 1
-        logger.trace(f"cangle {cangle} dangle {dangle}") #  rate {rate}
+            if i > maxloop:
+                break
+            if stop_func():
+                break
+            i += 1
+            # set_notice(f"cangle {cangle} dangle {dangle} movepx {move_px} tangle {tangle}") #  rate {rate}
 
-        if precise_mode and edit_cvdc:
-            changed_angle = get_rotation()
-            CVDC.append_angle_result(move_px, calculate_delta_angle(last_angle, changed_angle))
+            if precise_mode and edit_cvdc:
+                changed_angle = get_rotation()
+                CVDC.append_angle_result(move_px, calculate_delta_angle(last_angle, changed_angle))
+    elif MODE == 1:
+        for i in range(maxloop):
+            pass
 
 
 def view_to_angle_domain(angle, stop_func, deltanum=0.65, maxloop=100, corrected_num=CORRECT_DEGREE):

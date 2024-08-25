@@ -19,10 +19,11 @@ def sort_by_priority(x):
     return r
 
 class MissionPage(AdvancePage):
-    MISSION_INDEX = missions.mission_index.MISSION_INDEX
-    MISSION_META = load_json('mission_internal_meta.json', fr"{ROOT_PATH}/source/mission")
-    NAME_PROCESSBAR_MissionRebuild = 'PROCESSBAR_MissionRebuild'
+
     def __init__(self) -> None:
+        self.MISSION_INDEX = missions.mission_index.MISSION_INDEX
+        self.MISSION_META = load_json('mission_internal_meta.json', fr"{ROOT_PATH}/source/mission")
+        self.NAME_PROCESSBAR_MissionRebuild = 'PROCESSBAR_MissionRebuild'
         super().__init__(document_link=f'https://genshinimpactassistant.github.io/GIA-Document/#/{GLOBAL_LANG}/mission')
         self.missions = self.MISSION_INDEX
         self._create_default_settings()
@@ -76,6 +77,9 @@ class MissionPage(AdvancePage):
         for i in self.missions:
             if i not in show_missions:
                 show_missions.append(i)
+        for i in show_missions.copy():
+            if i not in self.missions:
+                show_missions.pop(show_missions.index(i))
 
         def pop_not_ascii():
             for i in range(len(show_missions)):
@@ -122,7 +126,7 @@ class MissionPage(AdvancePage):
                 # if os.path.exists(curr_mission_meta['local_edit_mission']):
                 output.put_markdown(t2t('## Local Mission')+': '+ mission_show_name, scope=mission_name)
             else:
-                output.put_text(mission_show_name, scope=mission_name)
+                output.put_markdown(t2t('## ') + mission_show_name, scope=mission_name)
             pv = 999
             ebd = False
             for iii in j:

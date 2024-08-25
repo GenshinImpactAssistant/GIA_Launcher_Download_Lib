@@ -586,8 +586,11 @@ class MissionDownloadPage(AdvancePage):
         disable_all = True if pin.pin["RADIO_DISABLE_ALL_MISSIONS"] == "Yes" else False
         update_list = []
         for mission_name in self.local_mission_names:
-            if pin.pin[f"UPDATE_{mission_name}"] == [t2t("Update")]:
-                update_list.append(mission_name)
+            try: #TODO: remove it (original)
+                if pin.pin[f"UPDATE_{mission_name}"] == [t2t("Update")]:
+                    update_list.append(mission_name)
+            except Exception as e:
+                logger.exception(e)
         delete_list = []
         for mission_name in self.local_mission_names:
             if pin.pin[f"DELETE_{mission_name}"]:

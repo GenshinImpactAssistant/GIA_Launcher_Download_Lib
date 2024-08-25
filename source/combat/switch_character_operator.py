@@ -69,7 +69,7 @@ class SwitchCharacterOperator(BaseThreading):
             if self.mode == 'Shield':
                 self.aim_operator.pause_threading()
                 self.switch_character(switch_type="SHIELD")
-                time.sleep(0.4)
+                time.sleep(1)
             else:
                 if self.aim_operator.sco_blocking_request.is_blocking():
                     self.aim_operator.sco_blocking_request.reply_request()

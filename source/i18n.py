@@ -41,8 +41,15 @@ if GLOBAL_LANG == "$locale$":
 # create .mo files
 po_file_path = os.path.join(ROOT_PATH, r'translation/locale', GLOBAL_LANG, 'LC_MESSAGES', f'{GLOBAL_LANG}.po')
 mo_file_path = os.path.splitext(po_file_path)[0] + '.mo'
-print(fr'python "{ROOT_PATH}/source/msgfmt.py" -o "{mo_file_path}" "{po_file_path}"')
-os.system(fr'python "{ROOT_PATH}/source/msgfmt.py" -o "{mo_file_path}" "{po_file_path}"')
+if os.path.exists(mo_file_path):
+    modify_time = os.path.getmtime(mo_file_path) - os.path.getmtime(po_file_path)
+    print(f"i18n delta time: {modify_time}")
+    if modify_time<0:
+        print(fr'python "{ROOT_PATH}/source/msgfmt.py" -o "{mo_file_path}" "{po_file_path}"')
+        os.system(fr'python "{ROOT_PATH}/source/msgfmt.py" -o "{mo_file_path}" "{po_file_path}"')
+else:
+    print(fr'python "{ROOT_PATH}/source/msgfmt.py" -o "{mo_file_path}" "{po_file_path}"')
+    os.system(fr'python "{ROOT_PATH}/source/msgfmt.py" -o "{mo_file_path}" "{po_file_path}"')
 
 l10n = gettext.translation(GLOBAL_LANG, localedir=os.path.join(ROOT_PATH, r"translation/locale"), languages=[GLOBAL_LANG])
 l10n.install()
