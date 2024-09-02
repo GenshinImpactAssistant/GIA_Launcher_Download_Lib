@@ -29,7 +29,7 @@ pydantic>2.0.0
 gimapdev==4.6.3
 giadep
 giaocr
-giayolo
+giayolo==0.0.3
 pyyaml
 urllib3
 json5

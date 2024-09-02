@@ -143,13 +143,13 @@ class MissionExecutor(BaseThreading):
                 time.sleep(0.5)
             self.stop_combat()
 
-    def _exec_absorption(self):
+    def _exec_absorption(self, mode='ALL'):
         """
         执行absorption的具体代码。
         由于不同自定义任务的吸附有所不同，因此单独实现更加方便。
         :return:
         """
-        self.PUO.absorb()
+        self.PUO.absorb(mode=mode)
 
     def move(self, MODE:str = None,
              stop_rule = None,

@@ -228,3 +228,5 @@ collected_images/
 *.giamode
 
 cache/
+DTISTREQ
+test.png

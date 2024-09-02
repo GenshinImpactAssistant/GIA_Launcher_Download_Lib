@@ -17,8 +17,20 @@
   "AreaCombatCharacterName1": {
     "common": "assets\\imgs\\Windows\\Combat\\common\\AreaCombatCharacterName1.jpg"
   },
+  "AreaCombatCharacterName1in2P": {
+    "common": "assets\\imgs\\Windows\\Combat\\common\\AreaCombatCharacterName1in2P.png"
+  },
+  "AreaCombatCharacterName1in3PMaster": {
+    "common": "assets\\imgs\\Windows\\Combat\\common\\AreaCombatCharacterName1in3PMaster.png"
+  },
+  "AreaCombatCharacterName1in3PVisitor": {
+    "common": "assets\\imgs\\Windows\\Combat\\common\\AreaCombatCharacterName1in3PVisitor.png"
+  },
   "AreaCombatCharacterName2": {
     "common": "assets\\imgs\\Windows\\Combat\\common\\AreaCombatCharacterName2.jpg"
+  },
+  "AreaCombatCharacterName2in3PMaster": {
+    "common": "assets\\imgs\\Windows\\Combat\\common\\AreaCombatCharacterName2in3PMaster.png"
   },
   "AreaCombatCharacterName3": {
     "common": "assets\\imgs\\Windows\\Combat\\common\\AreaCombatCharacterName3.jpg"
@@ -56,6 +68,9 @@
   "AreaCombatTeamCharactersName": {
     "common": "assets\\imgs\\Windows\\Combat\\common\\AreaCombatTeamCharactersName.jpg"
   },
+  "AreaDomainFailure": {
+    "common": "assets\\imgs\\Windows\\Domain\\common\\AreaDomainFailure.png"
+  },
   "AreaDomainLeaveIn": {
     "common": "assets\\imgs\\Windows\\Domain\\common\\AreaDomainLeaveIn.jpg"
   },
@@ -70,6 +85,21 @@
   },
   "AreaTalkSelects": {
     "common": "assets\\imgs\\Windows\\Talk\\common\\AreaTalkSelects.jpg"
+  },
+  "Button2P": {
+    "common": "assets\\imgs\\Windows\\Combat\\common\\Button2P.png"
+  },
+  "Button3P": {
+    "common": "assets\\imgs\\Windows\\Combat\\common\\Button3P.png"
+  },
+  "Button4P": {
+    "common": "assets\\imgs\\Windows\\Combat\\common\\Button4P.png"
+  },
+  "AreaDomainResidue": {
+    "common": "assets\\imgs\\Windows\\Domain\\common\\AreaDomainResidue.jpg"
+  },
+  "AreaDomainResidue1": {
+    "common": "assets\\imgs\\Windows\\Domain\\common\\AreaDomainResidue1.jpg"
   },
   "ButtonBigmapCloseMarkTableInTP": {
     "common": "assets\\imgs\\Windows\\Bigmap\\common\\ButtonBigmapCloseMarkTableInTP.png"
@@ -94,6 +124,18 @@
   },
   "ButtonCombatSwitchTeamRight": {
     "common": "assets\\imgs\\Windows\\Combat\\common\\ButtonCombatSwitchTeamRight.jpg"
+  },
+  "ButtonCommissionSwitchToCommissionPage": {
+    "zh_CN": "assets\\imgs\\Windows\\ClaimReward\\zh_CN\\ButtonCommissionSwitchToCommissionPage.png"
+  },
+  "ButtonCommissionUsePoints": {
+    "common": "assets\\imgs\\Windows\\ClaimReward\\common\\ButtonCommissionUsePoints.png"
+  },
+  "ButtonDomainFailure": {
+    "common": "assets\\imgs\\Windows\\Domain\\common\\ButtonDomainFailure.png"
+  },
+  "ButtonDomainRetry": {
+    "common": "assets\\imgs\\Windows\\Domain\\common\\ButtonDomainRetry.png"
   },
   "ButtonDomainSoloChallenge": {
     "en_US": "assets\\imgs\\Windows\\Domain\\en_US\\ButtonDomainSoloChallenge.jpg",
@@ -169,6 +211,9 @@
     "en_US": "assets\\imgs\\Windows\\Combat\\en_US\\CombatButtonGoToFight.jpg",
     "zh_CN": "assets\\imgs\\Windows\\Combat\\zh_CN\\CombatButtonGoToFight.jpg"
   },
+  "IconAchievements": {
+    "common": "assets\\imgs\\Windows\\UI\\common\\IconAchievements.png"
+  },
   "IconBattlePathExclamation": {
     "common": "assets\\imgs\\Windows\\ClaimReward\\common\\IconBattlePathExclamation.png"
   },
@@ -190,6 +235,9 @@
   "IconBigmapTeleportWaypoint": {
     "common": "assets\\imgs\\Windows\\Bigmap\\common\\IconBigmapTeleportWaypoint.jpg"
   },
+  "IconC": {
+    "common": "assets\\imgs\\Windows\\UI\\common\\IconC.png"
+  },
   "IconClaimRewardExpedition": {
     "common": "assets\\imgs\\Windows\\Expedition\\common\\IconClaimRewardExpedition.jpg"
   },
@@ -209,8 +257,14 @@
   "IconCommissionCommissionIcon": {
     "common": "assets\\imgs\\Windows\\Commission\\common\\IconCommissionCommissionIcon.jpg"
   },
+  "IconCommissionDetailPage": {
+    "zh_CN": "assets\\imgs\\Windows\\ClaimReward\\zh_CN\\IconCommissionDetailPage.png"
+  },
   "IconCommissionInCommission": {
     "common": "assets\\imgs\\Windows\\Commission\\common\\IconCommissionInCommission.jpg"
+  },
+  "IconEnter": {
+    "common": "assets\\imgs\\Windows\\UI\\common\\IconEnter.png"
   },
   "IconExpeditionComplete": {
     "en_US": "assets\\imgs\\Windows\\Expedition\\en_US\\IconExpeditionComplete.jpg",
@@ -219,6 +273,24 @@
   "IconExpeditionComplete2": {
     "en_US": "assets\\imgs\\Windows\\Expedition\\en_US\\IconExpeditionComplete2.jpg",
     "zh_CN": "assets\\imgs\\Windows\\Expedition\\zh_CN\\IconExpeditionComplete2.jpg"
+  },
+  "IconF1": {
+    "common": "assets\\imgs\\Windows\\UI\\common\\IconF1.png"
+  },
+  "IconF2": {
+    "common": "assets\\imgs\\Windows\\UI\\common\\IconF2.png"
+  },
+  "IconF3": {
+    "common": "assets\\imgs\\Windows\\UI\\common\\IconF3.png"
+  },
+  "IconF4": {
+    "common": "assets\\imgs\\Windows\\UI\\common\\IconF4.png"
+  },
+  "IconF5": {
+    "common": "assets\\imgs\\Windows\\UI\\common\\IconF5.png"
+  },
+  "IconG": {
+    "common": "assets\\imgs\\Windows\\UI\\common\\IconG.png"
   },
   "IconGeneralBlink": {
     "common": "assets\\imgs\\Windows\\General\\common\\IconGeneralBlink.jpg"
@@ -242,6 +314,9 @@
   "IconGeneralTalkBubble": {
     "common": "assets\\imgs\\Windows\\General\\common\\IconGeneralTalkBubble.jpg"
   },
+  "IconJ": {
+    "common": "assets\\imgs\\Windows\\UI\\common\\IconJ.png"
+  },
   "IconLeyLindOutcropBlossomOfRevelation": {
     "common": "assets\\imgs\\Windows\\LeyLineOutcrop\\common\\IconLeyLindOutcropBlossomOfRevelation.jpg"
   },
@@ -250,6 +325,12 @@
   },
   "IconLeyLineOutcropReward": {
     "common": "assets\\imgs\\Windows\\LeyLineOutcrop\\common\\IconLeyLineOutcropReward.jpg"
+  },
+  "IconM": {
+    "common": "assets\\imgs\\Windows\\UI\\common\\IconM.png"
+  },
+  "IconMailBox": {
+    "common": "assets\\imgs\\Windows\\UI\\common\\IconMailBox.png"
   },
   "IconMovementClimb": {
     "common": "assets\\imgs\\Windows\\Movement\\common\\IconMovementClimb.jpg"
@@ -269,11 +350,20 @@
   "IconMovementSwimming": {
     "common": "assets\\imgs\\Windows\\Movement\\common\\IconMovementSwimming.jpg"
   },
+  "IconPlayStore": {
+    "common": "assets\\imgs\\Windows\\UI\\common\\IconPlayStore.png"
+  },
+  "IconSetting": {
+    "common": "assets\\imgs\\Windows\\UI\\common\\IconSetting.png"
+  },
   "IconTalkTalking1": {
     "common": "assets\\imgs\\Windows\\Talk\\common\\IconTalkTalking1.jpg"
   },
   "IconTalkTalking2": {
     "common": "assets\\imgs\\Windows\\Talk\\common\\IconTalkTalking2.jpg"
+  },
+  "IconTrainingGuide": {
+    "common": "assets\\imgs\\Windows\\UI\\common\\IconTrainingGuide.png"
   },
   "IconUIBag": {
     "common": "assets\\imgs\\Windows\\UI\\common\\IconUIBag.jpg"
@@ -295,6 +385,9 @@
   },
   "IconUILoading2": {
     "common": "assets\\imgs\\Windows\\UI\\common\\IconUILoading2.png"
+  },
+  "IconUILoading3": {
+    "common": "assets\\imgs\\Windows\\UI\\common\\IconUILoading3.png"
   },
   "IconUILogin": {
     "common": "assets\\imgs\\Windows\\UI\\common\\IconUILogin.png"

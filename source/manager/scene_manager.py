@@ -1,3 +1,5 @@
+# 已经废弃，转为使用 source\ui\page.py
+
 from source.util import *
 from source.manager import img_manager
 from source.manager import asset

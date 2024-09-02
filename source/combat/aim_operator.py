@@ -96,9 +96,7 @@ class AimOperator(BaseThreading):
                     else: # 没找到，根据红色箭头移动寻找
                         if self.checkup_stop_func():continue
                         if not self.aim_timeout_retry_timer.reached(): continue # 超时后6秒内不寻找
-                        self.sco_blocking_request.send_request('_moving_find_enemy') # 向SCO申请暂停Tactic执行
-                        if not DEBUGING_THIS_MODULE: # set to False when debug this module
-                            print(self.sco_blocking_request.waiting_until_reply(stop_func=self.checkup_stop_func, timeout=60))
+
                         r = self._moving_find_enemy()
                         self.sco_blocking_request.recovery_request() # 解除申请
                         if not r:
@@ -307,7 +305,12 @@ class AimOperator(BaseThreading):
             r = combat_lib.combat_statement_detection()
             if r[0] or not r[1]:
                 break
-        
+
+        self.sco_blocking_request.send_request('_moving_find_enemy')  # 向SCO申请暂停Tactic执行
+        if not DEBUGING_THIS_MODULE:  # set to False when debug this module
+            print(self.sco_blocking_request.waiting_until_reply(stop_func=self.checkup_stop_func, timeout=60))
+
+
         itt.key_down('w')
         move_timer = AdvanceTimer(15).start()
         move_timer.start()

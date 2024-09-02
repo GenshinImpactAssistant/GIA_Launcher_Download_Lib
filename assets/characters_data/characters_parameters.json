@@ -149,7 +149,7 @@
         "E_long_cd_time": 9,
         "Elast_time": 0,
         "Epress_time": 1,
-        "tactic_group": "e?e~.a3:none;q?q:none;",
+        "tactic_group": "e?e~.da:none;q?q:none;",
         "Qlast_time": 8,
         "Qcd_time": 15,
         "vision": "Anemo",
@@ -455,7 +455,7 @@
         "tactic_group": "e?e:none;q?q:none;",
         "vision": "Pyro",
         "trigger": "e_ready",
-        "position": "Normal"
+        "position": "Main"
     },
     "Xiao": {
         "E_short_cd_time": 10,
@@ -464,10 +464,10 @@
         "Epress_time": 0,
         "Qcd_time": 18,
         "Qlast_time": 15,
-        "tactic_group": "e?e.e:none;q?q:none;",
+        "tactic_group": "e?e.e:none;q?q:none;#@q?ja:none;",
         "vision": "Anemo",
-        "trigger": "e_ready",
-        "position": "Normal"
+        "trigger": "e_ready,q_ready",
+        "position": "Main"
     },
     "Yanfei": {
         "E_short_cd_time": 9,
@@ -476,9 +476,9 @@
         "Epress_time": 0,
         "Qcd_time": 20,
         "Qlast_time": 15,
-        "tactic_group": "e?e:none;q?q:none;",
+        "tactic_group": "e?e.a~:none;q?q.a~:none;#@q?a.a.a~:none",
         "vision": "Pyro",
-        "trigger": "e_ready",
+        "trigger": "e_ready,q_ready",
         "position": "Normal"
     },
     "Baizhu": {

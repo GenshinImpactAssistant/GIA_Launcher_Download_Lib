@@ -398,14 +398,19 @@ def view_to_angle_domain(angle, stop_func, deltanum=0.65, maxloop=100, corrected
 
 
 def view_to_imgicon(cap: np.ndarray, imgicon: asset.ImgIcon):
-    corr_rate = 1
+
     ret_points = match_multiple_img(cap, imgicon.image)
-    if len(ret_points) == 0: return False
+    return view_to_position(ret_points)
+
+def view_to_position(possible_positions:list):
+    corr_rate = 1
+
+    if len(possible_positions) == 0: return False
     points_length = []
-    for point in ret_points:
+    for point in possible_positions:
         mx, my = SCREEN_CENTER_X, SCREEN_CENTER_Y
         points_length.append((point[0] - mx) ** 2 + (point[1] - my) ** 2)
-    closest_point = ret_points[points_length.index(min(points_length))]  # 获得距离鼠标坐标最近的一个坐标
+    closest_point = possible_positions[points_length.index(min(points_length))]  # 获得距离鼠标坐标最近的一个坐标
     px, py = closest_point
     mx, my = SCREEN_CENTER_X, SCREEN_CENTER_Y
     px = (px - mx) / (2.4 * corr_rate)

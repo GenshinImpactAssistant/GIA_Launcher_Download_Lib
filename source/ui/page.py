@@ -3,6 +3,7 @@ from typing import List, Union
 
 from source.manager import asset, img_manager
 from source.assets.ui import *
+from source.assets import launch_genshin
 
 class UIPage():
     parent = None
@@ -50,7 +51,8 @@ page_domain = UIPage(check_icon=asset.IconUIInDomain)
 page_bigmap = UIPage(check_icon=asset.IconUIBigmap)
 page_time = UIPage(check_icon=asset.IconUITimeMenuCore)
 page_configure_team = UIPage(check_icon=asset.IconUIPartySetup)
-page_loading = UIPage(check_icon=[IconUILoading1, IconUILoading2])
+page_loading = UIPage(check_icon=[IconUILoading1, IconUILoading2, IconUILoading3])
+page_login = UIPage(check_icon=IconUILogin)
 
 page_main.link('m', page_bigmap)
 page_main.link('esc', page_esc)
@@ -60,4 +62,4 @@ page_esc.link(asset.ButtonUIEnterPartySetup, page_configure_team)
 page_time.link(asset.ButtonGeneralExit, page_esc)
 page_bigmap.link('m', page_main)
 page_configure_team.link('esc', page_esc)
-
+page_login.link(launch_genshin.ClickToEnter, page_bigmap)

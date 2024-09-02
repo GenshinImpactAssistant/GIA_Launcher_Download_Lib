@@ -40,7 +40,7 @@ class MissionCombat(MissionExecutor):
 
         self.PUO.absorptive_positions.pop(self.PUO.absorptive_positions.index(abs_pos))
         self.PUO.absorptive_positions.append(list(genshin_map.get_position()))
-        return super()._exec_absorption()
+        return super()._exec_absorption(mode='COMBAT')
 
     def exec_mission(self):
         self.start_pickup()  # SweatFlower167910289922 SweatFlowerV2P120230507180640i0

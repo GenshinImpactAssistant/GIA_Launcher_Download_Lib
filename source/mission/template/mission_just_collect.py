@@ -20,6 +20,9 @@ class MissionJustCollect(MissionExecutor):
         self.stop_pickup()
         # self.collect(MODE="AUTO",pickup_points=[[71, -2205],[65,-2230]])
 
+    def _exec_absorption(self, mode='ALL'):
+        return super()._exec_absorption(mode='PLANT')
+
 class MissionJustCollectGroup(MissionExecutor):
     def __init__(self, filenames:list, name):
         super().__init__(is_CFCF=True,is_PUO=True,is_TMCF=True)
@@ -36,6 +39,9 @@ class MissionJustCollectGroup(MissionExecutor):
         for fn in self.filenames:
             self._exec_group(fn)
 
+    def _exec_absorption(self, mode='ALL'):
+        return super()._exec_absorption(mode='PLANT')
+
 class MissionJustCollectMoveStraight(MissionExecutor):
     def __init__(self, pos:list, name):
         super().__init__(is_CFCF=True,is_PUO=True,is_TMCF=True)
@@ -47,6 +53,9 @@ class MissionJustCollectMoveStraight(MissionExecutor):
         self.move_straight(self.pos, is_tp=True, is_precise_arrival=False,stop_rule=STOP_RULE_F)
         time.sleep(2)  # 如果路径结束时可能仍有剩余采集物，等待。
         self.stop_pickup()
+
+    def _exec_absorption(self, mode='ALL'):
+        return super()._exec_absorption(mode='PLANT')
 
 
 class MissionCollectArtifact(MissionExecutor):
@@ -69,3 +78,6 @@ class MissionCollectArtifact(MissionExecutor):
         time.sleep(2)  # 如果路径结束时可能仍有剩余采集物，等待。
         self.stop_pickup()
         # self.collect(MODE="AUTO",pickup_points=[[71, -2205],[65,-2230]])
+
+    def _exec_absorption(self, mode='ALL'):
+        return super()._exec_absorption(mode='PLANT')

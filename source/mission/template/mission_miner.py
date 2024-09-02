@@ -151,7 +151,7 @@ class MissionMiner(MissionExecutor):
 
         self.PUO.absorptive_positions.pop(self.PUO.absorptive_positions.index(abs_pos))
         self.PUO.absorptive_positions.append(list(genshin_map.get_position()))
-        super()._exec_absorption()
+        super()._exec_absorption(mode='PLANT')
 
 
     def exec_mission(self):

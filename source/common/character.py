@@ -39,7 +39,7 @@ class Character:
                  Elast_time:float=0,
                  tactic_group='', trigger: str = '=',
                  Epress_time:float=0, Qlast_time = 0, Qcd_time = 12,
-                 vision:str = '', long_attack_time:float = 2.5):
+                 vision:str = '', long_attack_time:float = 2.5, e_strict_mode:bool=False):
 
         self.name = name
         self.position = position
@@ -54,6 +54,7 @@ class Character:
         self.Epress_time = Epress_time
         self.vision = vision
         self.long_attack_time = long_attack_time
+        self.e_strict_mode = e_strict_mode
 
         self.itt = itt
 

@@ -25,7 +25,7 @@ keyboard.add_hotkey(GIAconfig.Keymap_StartStop, SEMIAUTO_FUNC_MANAGER.apply_chan
 
 @logger.catch
 def listening():
-    if not DEBUG_MODE:
+    if not DEBUG_MODE or True:
         # import giadep
         import giaocr
         import giayolo

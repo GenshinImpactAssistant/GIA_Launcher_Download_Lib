@@ -595,14 +595,19 @@ def get_chara_list():
         cQcd_time = get_param(team_item, "Qcd_time", autofill_flag, chara_name=cname)
         c_vision = get_param(team_item, "vision", autofill_flag, chara_name=cname)
         c_long_attack_time = get_param(team_item, "long_attack_time", autofill_flag, chara_name=cname, value_when_empty=2.5)
-    
+        c_e_strict_mode = get_param(team_item, "e_strict_mode", autofill_flag, chara_name=cname, value_when_empty=False)
+        if c_e_strict_mode:
+            if c_position == "Shield":
+                c_e_strict_mode = True
+                logger.info(f"character {cname} e_strict_mode has been set to True.")
+
         chara_list.append(
             character.Character(
                 name=cname, position=c_position, n=cn, priority=c_priority,
                 E_short_cd_time=cE_short_cd_time, E_long_cd_time=cE_long_cd_time, Elast_time=cElast_time,
                 tactic_group=c_tactic_group, trigger=c_trigger,
                 Epress_time=cEpress_time, Qlast_time=cQlast_time, Qcd_time=cQcd_time, vision = c_vision,
-                long_attack_time = c_long_attack_time
+                long_attack_time = c_long_attack_time, e_strict_mode=c_e_strict_mode
             )
         )
     if load_err_times>0:

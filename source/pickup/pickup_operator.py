@@ -15,6 +15,7 @@ from source.interaction.minimap_tracker import tracker
 from source.assets.pickup import *
 from source.map.map import genshin_map
 from source.funclib.cvars import *
+from source.pickup.yolov8_recognizer import find_possible_spoils, move_to_possible_spoils
 
 
 # USE_YAP = False if sys.gettrace() else True
@@ -128,13 +129,13 @@ class PickupOperator(BaseThreading):
     def get_absorb_pos(self, curr_pos):
         return list(quick_sort_euclidean_distance_plist(curr_pos, self.absorptive_positions)[0])
 
-    def absorb(self):
+    def absorb(self, mode="ALL"):
         curr_pos = genshin_map.get_position()
         for abs_pos in self.absorptive_positions:
             if euclidean_distance(abs_pos, curr_pos) < self.ABSORPTION_THRESHOLD:
 
                 if movement.land():
-                    self.absorptive_pickup(abs_pos)
+                    self.absorptive_pickup(abs_pos, mode=mode)
                 else:
                     logger.error(f"LAND FAIL")
                 self.absorptive_positions.pop(self.absorptive_positions.index(abs_pos))
@@ -350,7 +351,7 @@ class PickupOperator(BaseThreading):
                 movement.move(movement.MOVE_AHEAD, 4)
                 self.itt.key_down('spacebar')
 
-    def absorptive_pickup(self, pos, is_active_pickup = True):
+    def absorptive_pickup(self, pos, is_active_pickup = True, mode="ALL"):
         pt=time.time()
         arrive_flag = False
         arrive_i = 9999
@@ -389,7 +390,7 @@ class PickupOperator(BaseThreading):
                     arrive_flag = True
                     arrive_i = i
                     if is_active_pickup:
-                        self.active_pickup()
+                        self.active_pickup(mode=mode)
                     if combat_lib.CSDL.get_combat_state():
                         logger.info(f'absorption: fighting: break')
                         return False
@@ -401,66 +402,73 @@ class PickupOperator(BaseThreading):
             # movement.move_to_posi_LoopMode(pos, stop_func=self.checkup_stop_func, threshold=offset)
 
 
-    def active_pickup(self, is_nahida = None):
-        if is_nahida is None:
-            if self.is_nahida_in_team is None:
-                self.check_nahida()
-            is_nahida = self.is_nahida_in_team
-            logger.debug(f'is nahida: {is_nahida}')
-            is_nahida = is_nahida and (movement.get_current_motion_state() == WALKING)
-            logger.info(f'is nahida: {is_nahida}')
-        if GIAconfig.Dev_DisableF:
-            is_nahida = False
-        if is_nahida: # 'Nahida' in combat_lib.get_characters_name(max_retry=30)
-            names = combat_lib.get_characters_name()
-            nahida_index = names.index('Nahida') + 1
-            origin_chara_index = combat_lib.get_current_chara_num(self.checkup_stop_func)
-            while not combat_lib.get_current_chara_num(self.checkup_stop_func) == nahida_index:
-                itt.key_press(str(nahida_index))
-                time.sleep(0.2)
-            
-            # itt.middle_click()
-            # itt.delay(0.3, comment='reset view')
-            
-            itt.key_down('e')
-            itt.delay(0.4, comment='waiting the Nahida E skill start')
-            itt.key_down('e')
-            
-            for i in range(10):
-                itt.move_to(0,800,relative=True)
-                time.sleep(0.02)  
-            
-            rate = 1.2
-            
-            for i in range(int(108*rate)):
-                if i%int(8*rate)==0:
-                    if i >= 90*rate:
-                        itt.move_to(0,-1500,relative=True)
-                    if i >= 80*rate:
-                        itt.move_to(0,-1000,relative=True)
-                    elif i >= 60*rate:
-                        itt.move_to(0,-600,relative=True)
-                    elif i >= 20*rate:
-                        itt.move_to(0,-200,relative=True)
-                    else:
-                        itt.move_to(0,-100,relative=True)
+    def active_pickup(self, is_nahida = None, mode='ALL'):
+        if mode != 'COMBAT':
+            if is_nahida is None:
+                if self.is_nahida_in_team is None:
+                    self.check_nahida()
+                is_nahida = self.is_nahida_in_team
+                logger.debug(f'is nahida: {is_nahida}')
+                is_nahida = is_nahida and (movement.get_current_motion_state() == WALKING)
+                logger.info(f'is nahida: {is_nahida}')
+            if GIAconfig.Dev_DisableF:
+                is_nahida = False
+            if is_nahida: # 'Nahida' in combat_lib.get_characters_name(max_retry=30)
+                names = combat_lib.get_characters_name()
+                nahida_index = names.index('Nahida') + 1
+                origin_chara_index = combat_lib.get_current_chara_num(self.checkup_stop_func)
+                while not combat_lib.get_current_chara_num(self.checkup_stop_func) == nahida_index:
+                    itt.key_press(str(nahida_index))
+                    time.sleep(0.2)
+
+                # itt.middle_click()
+                # itt.delay(0.3, comment='reset view')
+
+                itt.key_down('e')
+                itt.delay(0.4, comment='waiting the Nahida E skill start')
+                itt.key_down('e')
+
+                for i in range(10):
+                    itt.move_to(0,800,relative=True)
                     time.sleep(0.02)
-                itt.move_to(int(400/rate)+random.randint(-100, 100),0,relative=True)
-                time.sleep(0.02)
+
+                rate = 1.2
+
+                for i in range(int(108*rate)):
+                    if i%int(8*rate)==0:
+                        if i >= 90*rate:
+                            itt.move_to(0,-1500,relative=True)
+                        if i >= 80*rate:
+                            itt.move_to(0,-1000,relative=True)
+                        elif i >= 60*rate:
+                            itt.move_to(0,-600,relative=True)
+                        elif i >= 20*rate:
+                            itt.move_to(0,-200,relative=True)
+                        else:
+                            itt.move_to(0,-100,relative=True)
+                        time.sleep(0.02)
+                    itt.move_to(int(400/rate)+random.randint(-100, 100),0,relative=True)
+                    time.sleep(0.02)
+
+                itt.key_up('e')
+
+                itt.delay(0.4, comment='waiting the Nahida E skill end')
+                itt.middle_click()
+
+                while not combat_lib.get_current_chara_num(self.checkup_stop_func) == origin_chara_index:
+                    itt.key_press(str(origin_chara_index))
+                    time.sleep(0.2)
+
+                return 0
             
-            itt.key_up('e')
-            
-            itt.delay(0.4, comment='waiting the Nahida E skill end')
-            itt.middle_click()
-            
-            while not combat_lib.get_current_chara_num(self.checkup_stop_func) == origin_chara_index:
-                itt.key_press(str(origin_chara_index))
-                time.sleep(0.2)
-            
-            return 0
-            
-        else:
-            return self.auto_pickup()
+        if mode == 'COMBAT':
+            center_pos = genshin_map.get_position()
+            OFFSET = 40
+            while find_possible_spoils():
+                move_to_possible_spoils()
+                if euclidean_distance(center_pos, genshin_map.get_position()) > 40:
+                    logger.info(t2t("out of range, break"))
+                    break
         
         
     def auto_pickup(self):
