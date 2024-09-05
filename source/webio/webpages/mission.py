@@ -103,7 +103,7 @@ class MissionPage(AdvancePage):
             mnote = None
             mtime = None
             if mission_name in self.MISSION_META:
-                if 'title' in self.MISSION_META[mission_name].keys():
+                if 'title' in self.MISSION_META[mission_name].keys() and self.MISSION_META[mission_name]['title'] is not None:
                     if GLOBAL_LANG in self.MISSION_META[mission_name]['title']:
                         mission_show_name = self.MISSION_META[mission_name]['title'][GLOBAL_LANG]
                     else:

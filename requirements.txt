@@ -48,3 +48,4 @@ qtpy==2.4.1
 loguru
 pywebview
 PyQtWebEngine
+ultralytics
