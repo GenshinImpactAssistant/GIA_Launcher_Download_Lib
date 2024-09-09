@@ -7,6 +7,7 @@ class FightOnlyGeneral(Commission):
         super().__init__(commission_type, commission_position)
 
     def exec_mission(self):
+        self.set_raise_exception()
         r = self.move_straight(self.commission_position, is_tp=True, stop_rule=STOP_RULE_ARRIVE)
         self.handle_tmf_stuck_then_raise(r)
         

@@ -41,6 +41,7 @@ class DangerousHaulGeneral(CommissionTemplate):
         return False
     
     def exec_mission(self):
+        self.set_raise_exception()
         attack_timer = AdvanceTimer(0.1).start()
         r = self.move_straight(self.commission_position, is_tp=True)
         if r == ERR_FAIL:return

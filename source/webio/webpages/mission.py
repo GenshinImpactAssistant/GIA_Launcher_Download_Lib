@@ -103,14 +103,13 @@ class MissionPage(AdvancePage):
             mnote = None
             mtime = None
             if mission_name in self.MISSION_META:
-                if 'title' in self.MISSION_META[mission_name].keys() and self.MISSION_META[mission_name]['title'] is not None:
-                    if GLOBAL_LANG in self.MISSION_META[mission_name]['title']:
-                        mission_show_name = self.MISSION_META[mission_name]['title'][GLOBAL_LANG]
-                    else:
-                        mission_show_name = self.MISSION_META[mission_name]['title']
+                if ('title' in self.MISSION_META[mission_name].keys()) and (self.MISSION_META[mission_name]['title'] is not None) and (GLOBAL_LANG in self.MISSION_META[mission_name]['title']):
+                    mission_show_name = self.MISSION_META[mission_name]['title'][GLOBAL_LANG]
                 else:
-                    logger.error(f"mission {mission_name} has not title?")
-                    mission_show_name = ""
+                    logger.debug(f"mission {mission_name} has not title. generate default title instead.")
+                    _tag = self.MISSION_META[mission_name].get('tags', "mission")
+                    _filename = mission_name
+                    mission_show_name = f"{_tag}: {_filename}"
                 mauthor = self.MISSION_META[mission_name].get('author', None)
                 mnote = self.MISSION_META[mission_name].get('note', None)
                 if 'last_update' in self.MISSION_META[mission_name].keys():

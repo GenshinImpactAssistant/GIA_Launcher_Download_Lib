@@ -252,8 +252,9 @@ class AimOperator(BaseThreading):
                 itt.key_down('w')
                 if not DEBUGING_THIS_MODULE:  # set to False when debug this module
                     print(self.sco_blocking_request.waiting_until_reply(stop_func=self.checkup_stop_func, timeout=60))
-                barrier_finder_move_limit_timer = AdvanceTimer(4).start()
+                barrier_finder_move_limit_timer = AdvanceTimer(2).start()
                 while 1:
+                    if not combat_lib.CSDL.get_combat_state(): return
                     if self.checkup_stop_func():
                         itt.key_up('w')
                         self.sco_blocking_request.recovery_request()
@@ -270,6 +271,7 @@ class AimOperator(BaseThreading):
                         self.sco_blocking_request.recovery_request()
                         self.find_enemy_behind_barrier_timeout_timer.reset().start()
                         return False
+
 
     def _moving_find_enemy(self):
         # enemy_possible_rotation = []
